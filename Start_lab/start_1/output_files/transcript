@@ -1,0 +1,80 @@
+# do temp_simlib_comp.tmp
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 09:34:17 on Aug 09,2023
+# vlog -work cycloneiiils_ver -vlog01compat f:/app_download/quartus_13/quartus/eda/sim_lib/cycloneiiils_atoms.v 
+# -- Compiling UDP CYCLONEIIILS_PRIM_DFFE
+# -- Compiling UDP CYCLONEIIILS_PRIM_DFFEAS
+# -- Compiling UDP CYCLONEIIILS_PRIM_DFFEAS_HIGH
+# -- Compiling module cycloneiiils_dffe
+# -- Compiling module cycloneiiils_mux21
+# -- Compiling module cycloneiiils_mux41
+# -- Compiling module cycloneiiils_and1
+# -- Compiling module cycloneiiils_and16
+# -- Compiling module cycloneiiils_bmux21
+# -- Compiling module cycloneiiils_b17mux21
+# -- Compiling module cycloneiiils_nmux21
+# -- Compiling module cycloneiiils_b5mux21
+# -- Compiling module cycloneiiils_latch
+# -- Compiling module cycloneiiils_routing_wire
+# -- Compiling module cycloneiiils_m_cntr
+# -- Compiling module cycloneiiils_n_cntr
+# -- Compiling module cycloneiiils_scale_cntr
+# -- Compiling module cycloneiiils_pll_reg
+# -- Compiling module cycloneiiils_pll
+# -- Compiling module cycloneiiils_lcell_comb
+# -- Compiling module cycloneiiils_ff
+# -- Compiling module cycloneiiils_ram_pulse_generator
+# -- Compiling module cycloneiiils_ram_register
+# -- Compiling module cycloneiiils_ram_block
+# -- Compiling module cycloneiiils_mac_data_reg
+# -- Compiling module cycloneiiils_mac_sign_reg
+# -- Compiling module cycloneiiils_mac_mult_internal
+# -- Compiling module cycloneiiils_mac_mult
+# -- Compiling module cycloneiiils_mac_out
+# -- Compiling module cycloneiiils_io_ibuf
+# -- Compiling module cycloneiiils_io_obuf
+# -- Compiling module cycloneiiils_ddio_out
+# -- Compiling module cycloneiiils_ddio_oe
+# -- Compiling module cycloneiiils_pseudo_diff_out
+# -- Compiling module cycloneiiils_io_pad
+# -- Compiling module cycloneiiils_ena_reg
+# -- Compiling module cycloneiiils_clkctrl
+# -- Compiling module cycloneiiils_rublock
+# -- Compiling module cycloneiiils_controller
+# -- Compiling module cycloneiiils_termination_ctrl
+# -- Compiling module cycloneiiils_termination_rupdn
+# -- Compiling module cycloneiiils_termination
+# -- Compiling module cycloneiiils_jtag
+# -- Compiling module cycloneiiils_crcblock
+# -- Compiling module cycloneiiils_oscillator
+# 
+# Top level modules:
+# 	cycloneiiils_dffe
+# 	cycloneiiils_and1
+# 	cycloneiiils_and16
+# 	cycloneiiils_bmux21
+# 	cycloneiiils_b17mux21
+# 	cycloneiiils_nmux21
+# 	cycloneiiils_b5mux21
+# 	cycloneiiils_pll_reg
+# 	cycloneiiils_pll
+# 	cycloneiiils_lcell_comb
+# 	cycloneiiils_ff
+# 	cycloneiiils_ram_block
+# 	cycloneiiils_mac_mult
+# 	cycloneiiils_mac_out
+# 	cycloneiiils_io_ibuf
+# 	cycloneiiils_io_obuf
+# 	cycloneiiils_ddio_out
+# 	cycloneiiils_ddio_oe
+# 	cycloneiiils_pseudo_diff_out
+# 	cycloneiiils_io_pad
+# 	cycloneiiils_clkctrl
+# 	cycloneiiils_rublock
+# 	cycloneiiils_controller
+# 	cycloneiiils_termination
+# 	cycloneiiils_jtag
+# 	cycloneiiils_crcblock
+# 	cycloneiiils_oscillator
+# End time: 09:34:17 on Aug 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

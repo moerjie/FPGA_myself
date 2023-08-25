@@ -1,0 +1,167 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/APP_Download/Quartus_13/Project/start_4/simulation/qsim
+vstart_4
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 f1UAClamPbc26O=S_bQ9j3
+IeR[R5HlKG>TZXk^[`7fj>3
+R0
+w1692008497
+Z2 8start_4.vo
+Z3 Fstart_4.vo
+Z4 L0 31
+Z5 OL;L;10.4;61
+!s108 1692008501.572000
+Z6 !s107 start_4.vo|
+Z7 !s90 -work|work|start_4.vo|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vstart_4_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 lokNh4<6J=b4D>hI5b6762
+IBZd8GhzH<GZ?PUQLO?QiV2
+R0
+Z9 w1692008496
+Z10 8Waveform.vwf.vt
+Z11 FWaveform.vwf.vt
+L0 57
+R5
+Z12 !s108 1692008501.836000
+Z13 !s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R8
+vstart_4_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 i@VHoIa`7EZe7>`46SbYC0
+IZnJ]mINzoI0j2lJbIQh>80
+R0
+R9
+R10
+R11
+Z15 L0 29
+R5
+R12
+R13
+R14
+!i113 0
+R8
+vstart_4_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 bS`^fRV^W?67d=BRInk^]3
+Ic>gLKSEiPBYfQUZ0Ue`gF2
+R0
+R9
+R10
+R11
+L0 438
+R5
+R12
+R13
+R14
+!i113 0
+R8
+vTIM_CNT
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2Ok_]amO8CQo?gA59hiL?0
+I774f4b5ELKG>clUk>`gN61
+R0
+w1692067673
+R2
+R3
+R4
+R5
+!s108 1692067677.140000
+R6
+R7
+!i113 0
+R8
+n@t@i@m_@c@n@t
+vTIM_CNT_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 e^F4?E2WVT:K8H^Heed342
+IKB67ljPFTV9>FQCEjhLBm0
+R0
+Z16 w1692067672
+Z17 8tim_cnt_v.vwf.vt
+Z18 Ftim_cnt_v.vwf.vt
+L0 61
+R5
+Z19 !s108 1692067677.418000
+Z20 !s107 tim_cnt_v.vwf.vt|
+Z21 !s90 -work|work|tim_cnt_v.vwf.vt|
+!i113 0
+R8
+n@t@i@m_@c@n@t_vlg_check_tst
+vTIM_CNT_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 P:RJG@MM_dReQU51Ua:Sb1
+I7mJUNEz]XfiNJK`78Q2FV0
+R0
+R16
+R17
+R18
+R15
+R5
+R19
+R20
+R21
+!i113 0
+R8
+n@t@i@m_@c@n@t_vlg_sample_tst
+vTIM_CNT_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 TzOf<ZiK3>7dglJl_8<zO1
+IKnlM0Qmh`T3D;6XL^TA;^0
+R0
+R16
+R17
+R18
+L0 627
+R5
+R19
+R20
+R21
+!i113 0
+R8
+n@t@i@m_@c@n@t_vlg_vec_tst

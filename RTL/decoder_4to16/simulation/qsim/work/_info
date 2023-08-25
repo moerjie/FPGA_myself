@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/APP_Download/Quartus_13/Project/RTL/decoder_4to16/simulation/qsim
+vdec4to16
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 PbMe6GB?4gY46C@PEiCCN1
+I[oXD<ifXQQBhUNC@ozOKA2
+R0
+w1692704341
+8dec4to16.vo
+Fdec4to16.vo
+L0 31
+Z2 OL;L;10.4;61
+!s108 1692704344.823000
+!s107 dec4to16.vo|
+!s90 -work|work|dec4to16.vo|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdec4to16_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 d>5Gm38DM;mBE2lg_[PWE3
+IMSncZFC0EhWa=`V2je`oO3
+R0
+Z4 w1692704340
+Z5 8Waveform.vwf.vt
+Z6 FWaveform.vwf.vt
+L0 57
+R2
+Z7 !s108 1692704344.886000
+Z8 !s107 Waveform.vwf.vt|
+Z9 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R3
+vdec4to16_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 R===9RGmOASg@V8B6_]Ja1
+Ib:18j@coFR?M[g@dAa=bf0
+R0
+R4
+R5
+R6
+L0 29
+R2
+R7
+R8
+R9
+!i113 0
+R3
+vdec4to16_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 jih:YLBN4lkc4XacQ]JYb1
+IB9>=3[`<h;W;2B09m41iX2
+R0
+R4
+R5
+R6
+L0 421
+R2
+R7
+R8
+R9
+!i113 0
+R3

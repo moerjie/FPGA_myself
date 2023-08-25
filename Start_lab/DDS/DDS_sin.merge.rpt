@@ -1,0 +1,214 @@
+Partition Merge report for DDS_sin
+Sat Oct 27 11:16:45 2012
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Partition Statistics
+  5. Partition Merge Partition Assignments
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Partition Merge Summary                                                       ;
++------------------------------------+------------------------------------------+
+; Partition Merge Status             ; Successful - Sat Oct 27 11:16:45 2012    ;
+; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name                      ; DDS_sin                                  ;
+; Top-level Entity Name              ; DDS_sin                                  ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; 238                                      ;
+;     Total combinational functions  ; 214                                      ;
+;     Dedicated logic registers      ; 159                                      ;
+; Total registers                    ; 159                                      ;
+; Total pins                         ; 4                                        ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 10,240                                   ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                        ;
++----------------------+----------------+-------------------+------------------------+----------------------+
+; Partition Name       ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents   ;
++----------------------+----------------+-------------------+------------------------+----------------------+
+; Top                  ; User-created   ; Source File       ; Source File            ;                      ;
+; sld_hub:sld_hub_inst ; Auto-generated ; Source File       ; Source File            ; sld_hub:sld_hub_inst ;
++----------------------+----------------+-------------------+------------------------+----------------------+
+
+
++----------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                       ;
++---------------------------------------------+-------+----------------------+
+; Statistic                                   ; Top   ; sld_hub:sld_hub_inst ;
++---------------------------------------------+-------+----------------------+
+; Estimated Total logic elements              ; 136   ; 102                  ;
+;                                             ;       ;                      ;
+; Total combinational functions               ; 122   ; 92                   ;
+; Logic element usage by number of LUT inputs ;       ;                      ;
+;     -- 4 input functions                    ; 35    ; 38                   ;
+;     -- 3 input functions                    ; 28    ; 33                   ;
+;     -- <=2 input functions                  ; 59    ; 21                   ;
+;                                             ;       ;                      ;
+; Logic elements by mode                      ;       ;                      ;
+;     -- normal mode                          ; 76    ; 88                   ;
+;     -- arithmetic mode                      ; 46    ; 4                    ;
+;                                             ;       ;                      ;
+; Total registers                             ; 95    ; 64                   ;
+;     -- Dedicated logic registers            ; 95    ; 64                   ;
+;     -- I/O registers                        ; 0     ; 0                    ;
+;                                             ;       ;                      ;
+; Virtual pins                                ; 0     ; 0                    ;
+; I/O pins                                    ; 4     ; 0                    ;
+; Embedded Multiplier 9-bit elements          ; 0     ; 0                    ;
+; Total memory bits                           ; 10240 ; 0                    ;
+; Total RAM block bits                        ; 0     ; 0                    ;
+; JTAG                                        ; 1     ; 0                    ;
+;                                             ;       ;                      ;
+; Connections                                 ;       ;                      ;
+;     -- Input Connections                    ; 114   ; 99                   ;
+;     -- Registered Input Connections         ; 56    ; 73                   ;
+;     -- Output Connections                   ; 152   ; 61                   ;
+;     -- Registered Output Connections        ; 5     ; 60                   ;
+;                                             ;       ;                      ;
+; Internal Connections                        ;       ;                      ;
+;     -- Total Connections                    ; 942   ; 563                  ;
+;     -- Registered Connections               ; 435   ; 403                  ;
+;                                             ;       ;                      ;
+; External Connections                        ;       ;                      ;
+;     -- Top                                  ; 106   ; 160                  ;
+;     -- sld_hub:sld_hub_inst                 ; 160   ; 0                    ;
+;                                             ;       ;                      ;
+; Partition Interface                         ;       ;                      ;
+;     -- Input Ports                          ; 19    ; 15                   ;
+;     -- Output Ports                         ; 10    ; 33                   ;
+;     -- Bidir Ports                          ; 0     ; 0                    ;
+;                                             ;       ;                      ;
+; Registered Ports                            ;       ;                      ;
+;     -- Registered Input Ports               ; 0     ; 4                    ;
+;     -- Registered Output Ports              ; 0     ; 23                   ;
+;                                             ;       ;                      ;
+; Port Connectivity                           ;       ;                      ;
+;     -- Input Ports driven by GND            ; 0     ; 1                    ;
+;     -- Output Ports driven by GND           ; 0     ; 0                    ;
+;     -- Input Ports driven by VCC            ; 0     ; 0                    ;
+;     -- Output Ports driven by VCC           ; 0     ; 0                    ;
+;     -- Input Ports with no Source           ; 0     ; 0                    ;
+;     -- Output Ports with no Source          ; 0     ; 0                    ;
+;     -- Input Ports with no Fanout           ; 0     ; 1                    ;
+;     -- Output Ports with no Fanout          ; 0     ; 18                   ;
++---------------------------------------------+-------+----------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Assignments                                                                                                              ;
++-----------+------------------------------+----------------------------------------------------------------------------------------+------+---------+
+; Partition ; Assignment                   ; Value                                                                                  ; From ; To      ;
++-----------+------------------------------+----------------------------------------------------------------------------------------+------+---------+
+; Top       ; Auto ROM Replacement         ; OFF                                                                                    ;      ;         ;
+; Top       ; SDC_STATEMENT                ; create_clock -period 10MHz -name altera_reserved_tck [get_ports {altera_reserved_tck}] ;      ;         ;
+; Top       ; NOT Gate Push-Back           ; OFF                                                                                    ;      ; clr_reg ;
+; Top       ; Remove Redundant Logic Cells ; OFF                                                                                    ;      ;         ;
+; Top       ; Ignore LCELL Buffers         ; OFF                                                                                    ;      ;         ;
+; Top       ; Power-Up Level               ; LOW                                                                                    ;      ; clr_reg ;
+; Top       ; SUPPRESS_DA_RULE_INTERNAL    ; A103,C102,C101                                                                         ;      ;         ;
+; Top       ; SUPPRESS_DA_RULE_INTERNAL    ; C106                                                                                   ;      ; tdo     ;
+; Top       ; PowerPlay Power Optimization ; NORMAL_COMPILATION                                                                     ;      ;         ;
+; Top       ; PowerPlay Power Optimization ; NORMAL_COMPILATION                                                                     ;      ;         ;
+; Top       ; PowerPlay Power Optimization ; NORMAL_COMPILATION                                                                     ;      ;         ;
+; Top       ; PowerPlay Power Optimization ; NORMAL_COMPILATION                                                                     ;      ;         ;
++-----------+------------------------------+----------------------------------------------------------------------------------------+------+---------+
+
+
++------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                 ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 238                      ;
+;                                             ;                          ;
+; Total combinational functions               ; 214                      ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 73                       ;
+;     -- 3 input functions                    ; 61                       ;
+;     -- <=2 input functions                  ; 80                       ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 164                      ;
+;     -- arithmetic mode                      ; 50                       ;
+;                                             ;                          ;
+; Total registers                             ; 159                      ;
+;     -- Dedicated logic registers            ; 159                      ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 4                        ;
+; Total memory bits                           ; 10240                    ;
+; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
+; Maximum fan-out                             ; 136                      ;
+; Total fan-out                               ; 1335                     ;
+; Average fan-out                             ; 3.41                     ;
++---------------------------------------------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+---------+
+; Name                                                                                                                    ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF     ;
++-------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+---------+
+; DDS:u4|sin_rom:u3|altsyncram:altsyncram_component|altsyncram_9i91:auto_generated|altsyncram_7u82:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 1024         ; 10           ; 1024         ; 10           ; 10240 ; sin.mif ;
++-------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+---------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Partition Merge
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Sat Oct 27 11:16:42 2012
+Info: Command: quartus_cdb --read_settings_files=on --write_settings_files=off DDS_sin -c DDS_sin --merge=on
+Info: Using synthesis netlist for partition "Top"
+Info: Using synthesis netlist for partition "sld_hub:sld_hub_inst"
+Info: Resolved and merged 2 partition(s)
+Info: Implemented 261 device resources after synthesis - the final resource count might be different
+    Info: Implemented 4 input pins
+    Info: Implemented 4 output pins
+    Info: Implemented 242 logic cells
+    Info: Implemented 10 RAM segments
+Info: Quartus II Partition Merge was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 181 megabytes
+    Info: Processing ended: Sat Oct 27 11:16:45 2012
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

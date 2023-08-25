@@ -1,0 +1,22 @@
+module dec_3to3(
+IN  ,
+OUT);
+input  [3-1:0] IN  ;
+output [8-1:0] OUT ;
+
+reg [8-1:0] OUT ;
+
+always @ (IN) begin
+  case(IN)
+    3'b000: OUT = 8'b 00000001;
+    3'b001: OUT = 8'b 00000010;
+    3'b010: OUT = 8'b 00000100;
+    3'b011: OUT = 8'b 00001000;
+    3'b100: OUT = 8'b 00010000;
+    3'b101: OUT = 8'b 00100000;
+    3'b110: OUT = 8'b 01000000;
+    3'b111: OUT = 8'b 10000000;
+  endcase
+end
+
+endmodule // module dec_3to8;

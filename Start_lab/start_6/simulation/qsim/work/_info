@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/APP_Download/Quartus_13/Project/start_6/simulation/qsim
+vstart_6
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 GU4a_A3OB5`Qn?d41Tef72
+ICeRMAE?]2ARN>E5RT0Ioi3
+R0
+w1692444540
+8start_6.vo
+Fstart_6.vo
+L0 31
+Z2 OL;L;10.4;61
+!s108 1692444544.607000
+!s107 start_6.vo|
+!s90 -work|work|start_6.vo|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vstart_6_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 EZIedaijbA99aY]CgfUn@1
+I6BZCKHRi0@j8cWIY3Shg;3
+R0
+Z4 w1692444539
+Z5 8Waveform.vwf.vt
+Z6 FWaveform.vwf.vt
+L0 59
+R2
+Z7 !s108 1692444544.779000
+Z8 !s107 Waveform.vwf.vt|
+Z9 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R3
+vstart_6_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 aj9dCJoQKQN_<O0XZE6@_0
+I4@[[e`VWn4bmizW=@^z1L0
+R0
+R4
+R5
+R6
+L0 29
+R2
+R7
+R8
+R9
+!i113 0
+R3
+vstart_6_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 QkIRLeXNnQaAedAb=36P:0
+I2jeG];K[;F9Z]<]aLb<@c1
+R0
+R4
+R5
+R6
+L0 428
+R2
+R7
+R8
+R9
+!i113 0
+R3

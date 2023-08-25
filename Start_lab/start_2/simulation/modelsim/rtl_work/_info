@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/APP_Download/Quartus_13/Project/start_2/simulation/modelsim
+vdec_2to4
+!s110 1691631063
+!i10b 1
+!s100 =NCSm=XD9A3I0;2`MYNNI2
+I`FZ6>^mNBSAH8CmTHT:4_3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1380439378
+8F:/APP_Download/Quartus_13/Project/start_2/rtl_module.v
+FF:/APP_Download/Quartus_13/Project/start_2/rtl_module.v
+L0 1
+OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1691631063.564000
+!s107 F:/APP_Download/Quartus_13/Project/start_2/rtl_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/APP_Download/Quartus_13/Project/start_2|F:/APP_Download/Quartus_13/Project/start_2/rtl_module.v|
+!i113 0
+o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+F:/APP_Download/Quartus_13/Project/start_2 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

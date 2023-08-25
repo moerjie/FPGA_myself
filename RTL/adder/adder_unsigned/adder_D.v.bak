@@ -1,0 +1,19 @@
+module adder_D(
+  IN1   ,
+  IN2   ,
+  CLK   ,
+  OUT   );
+input  [3:0] IN1, IN2;
+input CLK;
+output  [4:0] OUT;
+reg [3:0] in1_d1R, in2_d1R;
+reg  [4:0] adder_out, OUT;
+always@(posedge CLK) begin // 生成D触发器的always块
+  in1_d1R <= IN1;
+  in2_d1R <= IN2;
+  OUT     <= adder_out;
+end
+always@(in1_d1R or in2_d1R) begin // 生成组合逻辑的always 块
+  adder_out = in1_d1R + in2_d1R;
+end
+endmodule 

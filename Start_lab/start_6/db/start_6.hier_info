@@ -1,0 +1,92 @@
+|start_6
+RAOUT[0] <= cnt_incr:inst.ROM_ADD[0]
+RAOUT[1] <= cnt_incr:inst.ROM_ADD[1]
+RAOUT[2] <= cnt_incr:inst.ROM_ADD[2]
+RAOUT[3] <= cnt_incr:inst.ROM_ADD[3]
+RAOUT[4] <= cnt_incr:inst.ROM_ADD[4]
+RAOUT[5] <= cnt_incr:inst.ROM_ADD[5]
+RAOUT[6] <= cnt_incr:inst.ROM_ADD[6]
+CLK_50 => cnt_incr:inst.CLK
+CLK_50 => sine_rom:inst2.CLK
+SW[0] => cnt_incr:inst.INCR[0]
+SW[1] => cnt_incr:inst.INCR[1]
+SW[2] => cnt_incr:inst.INCR[2]
+SW[3] => cnt_incr:inst.INCR[3]
+SW[4] => cnt_incr:inst.INCR[4]
+SW[5] => cnt_incr:inst.INCR[5]
+SW[6] => cnt_incr:inst.INCR[6]
+SW[7] => cnt_incr:inst.INCR[7]
+SW[8] => cnt_incr:inst.INCR[8]
+ROMOUT[0] <= sine_rom:inst2.RD[0]
+ROMOUT[1] <= sine_rom:inst2.RD[1]
+ROMOUT[2] <= sine_rom:inst2.RD[2]
+ROMOUT[3] <= sine_rom:inst2.RD[3]
+ROMOUT[4] <= sine_rom:inst2.RD[4]
+ROMOUT[5] <= sine_rom:inst2.RD[5]
+ROMOUT[6] <= sine_rom:inst2.RD[6]
+ROMOUT[7] <= sine_rom:inst2.RD[7]
+
+
+|start_6|cnt_incr:inst
+CLK => CNTVAL[0]~reg0.CLK
+CLK => CNTVAL[1]~reg0.CLK
+CLK => CNTVAL[2]~reg0.CLK
+CLK => CNTVAL[3]~reg0.CLK
+CLK => CNTVAL[4]~reg0.CLK
+CLK => CNTVAL[5]~reg0.CLK
+CLK => CNTVAL[6]~reg0.CLK
+CLK => CNTVAL[7]~reg0.CLK
+CLK => CNTVAL[8]~reg0.CLK
+INCR[0] => Add0.IN9
+INCR[1] => Add0.IN8
+INCR[2] => Add0.IN7
+INCR[3] => Add0.IN6
+INCR[4] => Add0.IN5
+INCR[5] => Add0.IN4
+INCR[6] => Add0.IN3
+INCR[7] => Add0.IN2
+INCR[8] => Add0.IN1
+ROM_ADD[0] <= CNTVAL[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_ADD[1] <= CNTVAL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_ADD[2] <= CNTVAL[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_ADD[3] <= CNTVAL[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_ADD[4] <= CNTVAL[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_ADD[5] <= CNTVAL[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_ADD[6] <= CNTVAL[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[0] <= CNTVAL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[1] <= CNTVAL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[2] <= CNTVAL[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[3] <= CNTVAL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[4] <= CNTVAL[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[5] <= CNTVAL[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[6] <= CNTVAL[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[7] <= CNTVAL[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[8] <= CNTVAL[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|start_6|sine_rom:inst2
+CLK => RD[0]~reg0.CLK
+CLK => RD[1]~reg0.CLK
+CLK => RD[2]~reg0.CLK
+CLK => RD[3]~reg0.CLK
+CLK => RD[4]~reg0.CLK
+CLK => RD[5]~reg0.CLK
+CLK => RD[6]~reg0.CLK
+CLK => RD[7]~reg0.CLK
+RA[0] => Ram0.RADDR
+RA[1] => Ram0.RADDR1
+RA[2] => Ram0.RADDR2
+RA[3] => Ram0.RADDR3
+RA[4] => Ram0.RADDR4
+RA[5] => Ram0.RADDR5
+RA[6] => Ram0.RADDR6
+RD[0] <= RD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RD[1] <= RD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RD[2] <= RD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RD[3] <= RD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RD[4] <= RD[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RD[5] <= RD[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RD[6] <= RD[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RD[7] <= RD[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

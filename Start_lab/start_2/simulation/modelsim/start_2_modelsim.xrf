@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, F:/APP_Download/Quartus_13/Project/start_2/rtl_module.v
+source_file = 1, F:/APP_Download/Quartus_13/Project/start_2/start_2.bdf
+source_file = 1, F:/APP_Download/Quartus_13/Project/start_2/db/start_2.cbx.xml
+design_name = start_2
+instance = comp, \LED[3]~output , LED[3]~output, start_2, 1
+instance = comp, \LED[2]~output , LED[2]~output, start_2, 1
+instance = comp, \LED[1]~output , LED[1]~output, start_2, 1
+instance = comp, \LED[0]~output , LED[0]~output, start_2, 1
+instance = comp, \SW0~input , SW0~input, start_2, 1
+instance = comp, \SW1~input , SW1~input, start_2, 1
+instance = comp, \inst|Decoder0~0 , inst|Decoder0~0, start_2, 1
+instance = comp, \inst|Decoder0~1 , inst|Decoder0~1, start_2, 1
+instance = comp, \inst|Decoder0~2 , inst|Decoder0~2, start_2, 1
+instance = comp, \inst|Decoder0~3 , inst|Decoder0~3, start_2, 1

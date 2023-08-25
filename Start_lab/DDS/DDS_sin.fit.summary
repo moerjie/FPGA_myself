@@ -1,0 +1,16 @@
+Fitter Status : Failed - Sun Aug 13 08:08:58 2023
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : DDS_sin
+Top-level Entity Name : DDS_top
+Family : Cyclone III
+Device : EP3C5F256C6
+Timing Models : Final
+Total logic elements : 488 / 5,136 ( 10 % )
+    Total combinational functions : 461 / 5,136 ( 9 % )
+    Dedicated logic registers : 233 / 5,136 ( 5 % )
+Total registers : 233
+Total pins : 19 / 183 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 15,360 / 423,936 ( 4 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

@@ -1,0 +1,162 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/APP_Download/Quartus_13/Project/FPGA_circuit_logic/counter20/simulation/qsim
+vcounter12
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 7RYKQjDWR=`fVdbzlO9z82
+IRD29okkAo;oL<J[^^CTo03
+R0
+Z2 w1692612338
+Z3 8counter20.vo
+Z4 Fcounter20.vo
+Z5 L0 31
+Z6 OL;L;10.4;61
+!s108 1692612342.824000
+Z7 !s107 counter20.vo|
+Z8 !s90 -work|work|counter20.vo|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vcounter12_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ielX]b`c7k<cATle=Qb<z2
+Ibn8m2?fm?Zn]0L37LzLcX0
+R0
+R2
+Z10 8Waveform.vwf.vt
+Z11 FWaveform.vwf.vt
+L0 59
+R6
+Z12 !s108 1692612342.883000
+Z13 !s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R9
+vcounter12_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 F_A;b5ga]02gZNAM]=?Fi1
+IRI6;=IgfW6<K225k5jJ^f3
+R0
+R2
+R10
+R11
+Z15 L0 29
+R6
+R12
+R13
+R14
+!i113 0
+R9
+vcounter12_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 K<AOb>H]f_TlJ1IQMii;@0
+I=hCIXml``9oE]U<4E0dTb3
+R0
+R2
+R10
+R11
+L0 267
+R6
+R12
+R13
+R14
+!i113 0
+R9
+vcounter20
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 YJ^idQN]oV=OiGQ_82ilE1
+IRJVT[CIdK24gSgjbWcD1E0
+R0
+Z16 w1692613337
+R3
+R4
+R5
+R6
+!s108 1692613341.912000
+R7
+R8
+!i113 0
+R9
+vcounter20_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 SgXUO5nZ68IaMl5Ol6G`B1
+IQa6G41eMI?l_SAboUW7I81
+R0
+R16
+Z17 8Waveform_CNT20.vwf.vt
+Z18 FWaveform_CNT20.vwf.vt
+L0 57
+R6
+Z19 !s108 1692613341.971000
+Z20 !s107 Waveform_CNT20.vwf.vt|
+Z21 !s90 -work|work|Waveform_CNT20.vwf.vt|
+!i113 0
+R9
+vcounter20_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 TZB5e^nane:ki6=TYojcX0
+IZ>E__5l0[D4BYTYAC`WP@1
+R0
+R16
+R17
+R18
+R15
+R6
+R19
+R20
+R21
+!i113 0
+R9
+vcounter20_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 d9IzSj`Xn5`eikASMEMYz1
+I@34hJObA>WA_:7=bQ>k]50
+R0
+R16
+R17
+R18
+L0 287
+R6
+R19
+R20
+R21
+!i113 0
+R9

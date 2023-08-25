@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Nov 16 13:35:34 2013
+Quartus II Version : 7.2 Build 207 03/18/2008 SP 3 SJ Full Version
+Revision Name : start_lab
+Top-level Entity Name : start_lab
+Family : Cyclone III
+Total logic elements : 556
+    Total combinational functions : 402
+    Dedicated logic registers : 556
+Total registers : 556
+Total pins : 27
+Total virtual pins : 23
+Total memory bits : 12,288
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

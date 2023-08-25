@@ -1,0 +1,75 @@
+# do start_2.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:01:54 on Aug 10,2023
+# vlog -work work start_2.vo 
+# -- Compiling module start_2_3
+# 
+# Top level modules:
+# 	start_2_3
+# End time: 17:01:55 on Aug 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:01:55 on Aug 10,2023
+# vlog -work work Waveform_4_7.vwf.vt 
+# -- Compiling module start_2_3_vlg_sample_tst
+# -- Compiling module start_2_3_vlg_check_tst
+# -- Compiling module start_2_3_vlg_vec_tst
+# 
+# Top level modules:
+# 	start_2_3_vlg_vec_tst
+# End time: 17:01:55 on Aug 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "start_2.do" 
+# Start time: 17:01:55 on Aug 10,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Refreshing F:/APP_Download/Quartus_13/Project/start_2/simulation/qsim/work.start_2_3_vlg_vec_tst
+# Loading work.start_2_3_vlg_vec_tst
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/APP_Download/Quartus_13/Project/start_2/simulation/qsim/work.start_2_3
+# Loading work.start_2_3
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/APP_Download/Quartus_13/Project/start_2/simulation/qsim/work.start_2_3_vlg_sample_tst
+# Loading work.start_2_3_vlg_sample_tst
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/APP_Download/Quartus_13/Project/start_2/simulation/qsim/work.start_2_3_vlg_check_tst
+# Loading work.start_2_3_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform_4_7.vwf.vt(261)
+#    Time: 1 us  Iteration: 0  Instance: /start_2_3_vlg_vec_tst/tb_out
+# End time: 17:01:56 on Aug 10,2023, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 1

@@ -1,0 +1,28 @@
+|start_2_3
+DISP[6] <= dec_4to7:inst.OUT[0]
+DISP[5] <= dec_4to7:inst.OUT[1]
+DISP[4] <= dec_4to7:inst.OUT[2]
+DISP[3] <= dec_4to7:inst.OUT[3]
+DISP[2] <= dec_4to7:inst.OUT[4]
+DISP[1] <= dec_4to7:inst.OUT[5]
+DISP[0] <= dec_4to7:inst.OUT[6]
+SW0 => dec_4to7:inst.IN[0]
+SW1 => dec_4to7:inst.IN[1]
+SW2 => dec_4to7:inst.IN[2]
+SW3 => dec_4to7:inst.IN[3]
+
+
+|start_2_3|dec_4to7:inst
+IN[0] => Decoder0.IN3
+IN[1] => Decoder0.IN2
+IN[2] => Decoder0.IN1
+IN[3] => Decoder0.IN0
+OUT[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

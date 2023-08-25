@@ -1,0 +1,223 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version"
+
+// DATE "08/10/2023 09:32:28"
+
+// 
+// Device: Altera EP3C16F484C6 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module start_2 (
+	LED,
+	SW0,
+	SW1);
+output 	[3:0] LED;
+input 	SW0;
+input 	SW1;
+
+// Design Ports Information
+// LED[3]	=>  Location: PIN_H1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// LED[2]	=>  Location: PIN_J3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// LED[1]	=>  Location: PIN_J2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// LED[0]	=>  Location: PIN_J1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// SW0	=>  Location: PIN_J6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// SW1	=>  Location: PIN_H5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("start_2_6_1200mv_85c_v_slow.sdo");
+// synopsys translate_on
+
+wire \LED[3]~output_o ;
+wire \LED[2]~output_o ;
+wire \LED[1]~output_o ;
+wire \LED[0]~output_o ;
+wire \SW0~input_o ;
+wire \SW1~input_o ;
+wire \inst|Decoder0~0_combout ;
+wire \inst|Decoder0~1_combout ;
+wire \inst|Decoder0~2_combout ;
+wire \inst|Decoder0~3_combout ;
+
+
+// Location: IOOBUF_X0_Y21_N16
+cycloneiii_io_obuf \LED[3]~output (
+	.i(\inst|Decoder0~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED[3]~output .bus_hold = "false";
+defparam \LED[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y21_N23
+cycloneiii_io_obuf \LED[2]~output (
+	.i(\inst|Decoder0~1_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED[2]~output .bus_hold = "false";
+defparam \LED[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y20_N2
+cycloneiii_io_obuf \LED[1]~output (
+	.i(\inst|Decoder0~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED[1]~output .bus_hold = "false";
+defparam \LED[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y20_N9
+cycloneiii_io_obuf \LED[0]~output (
+	.i(!\inst|Decoder0~3_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\LED[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \LED[0]~output .bus_hold = "false";
+defparam \LED[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y24_N1
+cycloneiii_io_ibuf \SW0~input (
+	.i(SW0),
+	.ibar(gnd),
+	.o(\SW0~input_o ));
+// synopsys translate_off
+defparam \SW0~input .bus_hold = "false";
+defparam \SW0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y27_N1
+cycloneiii_io_ibuf \SW1~input (
+	.i(SW1),
+	.ibar(gnd),
+	.o(\SW1~input_o ));
+// synopsys translate_off
+defparam \SW1~input .bus_hold = "false";
+defparam \SW1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X3_Y20_N0
+cycloneiii_lcell_comb \inst|Decoder0~0 (
+// Equation(s):
+// \inst|Decoder0~0_combout  = (\SW0~input_o  & \SW1~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\SW0~input_o ),
+	.datad(\SW1~input_o ),
+	.cin(gnd),
+	.combout(\inst|Decoder0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|Decoder0~0 .lut_mask = 16'hF000;
+defparam \inst|Decoder0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X3_Y20_N26
+cycloneiii_lcell_comb \inst|Decoder0~1 (
+// Equation(s):
+// \inst|Decoder0~1_combout  = (!\SW0~input_o  & \SW1~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\SW0~input_o ),
+	.datad(\SW1~input_o ),
+	.cin(gnd),
+	.combout(\inst|Decoder0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|Decoder0~1 .lut_mask = 16'h0F00;
+defparam \inst|Decoder0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X3_Y20_N4
+cycloneiii_lcell_comb \inst|Decoder0~2 (
+// Equation(s):
+// \inst|Decoder0~2_combout  = (\SW0~input_o  & !\SW1~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\SW0~input_o ),
+	.datad(\SW1~input_o ),
+	.cin(gnd),
+	.combout(\inst|Decoder0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|Decoder0~2 .lut_mask = 16'h00F0;
+defparam \inst|Decoder0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X3_Y20_N14
+cycloneiii_lcell_comb \inst|Decoder0~3 (
+// Equation(s):
+// \inst|Decoder0~3_combout  = (\SW0~input_o ) # (\SW1~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\SW0~input_o ),
+	.datad(\SW1~input_o ),
+	.cin(gnd),
+	.combout(\inst|Decoder0~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|Decoder0~3 .lut_mask = 16'hFFF0;
+defparam \inst|Decoder0~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign LED[3] = \LED[3]~output_o ;
+
+assign LED[2] = \LED[2]~output_o ;
+
+assign LED[1] = \LED[1]~output_o ;
+
+assign LED[0] = \LED[0]~output_o ;
+
+endmodule

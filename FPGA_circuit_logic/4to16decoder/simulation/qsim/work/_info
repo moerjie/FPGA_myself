@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/APP_Download/Quartus_13/Project/FPGA_circuit_logic/4to16decoder/simulation/qsim
+vdec4to16
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 KSfR=l@fd2SXV1EgZ_gWN3
+I[[zI08Y8AAVVTKO9zSLe>1
+R0
+w1692499128
+84to16decoder.vo
+F4to16decoder.vo
+L0 31
+Z2 OL;L;10.4;61
+!s108 1692499132.068000
+!s107 4to16decoder.vo|
+!s90 -work|work|4to16decoder.vo|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdec4to16_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 _GT`;Vk6^o@YgGn78B]jC1
+INSRC:6No2l6ebdI^f?gbc3
+R0
+Z4 w1692499127
+Z5 8Waveform2.vwf.vt
+Z6 FWaveform2.vwf.vt
+L0 63
+R2
+Z7 !s108 1692499132.181000
+Z8 !s107 Waveform2.vwf.vt|
+Z9 !s90 -work|work|Waveform2.vwf.vt|
+!i113 0
+R3
+vdec4to16_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 VdVnDC_VU4RF<ajn?Cza02
+ICoUEhUZiLn6QBozR_oDRm1
+R0
+R4
+R5
+R6
+L0 29
+R2
+R7
+R8
+R9
+!i113 0
+R3
+vdec4to16_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 X72e[]@PC@iCeUPPHakeE1
+IK82F3LK@a4OfjaND4X@;71
+R0
+R4
+R5
+R6
+L0 563
+R2
+R7
+R8
+R9
+!i113 0
+R3

@@ -1,0 +1,118 @@
+/********************************版权声明**************************************
+**                              大西瓜团队
+**                            
+**----------------------------文件信息--------------------------
+** 文件名称：TLC615.v
+** 创建日期：2012.10.10
+** 功能描述：使用10位串行DA芯片TLC5615将数字信号转换为模拟信号，开发板DA芯片VDD=5V,VREF=3.3V 
+             计算公式：Vout=VREF*(N/1024) N为10位二进制码
+** 操作过程：根据需求，在程序改变10位二进制数，在DA芯片的Vout脚输出相应电压
+** 硬件平台：大西瓜第一代开发板
+** 版权声明：本代码属个人知识产权,本代码仅供交流学习.
+**---------------------------修改文件的相关信息----------------
+** 修改人：
+** 修改日期：		
+** 修改内容：
+*******************************************************************************/
+module TLC5615
+       (clk,                   //内部时钟
+        sclk,                  //TLC5615 sclk时钟脚
+        din,                   //TLC5615 din数据脚
+        cs,                    //TLC5615 cs片选
+        din_in);               //十位数据输入 
+            
+input      clk;
+input [9:0]din_in;
+output     din;
+output     cs;
+output     sclk;
+
+reg        din;
+reg        cs;
+reg        sclk;
+reg [3:0]  count1,count2,count3;
+reg [9:0]  din_reg;                //10位数据寄存器
+initial                          //初始化
+begin
+  cs=1;
+  din=0;
+  count1=0;
+  count2=0;
+  count3=0;
+//  din_reg=10'b00_0000_1111;                    //实验者可以根据需要修改10为二进制码
+end
+
+/************************************************/
+/*** sclk的频率设置为5MHz ***/
+always@(posedge clk)
+begin
+  if(count3==4'd9)
+  begin   
+     sclk<=~sclk;
+     count3<=0;
+  end
+  else
+    count3<=count3+1'b1;
+end
+/*********将DDS产生的数据进行寄存**********/
+always@(posedge clk)
+  begin
+   din_reg<=din_in;
+  end
+
+ 
+/*** TLC5615 cs片选 ***/
+always@(negedge sclk)
+begin
+  if(count1>=4'd12&&count1<4'd15)
+  begin
+     cs<=1;                                      //拉高片选
+     count1<=count1+4'd1;
+  end
+  else if(count1==4'd15)
+  begin
+    count1<=0;
+  end
+  else
+  begin
+    cs<=0;                                       //拉低片选
+    count1<=count1+4'd1;
+  end 
+end 
+
+/*** 10位二进制码进行数模转换（采用12位传送方式即10位有效位+2位填充位） ***/
+always@(posedge sclk)
+begin
+  if(cs==0)
+  begin
+  case(count2)
+  4'd0:din<=1'd0;                                //无效位
+  
+  4'd1:begin din<=din_reg[9];end                 //10位有效位      
+  4'd2:begin din<=din_reg[8];end
+  4'd3:begin din<=din_reg[7];end 
+  4'd4:begin din<=din_reg[6];end 
+  4'd5:begin din<=din_reg[5];end 
+  4'd6:begin din<=din_reg[4];end 
+  4'd7:begin din<=din_reg[3];end 
+  4'd8:begin din<=din_reg[2];end 
+  4'd9:begin din<=din_reg[1];end
+  4'd10:begin din<=din_reg[0];end 
+  
+  4'd11:begin din<=1'd0;end                      //填充位 补0即可
+  4'd12:begin din<=1'd0;end                      //填充位 补0即可
+  
+  4'd13:din<=1'd0;                               //无效位
+  4'd14:din<=1'd0;                               //无效位
+  4'd15:din<=1'd0;                               //无效位
+  default:begin count2<=0;din<=0;end
+  endcase
+  end
+  if(count2==4'd15)
+   count2<=0;
+  else
+  count2<=count2+4'd1;
+end 
+
+endmodule 
+  

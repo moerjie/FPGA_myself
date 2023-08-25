@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Nov 16 13:35:39 2013
+Quartus II Version : 7.2 Build 207 03/18/2008 SP 3 SJ Full Version
+Revision Name : start_lab
+Top-level Entity Name : start_lab
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Preliminary
+Total logic elements : 691 / 15,408 ( 4 % )
+    Total combinational functions : 404 / 15,408 ( 3 % )
+    Dedicated logic registers : 556 / 15,408 ( 4 % )
+Total registers : 556
+Total pins : 27 / 347 ( 8 % )
+Total virtual pins : 23
+Total memory bits : 12,288 / 516,096 ( 2 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : -3.676
+TNS   : -616.944
+
+Type  : Slow 1200mV 85C Model Setup 'CLK50'
+Slack : -3.635
+TNS   : -337.869
+
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : -0.862
+TNS   : -33.904
+
+Type  : Slow 1200mV 85C Model Hold 'CLK50'
+Slack : 0.372
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK50'
+Slack : -4.241
+TNS   : -241.392
+
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : -2.937
+TNS   : -527.658
+
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.951
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'CLK50'
+Slack : 4.757
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : -3.242
+TNS   : -520.645
+
+Type  : Slow 1200mV 0C Model Setup 'CLK50'
+Slack : -3.168
+TNS   : -284.034
+
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : -0.773
+TNS   : -30.448
+
+Type  : Slow 1200mV 0C Model Hold 'CLK50'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK50'
+Slack : -3.693
+TNS   : -210.122
+
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : -2.518
+TNS   : -448.857
+
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.850
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'CLK50'
+Slack : 4.279
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : -2.365
+TNS   : -225.971
+
+Type  : Fast 1200mV 0C Model Setup 'CLK50'
+Slack : -1.598
+TNS   : -132.480
+
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : -0.620
+TNS   : -25.072
+
+Type  : Fast 1200mV 0C Model Hold 'CLK50'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK50'
+Slack : -2.155
+TNS   : -122.548
+
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : -1.300
+TNS   : -220.543
+
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.533
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'CLK50'
+Slack : 2.820
+TNS   : 0.000
+
+------------------------------------------------------------

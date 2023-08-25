@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/APP_Download/Quartus_13/Project/RTL/MUX4/simulation/qsim
+vMUX4
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Pj^ca39cfYBeSa<QMB38Z2
+IVZlW8M]m6Z>>VEo4Do:Yz2
+R0
+w1692616798
+8MUX4.vo
+FMUX4.vo
+L0 31
+Z2 OL;L;10.4;61
+!s108 1692616802.376000
+!s107 MUX4.vo|
+!s90 -work|work|MUX4.vo|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@m@u@x4
+vMUX4_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 7`8jC0hH[D7P>Tie]f71=2
+IX`e3SCG7^<HDoz5Eb1R;Q1
+R0
+Z4 w1692616797
+Z5 8Waveform.vwf.vt
+Z6 FWaveform.vwf.vt
+L0 65
+R2
+Z7 !s108 1692616802.460000
+Z8 !s107 Waveform.vwf.vt|
+Z9 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R3
+n@m@u@x4_vlg_check_tst
+vMUX4_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 TJbj;FzfO_mlj78f>76_D2
+I>QTRAzH@oVm=RZAhT@E>80
+R0
+R4
+R5
+R6
+L0 29
+R2
+R7
+R8
+R9
+!i113 0
+R3
+n@m@u@x4_vlg_sample_tst
+vMUX4_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 88PCX61W6bHeimdBKlV9^0
+I[ZIH>9R?BF6_84G^aRDgQ1
+R0
+R4
+R5
+R6
+L0 429
+R2
+R7
+R8
+R9
+!i113 0
+R3
+n@m@u@x4_vlg_vec_tst

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DDS_sin">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:u4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_lhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:u4|sin_rom:u3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vr91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:u4|squ_rom:u5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3c81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:u4|tri_rom:u4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_pb81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

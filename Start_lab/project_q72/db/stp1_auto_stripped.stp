@@ -1,0 +1,168 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C16 (0x020F20DD)" sof_file="" top_level_entity="start_lab">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance compilation_mode="full" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2013/11/16 13:35:29  #0">
+      <clock name="CLK50" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_trigger_nodes="0" sample_depth="512" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="RAOUT[0]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[1]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[2]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[3]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[4]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[5]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[6]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[0]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[1]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[2]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[3]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[4]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[5]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[6]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[7]" tap_mode="classic" type="output pin"/>
+          <wire name="SW[0]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[1]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[2]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[3]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[4]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[5]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[6]" tap_mode="classic" type="input pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="RAOUT[0]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[1]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[2]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[3]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[4]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[5]" tap_mode="classic" type="output pin"/>
+          <wire name="RAOUT[6]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[0]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[1]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[2]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[3]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[4]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[5]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[6]" tap_mode="classic" type="output pin"/>
+          <wire name="ROMOUT[7]" tap_mode="classic" type="output pin"/>
+          <wire name="SW[0]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[1]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[2]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[3]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[4]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[5]" tap_mode="classic" type="input pin"/>
+          <wire name="SW[6]" tap_mode="classic" type="input pin"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec/>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="RAOUT" order="lsb_to_msb" radix="line" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="RAOUT[0]"/>
+            <net is_signal_inverted="no" name="RAOUT[1]"/>
+            <net is_signal_inverted="no" name="RAOUT[2]"/>
+            <net is_signal_inverted="no" name="RAOUT[3]"/>
+            <net is_signal_inverted="no" name="RAOUT[4]"/>
+            <net is_signal_inverted="no" name="RAOUT[5]"/>
+            <net is_signal_inverted="no" name="RAOUT[6]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="SW" order="lsb_to_msb" radix="hex" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="SW[0]"/>
+            <net is_signal_inverted="no" name="SW[1]"/>
+            <net is_signal_inverted="no" name="SW[2]"/>
+            <net is_signal_inverted="no" name="SW[3]"/>
+            <net is_signal_inverted="no" name="SW[4]"/>
+            <net is_signal_inverted="no" name="SW[5]"/>
+            <net is_signal_inverted="no" name="SW[6]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ROMOUT" order="lsb_to_msb" radix="line_signed" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="ROMOUT[0]"/>
+            <net is_signal_inverted="no" name="ROMOUT[1]"/>
+            <net is_signal_inverted="no" name="ROMOUT[2]"/>
+            <net is_signal_inverted="no" name="ROMOUT[3]"/>
+            <net is_signal_inverted="no" name="ROMOUT[4]"/>
+            <net is_signal_inverted="no" name="ROMOUT[5]"/>
+            <net is_signal_inverted="no" name="ROMOUT[6]"/>
+            <net is_signal_inverted="no" name="ROMOUT[7]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="RAOUT" order="lsb_to_msb" radix="line" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="RAOUT[0]"/>
+            <net is_signal_inverted="no" name="RAOUT[1]"/>
+            <net is_signal_inverted="no" name="RAOUT[2]"/>
+            <net is_signal_inverted="no" name="RAOUT[3]"/>
+            <net is_signal_inverted="no" name="RAOUT[4]"/>
+            <net is_signal_inverted="no" name="RAOUT[5]"/>
+            <net is_signal_inverted="no" name="RAOUT[6]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="SW" order="lsb_to_msb" radix="hex" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="SW[0]"/>
+            <net is_signal_inverted="no" name="SW[1]"/>
+            <net is_signal_inverted="no" name="SW[2]"/>
+            <net is_signal_inverted="no" name="SW[3]"/>
+            <net is_signal_inverted="no" name="SW[4]"/>
+            <net is_signal_inverted="no" name="SW[5]"/>
+            <net is_signal_inverted="no" name="SW[6]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ROMOUT" order="lsb_to_msb" radix="line_signed" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="ROMOUT[0]"/>
+            <net is_signal_inverted="no" name="ROMOUT[1]"/>
+            <net is_signal_inverted="no" name="ROMOUT[2]"/>
+            <net is_signal_inverted="no" name="ROMOUT[3]"/>
+            <net is_signal_inverted="no" name="ROMOUT[4]"/>
+            <net is_signal_inverted="no" name="ROMOUT[5]"/>
+            <net is_signal_inverted="no" name="ROMOUT[6]"/>
+            <net is_signal_inverted="no" name="ROMOUT[7]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="F62EE289" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2013/11/16 13:35:29  #1" position="pre" power_up_trigger_mode="false" segment_size="16" storage_mode="off" storage_qualifier_port_is_pin="true" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <storage_qualifier_level>
+            <power_up>
+            </power_up>
+          </storage_qualifier_level>
+          <storage_qualifier_level>
+            <power_up>
+            </power_up>
+          </storage_qualifier_level>
+          <storage_qualifier_level>
+            <power_up>
+            </power_up>
+          </storage_qualifier_level>
+          <transitional><pwr_up_transitional/>
+          </transitional>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="4"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="523776"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1215,648,497,155,0,50,82,0,0"/>
+  </global_info>
+</session>

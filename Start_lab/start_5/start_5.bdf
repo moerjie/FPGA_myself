@@ -1,0 +1,266 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -80 248 88 264)
+	(text "INPUT" (rect 125 0 161 13)(font "Arial" (font_size 6)))
+	(text "CLK_50" (rect 5 0 58 15)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 20)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -152 264 -80 288))
+)
+(pin
+	(input)
+	(rect 344 280 512 296)
+	(text "INPUT" (rect 125 0 161 13)(font "Arial" (font_size 6)))
+	(text "SW0" (rect 5 0 35 15)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 20)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 288 296 344 320))
+)
+(pin
+	(input)
+	(rect 336 384 504 400)
+	(text "INPUT" (rect 125 0 161 13)(font "Arial" (font_size 6)))
+	(text "SW1" (rect 5 0 36 15)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 20)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 336 408 400 432))
+)
+(pin
+	(output)
+	(rect 320 328 496 344)
+	(text "OUTPUT" (rect 1 0 51 13)(font "Arial" (font_size 6)))
+	(text "EN_OUT" (rect 90 0 147 15)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 416 296 480 320))
+)
+(pin
+	(output)
+	(rect 752 232 928 248)
+	(text "OUTPUT" (rect 1 0 51 13)(font "Arial" (font_size 6)))
+	(text "OUT[5..0]" (rect 90 0 150 15)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 928 248 992 272))
+)
+(symbol
+	(rect 456 192 488 224)
+	(text "GND" (rect 8 16 33 29)(font "Arial" (font_size 6)))
+	(text "inst3" (rect 3 21 34 36)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 26 16)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 26 16)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 512 208 712 352)
+	(text "shift_reg_SIPO_dir" (rect 5 0 127 15)(font "Arial" ))
+	(text "inst2" (rect 8 128 39 143)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RST" (rect 0 0 28 15)(font "Arial" ))
+		(text "RST" (rect 21 27 49 42)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 28 15)(font "Arial" ))
+		(text "CLK" (rect 21 43 49 58)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "EN" (rect 0 0 20 15)(font "Arial" ))
+		(text "EN" (rect 21 59 41 74)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "IN" (rect 0 0 14 15)(font "Arial" ))
+		(text "IN" (rect 21 75 35 90)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "DIR" (rect 0 0 24 15)(font "Arial" ))
+		(text "DIR" (rect 21 91 45 106)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "OUT[SHLEN-1..0]" (rect 0 0 113 15)(font "Arial" ))
+		(text "OUT[SHLEN-1..0]" (rect 84 27 197 42)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(parameter
+		"SHLEN"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 184 128))
+	)
+	(annotation_block (parameter)(rect 712 176 928 208))
+)
+(symbol
+	(rect 120 224 312 304)
+	(text "cnt_sync" (rect 5 0 61 15)(font "Arial" ))
+	(text "inst1" (rect 8 64 39 79)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 28 15)(font "Arial" ))
+		(text "CLK" (rect 21 27 49 42)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "CNTVAL[31..0]" (rect 0 0 93 15)(font "Arial" ))
+		(text "CNTVAL[31..0]" (rect 93 27 186 42)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
+	)
+	(port
+		(pt 192 48)
+		(output)
+		(text "OV" (rect 0 0 18 15)(font "Arial" ))
+		(text "OV" (rect 156 43 174 58)(font "Arial" ))
+		(line (pt 192 48)(pt 176 48))
+	)
+	(parameter
+		"MAX_VAL"
+		"25000000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 176 64))
+	)
+	(annotation_block (parameter)(rect 112 176 341 208))
+)
+(connector
+	(pt 512 272)
+	(pt 312 272)
+)
+(connector
+	(text "CLK" (rect 90 240 118 255)(font "Arial" ))
+	(pt 88 256)
+	(pt 120 256)
+)
+(connector
+	(text "CLK" (rect 458 232 486 247)(font "Arial" ))
+	(pt 512 256)
+	(pt 480 256)
+)
+(connector
+	(pt 512 240)
+	(pt 496 240)
+)
+(connector
+	(pt 496 240)
+	(pt 496 184)
+)
+(connector
+	(pt 472 192)
+	(pt 472 184)
+)
+(connector
+	(pt 472 184)
+	(pt 496 184)
+)
+(connector
+	(pt 312 336)
+	(pt 320 336)
+)
+(connector
+	(pt 312 272)
+	(pt 312 336)
+)
+(connector
+	(pt 712 240)
+	(pt 752 240)
+	(bus)
+)
+(connector
+	(pt 512 304)
+	(pt 504 304)
+)
+(connector
+	(pt 504 304)
+	(pt 504 392)
+)
+(junction (pt 312 272))

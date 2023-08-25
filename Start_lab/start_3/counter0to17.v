@@ -1,0 +1,26 @@
+module cnt_0to17(
+  CLK   ,   // clock
+  CNTVAL,   // counter value
+  OV    );  // overflow
+input CLK;
+output [5-1:0] CNTVAL;
+output OV;
+
+reg [5-1:0] CNTVAL;
+reg OV;
+
+always @ (posedge CLK) begin
+  if(CNTVAL >= 17)
+    CNTVAL <= 0;
+  else
+    CNTVAL <= CNTVAL + 1'b1;
+end
+
+always @ (CNTVAL) begin
+  if(CNTVAL <= 8)
+    OV = 1'b 0;
+  else
+    OV = 1'b 1;
+end
+
+endmodule   // module cnt_0to9

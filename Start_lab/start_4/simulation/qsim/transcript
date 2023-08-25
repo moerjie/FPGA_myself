@@ -1,0 +1,97 @@
+# do start_4.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 10:47:57 on Aug 15,2023
+# vlog -work work start_4.vo 
+# -- Compiling module TIM_CNT
+# 
+# Top level modules:
+# 	TIM_CNT
+# End time: 10:47:57 on Aug 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 10:47:57 on Aug 15,2023
+# vlog -work work tim_cnt_v.vwf.vt 
+# -- Compiling module TIM_CNT_vlg_sample_tst
+# -- Compiling module TIM_CNT_vlg_check_tst
+# -- Compiling module TIM_CNT_vlg_vec_tst
+# 
+# Top level modules:
+# 	TIM_CNT_vlg_vec_tst
+# End time: 10:47:57 on Aug 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "start_4.do" 
+# Start time: 10:47:57 on Aug 15,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Refreshing F:/APP_Download/Quartus_13/Project/start_4/simulation/qsim/work.TIM_CNT_vlg_vec_tst
+# Loading work.TIM_CNT_vlg_vec_tst
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/APP_Download/Quartus_13/Project/start_4/simulation/qsim/work.TIM_CNT
+# Loading work.TIM_CNT
+# Loading altera_ver.dffeas
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_jtag
+# Loading cycloneiii_ver.cycloneiii_clkctrl
+# Loading cycloneiii_ver.cycloneiii_mux41
+# Loading cycloneiii_ver.cycloneiii_ena_reg
+# Loading cycloneiii_ver.cycloneiii_ram_block
+# Loading cycloneiii_ver.cycloneiii_ram_register
+# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/APP_Download/Quartus_13/Project/start_4/simulation/qsim/work.TIM_CNT_vlg_sample_tst
+# Loading work.TIM_CNT_vlg_sample_tst
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/APP_Download/Quartus_13/Project/start_4/simulation/qsim/work.TIM_CNT_vlg_check_tst
+# Loading work.TIM_CNT_vlg_check_tst
+# ** Warning: (vsim-3017) tim_cnt_v.vwf.vt(644): [TFMPC] - Too few port connections. Expected 14, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /TIM_CNT_vlg_vec_tst/i1 File: start_4.vo
+# ** Warning: (vsim-3722) tim_cnt_v.vwf.vt(644): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# ** Warning: (vsim-3722) tim_cnt_v.vwf.vt(644): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: (vsim-3722) tim_cnt_v.vwf.vt(644): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: (vsim-3722) tim_cnt_v.vwf.vt(644): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: (vsim-3722) tim_cnt_v.vwf.vt(644): [TFMPC] - Missing connection for port 'auto_stp_external_clock_0'.
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port HEX_HIGH[6] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000000
+# ERROR! Vector Mismatch for output port HEX_LOW[6] :: @time = 1000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000000
+#           2 mismatched vectors : Simulation failed !
+# ** Note: $finish    : tim_cnt_v.vwf.vt(623)
+#    Time: 10 us  Iteration: 0  Instance: /TIM_CNT_vlg_vec_tst/tb_out
+# End time: 10:47:59 on Aug 15,2023, Elapsed time: 0:00:02
+# Errors: 6, Warnings: 7
