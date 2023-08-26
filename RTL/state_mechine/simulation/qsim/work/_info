@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Git_Repository/FPGA_myself/RTL/state_mechine/simulation/qsim
+vstate_cola
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 3Ag^3AOG85Ib_1N<X24SW2
+I]GBeUmE1Tijh[SZQAZfG@2
+R0
+w1693057712
+8state_cola.vo
+Fstate_cola.vo
+L0 31
+Z2 OL;L;10.4;61
+!s108 1693057716.404000
+!s107 state_cola.vo|
+!s90 -work|work|state_cola.vo|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vstate_cola_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Qb1zm_W0FHhfdm>9^cSD91
+Ihogn?mSIhbz>kVRoP?2WP0
+R0
+Z4 w1693057711
+Z5 8Waveform.vwf.vt
+Z6 FWaveform.vwf.vt
+L0 61
+R2
+Z7 !s108 1693057716.467000
+Z8 !s107 Waveform.vwf.vt|
+Z9 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R3
+vstate_cola_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 WBd^2fY8`Zdnc^`SX5VK83
+IjX1:k>3TOAS]Z]eRHZml53
+R0
+R4
+R5
+R6
+L0 29
+R2
+R7
+R8
+R9
+!i113 0
+R3
+vstate_cola_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 V9KJVDLUVTlCbI4kld?DB1
+IX>YIfSU6N?4TXDQFMoLN31
+R0
+R4
+R5
+R6
+L0 156
+R2
+R7
+R8
+R9
+!i113 0
+R3

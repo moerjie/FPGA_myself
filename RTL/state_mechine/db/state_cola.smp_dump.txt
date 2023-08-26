@@ -1,0 +1,7 @@
+
+State Machine - |state_cola|stateR
+Name stateR.ST_3_CENT stateR.ST_2_CENT stateR.ST_1_CENT stateR.ST_0_CENT 
+stateR.ST_0_CENT 0 0 0 0 
+stateR.ST_1_CENT 0 0 1 1 
+stateR.ST_2_CENT 0 1 0 1 
+stateR.ST_3_CENT 1 0 0 1 
