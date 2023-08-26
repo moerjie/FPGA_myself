@@ -2,27 +2,27 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 20:52:36 on Aug 25,2023
+# Start time: 08:28:03 on Aug 26,2023
 # vlog -work work adder.vo 
-# -- Compiling module adder_D
+# -- Compiling module adder
 # 
 # Top level modules:
-# 	adder_D
-# End time: 20:52:36 on Aug 25,2023, Elapsed time: 0:00:00
+# 	adder
+# End time: 08:28:03 on Aug 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 20:52:36 on Aug 25,2023
-# vlog -work work adder_d.vwf.vt 
-# -- Compiling module adder_D_vlg_sample_tst
-# -- Compiling module adder_D_vlg_check_tst
-# -- Compiling module adder_D_vlg_vec_tst
+# Start time: 08:28:03 on Aug 26,2023
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module adder_vlg_sample_tst
+# -- Compiling module adder_vlg_check_tst
+# -- Compiling module adder_vlg_vec_tst
 # 
 # Top level modules:
-# 	adder_D_vlg_vec_tst
-# End time: 20:52:36 on Aug 25,2023, Elapsed time: 0:00:00
+# 	adder_vlg_vec_tst
+# End time: 08:28:03 on Aug 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -do "adder.do" 
-# Start time: 20:52:36 on Aug 25,2023
+# Start time: 08:28:03 on Aug 26,2023
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
 # //  ModelSim SE-64 10.4 Dec  3 2014 
@@ -39,42 +39,37 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-# Refreshing F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/simulation/qsim/work.adder_D_vlg_vec_tst
-# Loading work.adder_D_vlg_vec_tst
+# Refreshing F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/simulation/qsim/work.adder_vlg_vec_tst
+# Loading work.adder_vlg_vec_tst
 # ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
 # 
 # No such file or directory. (errno = ENOENT)
 # ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
 # 
 # No such file or directory. (errno = ENOENT)
-# Refreshing F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/simulation/qsim/work.adder_D
-# Loading work.adder_D
+# Refreshing F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/simulation/qsim/work.adder
+# Loading work.adder
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
-# Loading cycloneiii_ver.cycloneiii_clkctrl
-# Loading cycloneiii_ver.cycloneiii_mux41
-# Loading cycloneiii_ver.cycloneiii_ena_reg
 # Loading cycloneiii_ver.cycloneiii_lcell_comb
-# Loading altera_ver.dffeas
 # ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
 # 
 # No such file or directory. (errno = ENOENT)
 # ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
 # 
 # No such file or directory. (errno = ENOENT)
-# Refreshing F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/simulation/qsim/work.adder_D_vlg_sample_tst
-# Loading work.adder_D_vlg_sample_tst
+# Refreshing F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/simulation/qsim/work.adder_vlg_sample_tst
+# Loading work.adder_vlg_sample_tst
 # ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
 # 
 # No such file or directory. (errno = ENOENT)
 # ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
 # 
 # No such file or directory. (errno = ENOENT)
-# Refreshing F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/simulation/qsim/work.adder_D_vlg_check_tst
-# Loading work.adder_D_vlg_check_tst
-# Loading altera_ver.PRIM_GDFF_LOW
+# Refreshing F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/simulation/qsim/work.adder_vlg_check_tst
+# Loading work.adder_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : adder_d.vwf.vt(295)
-#    Time: 1 us  Iteration: 0  Instance: /adder_D_vlg_vec_tst/tb_out
-# End time: 20:52:37 on Aug 25,2023, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform.vwf.vt(221)
+#    Time: 1 us  Iteration: 0  Instance: /adder_vlg_vec_tst/tb_out
+# End time: 08:28:05 on Aug 26,2023, Elapsed time: 0:00:02
 # Errors: 6, Warnings: 1

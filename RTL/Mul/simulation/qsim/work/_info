@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/APP_Download/Quartus_13/Project/RTL/Mul/simulation/qsim
+vMul_unsigned
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 0W]blKdlMYJd?6==4TFnM1
+I=<_hdSfOJKg`5H]eN_?Ld2
+R0
+w1692969579
+8Mul_unsigned.vo
+FMul_unsigned.vo
+L0 31
+Z2 OL;L;10.4;61
+!s108 1692969583.296000
+!s107 Mul_unsigned.vo|
+!s90 -work|work|Mul_unsigned.vo|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@mul_unsigned
+vMul_unsigned_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 B^7;>MQ0>Ng0XJSh36L]f3
+IjUkGjYdW<=nL0OgQV2;U>3
+R0
+Z4 w1692969578
+Z5 8Mul_unsigned.vwf.vt
+Z6 FMul_unsigned.vwf.vt
+L0 59
+R2
+Z7 !s108 1692969583.371000
+Z8 !s107 Mul_unsigned.vwf.vt|
+Z9 !s90 -work|work|Mul_unsigned.vwf.vt|
+!i113 0
+R3
+n@mul_unsigned_vlg_check_tst
+vMul_unsigned_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Gj]AG=P84IGYd01[A`cj83
+IIH2iYdD2H1=g24DBc>>NI0
+R0
+R4
+R5
+R6
+L0 29
+R2
+R7
+R8
+R9
+!i113 0
+R3
+n@mul_unsigned_vlg_sample_tst
+vMul_unsigned_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 W>FM`^Z_VIEP8YWF;dC`>2
+Ib8nW_DR2]Xc9=kC>Bfe^[0
+R0
+R4
+R5
+R6
+L0 423
+R2
+R7
+R8
+R9
+!i113 0
+R3
+n@mul_unsigned_vlg_vec_tst

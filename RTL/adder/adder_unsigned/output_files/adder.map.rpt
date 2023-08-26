@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adder
-Fri Aug 25 20:50:44 2023
+Sat Aug 26 08:26:58 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 25 20:50:44 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Aug 26 08:26:58 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; adder                                       ;
-; Top-level Entity Name              ; adder_D                                     ;
+; Top-level Entity Name              ; adder                                       ;
 ; Family                             ; Cyclone III                                 ;
-; Total logic elements               ; 41                                          ;
-;     Total combinational functions  ; 9                                           ;
-;     Dedicated logic registers      ; 41                                          ;
-; Total registers                    ; 41                                          ;
-; Total pins                         ; 26                                          ;
+; Total logic elements               ; 5                                           ;
+;     Total combinational functions  ; 5                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; adder_D            ; adder              ;
+; Top-level entity name                                                      ; adder              ; adder              ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -162,43 +162,43 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
-; adder_D.v                        ; yes             ; User Verilog HDL File  ; F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/adder_D.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
+; adder.v                          ; yes             ; User Verilog HDL File  ; F:/APP_Download/Quartus_13/Project/RTL/adder/adder_unsigned/adder.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 41        ;
-;                                             ;           ;
-; Total combinational functions               ; 9         ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 8         ;
-;     -- <=2 input functions                  ; 1         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1         ;
-;     -- arithmetic mode                      ; 8         ;
-;                                             ;           ;
-; Total registers                             ; 41        ;
-;     -- Dedicated logic registers            ; 41        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 26        ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 41        ;
-; Total fan-out                               ; 141       ;
-; Average fan-out                             ; 1.38      ;
-+---------------------------------------------+-----------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 5      ;
+;                                             ;        ;
+; Total combinational functions               ; 5      ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 0      ;
+;     -- 3 input functions                    ; 4      ;
+;     -- <=2 input functions                  ; 1      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 1      ;
+;     -- arithmetic mode                      ; 4      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 13     ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+; Maximum fan-out node                        ; Add0~0 ;
+; Maximum fan-out                             ; 2      ;
+; Total fan-out                               ; 32     ;
+; Average fan-out                             ; 1.03   ;
++---------------------------------------------+--------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -206,7 +206,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |adder_D                   ; 9 (9)             ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |adder_D            ; work         ;
+; |adder                     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |adder              ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -216,7 +216,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 41    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -241,25 +241,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Fri Aug 25 20:50:44 2023
+    Info: Processing started: Sat Aug 26 08:26:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder -c adder
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file adder.v
     Info (12023): Found entity 1: adder
 Info (12021): Found 1 design units, including 1 entities, in source file adder_d.v
     Info (12023): Found entity 1: adder_D
-Info (12127): Elaborating entity "adder_D" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
+Info (12127): Elaborating entity "adder" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 41 logic cells
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 5 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4662 megabytes
-    Info: Processing ended: Fri Aug 25 20:50:44 2023
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4636 megabytes
+    Info: Processing ended: Sat Aug 26 08:26:58 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

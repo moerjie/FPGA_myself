@@ -1,0 +1,70 @@
+//////////////////// 计数器代码  /////////////////////////
+
+module cnt_en(
+  RST   , // 异步复位， 高有效
+  CLK   , // 时钟，上升沿有效
+  EN    , // 输入的计数使能，高有效
+  CLR   , // 输入的清零信号，高有效
+  LOAD  , // 输入的数据加载使能信号，高有效
+  DATA  , // 输入的加载数据信号
+  CNTVAL, // 输出的计数值信号
+  OV    );// 计数溢出信号，计数值为最大值时该信号为1
+
+input RST   , CLK   , EN    , CLR   , LOAD  ;
+input [3:0] DATA ;
+output [3:0] CNTVAL;
+output OV;   
+
+reg [3:0] CNTVAL, cnt_next;
+reg OV;
+// 电路编译参数，最大计数值
+parameter CNT_MAX_VAL = 9;
+
+// 组合逻辑，生成cnt_next
+// 计数使能最优先，清零第二优先，加载第三优先
+always @(EN or CLR or LOAD or DATA or CNTVAL) begin
+      // 使能有效
+    if(CLR) begin // 清零有效
+		cnt_next = 0;
+    end
+    else begin  // 清零无效
+		if(EN) begin
+			if(LOAD) begin // 加载有效
+				cnt_next = DATA;
+			end
+			else begin     // 加载无效，正常计数
+							// 使能有效，清零和加载都无效，根据当前计数值计算下一值
+				if(CNTVAL < CNT_MAX_VAL) begin // 未计数到最大值， 下一值加1
+					cnt_next = CNTVAL + 1'b1;
+				end
+				else begin // 计数到最大值，下一计数值为0
+					cnt_next = 0;
+				end
+			end // else LOAD
+		end  
+		else begin  // 使能无效，计数值保持不动
+			cnt_next = CNTVAL;
+		end
+
+	end // if CLR
+
+end
+
+// 时序逻辑 更新下一时钟周期的计数值
+// CNTVAL 会被编译为D触发器
+always @ (posedge CLK or posedge RST) begin
+  if(RST) 
+    CNTVAL <= 0;
+  else
+    CNTVAL <= cnt_next;
+end
+
+// 组合逻辑，生成OV
+always @ (CNTVAL) begin
+  if(CNTVAL == CNT_MAX_VAL) 
+    OV = 1;
+  else
+    OV = 0;
+end
+
+endmodule

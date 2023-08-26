@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, F:/APP_Download/Quartus_13/Project/RTL/Counter/cnt_1.v
+source_file = 1, F:/APP_Download/Quartus_13/Project/RTL/Counter/db/cnt_1.cbx.xml
+design_name = cnt_1
+instance = comp, \ov~output , ov~output, cnt_1, 1
+instance = comp, \clk~input , clk~input, cnt_1, 1
+instance = comp, \clk~inputclkctrl , clk~inputclkctrl, cnt_1, 1
+instance = comp, \cnt[0]~3 , cnt[0]~3, cnt_1, 1
+instance = comp, \cnt[0] , cnt[0], cnt_1, 1
+instance = comp, \cnt[2]~2 , cnt[2]~2, cnt_1, 1
+instance = comp, \cnt[2] , cnt[2], cnt_1, 1
+instance = comp, \cnt~0 , cnt~0, cnt_1, 1
+instance = comp, \cnt[3] , cnt[3], cnt_1, 1
+instance = comp, \cnt~1 , cnt~1, cnt_1, 1
+instance = comp, \cnt[1] , cnt[1], cnt_1, 1
+instance = comp, \Equal0~0 , Equal0~0, cnt_1, 1
+instance = comp, \ov~reg0 , ov~reg0, cnt_1, 1

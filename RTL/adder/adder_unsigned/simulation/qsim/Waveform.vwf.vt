@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "08/23/2023 18:33:22"
+// Generated on "08/26/2023 08:27:58"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    adder
 // 
@@ -60,16 +60,16 @@ module adder_vlg_check_tst (
 	OUT,
 	sampler_rx
 );
-input [3:0] OUT;
+input [4:0] OUT;
 input sampler_rx;
 
-reg [3:0] OUT_expected;
+reg [4:0] OUT_expected;
 
-reg [3:0] OUT_prev;
+reg [4:0] OUT_prev;
 
-reg [3:0] OUT_expected_prev;
+reg [4:0] OUT_expected_prev;
 
-reg [3:0] last_OUT_exp;
+reg [4:0] last_OUT_exp;
 
 reg trigger;
 
@@ -102,6 +102,11 @@ begin
 end
 
 
+// expected OUT[ 4 ]
+initial
+begin
+	OUT_expected[4] = 1'bX;
+end 
 // expected OUT[ 3 ]
 initial
 begin
@@ -188,6 +193,19 @@ begin
 		on_first_change[1] = 1'b0;
 		last_OUT_exp[3] = OUT_expected_prev[3];
 	end
+	if (
+		( OUT_expected_prev[4] !== 1'bx ) && ( OUT_prev[4] !== OUT_expected_prev[4] )
+		&& ((OUT_expected_prev[4] !== last_OUT_exp[4]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port OUT[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", OUT_expected_prev);
+		$display ("     Real value = %b", OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_OUT_exp[4] = OUT_expected_prev[4];
+	end
 
 	trigger <= ~trigger;
 end
@@ -210,7 +228,7 @@ module adder_vlg_vec_tst();
 reg [3:0] IN1;
 reg [3:0] IN2;
 // wires                                               
-wire [3:0] OUT;
+wire [4:0] OUT;
 
 wire sampler;                             
 
