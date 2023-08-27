@@ -1,5 +1,5 @@
 EDA Netlist Writer report for state_cola
-Sat Aug 26 21:48:32 2023
+Sun Aug 27 12:05:45 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Aug 26 21:48:32 2023 ;
+; EDA Netlist Writer Status ; Successful - Sun Aug 27 12:05:45 2023 ;
 ; Revision Name             ; state_cola                            ;
-; Top-level Entity Name     ; state_cola                            ;
+; Top-level Entity Name     ; list_test                             ;
 ; Family                    ; Cyclone III                           ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -93,12 +93,12 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Sat Aug 26 21:48:32 2023
+    Info: Processing started: Sun Aug 27 12:05:45 2023
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/Git_Repository/FPGA_myself/RTL/state_mechine/simulation/qsim/ state_cola -c state_cola
 Info (204019): Generated file state_cola.vo in folder "F:/Git_Repository/FPGA_myself/RTL/state_mechine/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4565 megabytes
-    Info: Processing ended: Sat Aug 26 21:48:32 2023
+    Info: Peak virtual memory: 4557 megabytes
+    Info: Processing ended: Sun Aug 27 12:05:45 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

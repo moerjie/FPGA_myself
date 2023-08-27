@@ -1,5 +1,5 @@
 Analysis & Synthesis report for state_cola
-Sat Aug 26 21:44:29 2023
+Sun Aug 27 12:02:39 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -13,12 +13,13 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |state_cola|stateR
+  8. State Machine - |list_test|stateR
   9. Registers Removed During Synthesis
  10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |state_cola
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |list_test
  12. Elapsed Time Per Partition
  13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -44,15 +45,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Aug 26 21:44:29 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Aug 27 12:02:39 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; state_cola                                  ;
-; Top-level Entity Name              ; state_cola                                  ;
+; Top-level Entity Name              ; list_test                                   ;
 ; Family                             ; Cyclone III                                 ;
-; Total logic elements               ; 4                                           ;
-;     Total combinational functions  ; 3                                           ;
-;     Dedicated logic registers      ; 4                                           ;
-; Total registers                    ; 4                                           ;
+; Total logic elements               ; 6                                           ;
+;     Total combinational functions  ; 6                                           ;
+;     Dedicated logic registers      ; 5                                           ;
+; Total registers                    ; 5                                           ;
 ; Total pins                         ; 4                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -67,7 +68,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; state_cola         ; state_cola         ;
+; Top-level entity name                                                      ; list_test          ; state_cola         ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -165,13 +166,13 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; state_cola.v                     ; yes             ; User Verilog HDL File  ; F:/Git_Repository/FPGA_myself/RTL/state_mechine/state_cola.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+; list_test.v                      ; yes             ; User Verilog HDL File  ; F:/Git_Repository/FPGA_myself/RTL/state_mechine/list_test.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------+
@@ -179,28 +180,28 @@ applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 4             ;
+; Estimated Total logic elements              ; 6             ;
 ;                                             ;               ;
-; Total combinational functions               ; 3             ;
+; Total combinational functions               ; 6             ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 0             ;
-;     -- 3 input functions                    ; 1             ;
+;     -- 4 input functions                    ; 1             ;
+;     -- 3 input functions                    ; 3             ;
 ;     -- <=2 input functions                  ; 2             ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 3             ;
+;     -- normal mode                          ; 6             ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
-; Total registers                             ; 4             ;
-;     -- Dedicated logic registers            ; 4             ;
+; Total registers                             ; 5             ;
+;     -- Dedicated logic registers            ; 5             ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
 ; I/O pins                                    ; 4             ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
-; Maximum fan-out node                        ; CENT1IN~input ;
-; Maximum fan-out                             ; 4             ;
-; Total fan-out                               ; 25            ;
-; Average fan-out                             ; 1.67          ;
+; Maximum fan-out node                        ; DATA_IN~input ;
+; Maximum fan-out                             ; 6             ;
+; Total fan-out                               ; 37            ;
+; Average fan-out                             ; 1.95          ;
 +---------------------------------------------+---------------+
 
 
@@ -209,22 +210,23 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |state_cola                ; 3 (3)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |state_cola         ; work         ;
+; |list_test                 ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |list_test          ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------------------+
-; State Machine - |state_cola|stateR                                                           ;
-+------------------+------------------+------------------+------------------+------------------+
-; Name             ; stateR.ST_3_CENT ; stateR.ST_2_CENT ; stateR.ST_1_CENT ; stateR.ST_0_CENT ;
-+------------------+------------------+------------------+------------------+------------------+
-; stateR.ST_0_CENT ; 0                ; 0                ; 0                ; 0                ;
-; stateR.ST_1_CENT ; 0                ; 0                ; 1                ; 1                ;
-; stateR.ST_2_CENT ; 0                ; 1                ; 0                ; 1                ;
-; stateR.ST_3_CENT ; 1                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+
++-----------------------------------------------------------------------+
+; State Machine - |list_test|stateR                                     ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; Name      ; stateR.s3 ; stateR.s2 ; stateR.s1 ; stateR.s0 ; stateR.s4 ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; stateR.s0 ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; stateR.s1 ; 0         ; 0         ; 1         ; 1         ; 0         ;
+; stateR.s2 ; 0         ; 1         ; 0         ; 1         ; 0         ;
+; stateR.s3 ; 1         ; 0         ; 0         ; 1         ; 0         ;
+; stateR.s4 ; 0         ; 0         ; 0         ; 1         ; 1         ;
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 
 +------------------------------------------------------------+
@@ -243,26 +245,27 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |state_cola ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; ST_0_CENT      ; 0     ; Signed Integer                                    ;
-; ST_1_CENT      ; 1     ; Signed Integer                                    ;
-; ST_2_CENT      ; 2     ; Signed Integer                                    ;
-; ST_3_CENT      ; 3     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |list_test ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; s0             ; 000   ; Unsigned Binary                                  ;
+; s1             ; 001   ; Unsigned Binary                                  ;
+; s2             ; 010   ; Unsigned Binary                                  ;
+; s3             ; 011   ; Unsigned Binary                                  ;
+; s4             ; 100   ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -281,24 +284,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sat Aug 26 21:44:29 2023
+    Info: Processing started: Sun Aug 27 12:02:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off state_cola -c state_cola
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file list_test.v
+    Info (12023): Found entity 1: list_test
 Info (12021): Found 1 design units, including 1 entities, in source file state_cola.v
     Info (12023): Found entity 1: state_cola
-Info (12127): Elaborating entity "state_cola" for the top level hierarchy
+Info (12127): Elaborating entity "list_test" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 4 logic cells
+    Info (21061): Implemented 6 logic cells
+Info (144001): Generated suppressed messages file F:/Git_Repository/FPGA_myself/RTL/state_mechine/output_files/state_cola.map.smsg
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4671 megabytes
-    Info: Processing ended: Sat Aug 26 21:44:29 2023
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4653 megabytes
+    Info: Processing ended: Sun Aug 27 12:02:39 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in F:/Git_Repository/FPGA_myself/RTL/state_mechine/output_files/state_cola.map.smsg.
 
 

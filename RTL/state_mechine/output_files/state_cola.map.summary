@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sat Aug 26 21:44:29 2023
+Analysis & Synthesis Status : Successful - Sun Aug 27 12:02:39 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : state_cola
-Top-level Entity Name : state_cola
+Top-level Entity Name : list_test
 Family : Cyclone III
-Total logic elements : 4
-    Total combinational functions : 3
-    Dedicated logic registers : 4
-Total registers : 4
+Total logic elements : 6
+    Total combinational functions : 6
+    Dedicated logic registers : 5
+Total registers : 5
 Total pins : 4
 Total virtual pins : 0
 Total memory bits : 0

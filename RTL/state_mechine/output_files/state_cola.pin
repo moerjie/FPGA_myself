@@ -244,7 +244,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : F20       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F22       :        :                   :         : 6         :                
-RST                          : G1        : input  : 2.5 V             :         : 1         : N              
+RET                          : G1        : input  : 2.5 V             :         : 1         : N              
 CLK                          : G2        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G4        :        :                   :         : 1         :                
@@ -316,8 +316,8 @@ GND                          : K3        : gnd    :                   :         
 VCCIO1                       : K4        : power  :                   : 2.5V    : 1         :                
 nCONFIG                      : K5        :        :                   :         : 1         :                
 nSTATUS                      : K6        :        :                   :         : 1         :                
-TINOUT                       : K7        : output : 2.5 V             :         : 1         : N              
-CENT1IN                      : K8        : input  : 2.5 V             :         : 1         : N              
+OUT                          : K7        : output : 2.5 V             :         : 1         : N              
+DATA_IN                      : K8        : input  : 2.5 V             :         : 1         : N              
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 GND                          : K11       : gnd    :                   :         :           :                
