@@ -22,9 +22,12 @@ reg        TINOUT       ;
 // calc next state
 always @ (CENT1IN or stateR) begin
   case (stateR)
-    ST_0_CENT :begin if(CENT1IN) next_state = ST_1_CENT ; else next_state = ST_0_CENT; end
-    ST_1_CENT :begin if(CENT1IN) next_state = ST_2_CENT ; else next_state = ST_1_CENT; end
-    ST_2_CENT :begin if(CENT1IN) next_state = ST_3_CENT ; else next_state = ST_2_CENT; end
+    ST_0_CENT :begin if(CENT1IN) next_state = ST_1_CENT ; 
+                else next_state = ST_0_CENT; end
+    ST_1_CENT :begin if(CENT1IN) next_state = ST_2_CENT ; 
+                else next_state = ST_1_CENT; end
+    ST_2_CENT :begin if(CENT1IN) next_state = ST_3_CENT ; 
+                else next_state = ST_2_CENT; end
     ST_3_CENT :begin next_state = ST_0_CENT; end
   endcase
 end
