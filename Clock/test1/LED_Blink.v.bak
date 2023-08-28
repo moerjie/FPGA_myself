@@ -1,0 +1,40 @@
+module LED_Blink (
+    clk,
+    rst,
+    out
+);
+
+input clk,rst;
+output out;
+
+reg out;
+reg [3:0] cntval;
+
+parameter max_val = 5;
+
+always @(posedge clk or rst) begin
+    if(rst) begin
+        cntval<=0; 
+    end
+
+    else begin
+        if(cntval>=max_val) begin
+            cntval<=0;  
+        end
+        else begin
+            cntval=cntval+1'b1;  
+        end
+        
+    end
+end
+
+always @(cntval) begin
+    if(cntval==max_val)begin
+       out=1'b1;
+    end
+    else begin
+        out=1'b0;
+    end
+end
+    
+endmodule
