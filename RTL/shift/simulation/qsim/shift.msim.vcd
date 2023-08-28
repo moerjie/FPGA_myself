@@ -1,0 +1,478 @@
+$comment
+	File created using the following command:
+		vcd file shift.msim.vcd -direction
+$end
+$date
+	Mon Aug 28 11:19:30 2023
+$end
+$version
+	ModelSim Version 10.4
+$end
+$timescale
+	1ps
+$end
+
+$scope module shift_register_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 1 " EN $end
+$var reg 4 # IN [3:0] $end
+$var reg 1 $ LOAD $end
+$var reg 1 % RST $end
+$var wire 1 & OUT $end
+$var wire 1 ' sampler $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . OUT~output_o $end
+$var wire 1 / CLK~input_o $end
+$var wire 1 0 CLK~inputclkctrl_outclk $end
+$var wire 1 1 LOAD~input_o $end
+$var wire 1 2 RST~input_o $end
+$var wire 1 3 EN~input_o $end
+$var wire 1 4 OUT~0_combout $end
+$var wire 1 5 IN[3]~input_o $end
+$var wire 1 6 shift_R[0]~23_combout $end
+$var wire 1 7 shift_R[0]~23clkctrl_outclk $end
+$var wire 1 8 shift_R[3]~1_combout $end
+$var wire 1 9 IN[2]~input_o $end
+$var wire 1 : shift_R[2]~6_combout $end
+$var wire 1 ; IN[1]~input_o $end
+$var wire 1 < shift_R[1]~11_combout $end
+$var wire 1 = IN[0]~input_o $end
+$var wire 1 > shift_R[0]~16_combout $end
+$var wire 1 ? shift_R[3]~0_combout $end
+$var wire 1 @ shift_R[0]~_emulated_q $end
+$var wire 1 A shift_R[0]~18_combout $end
+$var wire 1 B shift_R[0]~17_combout $end
+$var wire 1 C shift_R[1]~14_combout $end
+$var wire 1 D shift_R[1]~_emulated_q $end
+$var wire 1 E shift_R[1]~13_combout $end
+$var wire 1 F shift_R[1]~12_combout $end
+$var wire 1 G shift_R[2]~9_combout $end
+$var wire 1 H shift_R[2]~_emulated_q $end
+$var wire 1 I shift_R[2]~8_combout $end
+$var wire 1 J shift_R[2]~7_combout $end
+$var wire 1 K shift_R[3]~4_combout $end
+$var wire 1 L shift_R[3]~_emulated_q $end
+$var wire 1 M shift_R[3]~3_combout $end
+$var wire 1 N shift_R[3]~2_combout $end
+$var wire 1 O OUT~1_combout $end
+$var wire 1 P OUT~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+b1100 #
+1$
+0%
+0&
+x'
+0(
+1)
+x*
+1+
+1,
+1-
+0.
+0/
+00
+11
+02
+13
+04
+15
+16
+17
+18
+19
+1:
+0;
+0<
+0=
+0>
+1?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+0H
+1I
+1J
+0K
+0L
+1M
+1N
+0O
+0P
+$end
+#25000
+1!
+0'
+1/
+10
+#50000
+0!
+1'
+0/
+00
+#75000
+1!
+0'
+1/
+10
+#80000
+0$
+1'
+01
+06
+14
+07
+0?
+1O
+#100000
+0!
+0'
+0/
+00
+#125000
+1!
+1'
+1/
+10
+1H
+1P
+1.
+0I
+1&
+0J
+1K
+#150000
+0!
+0'
+0/
+00
+#175000
+1!
+1'
+1/
+10
+1L
+0M
+0N
+0O
+#200000
+0!
+0'
+0/
+00
+#225000
+1!
+1'
+1/
+10
+0P
+0.
+0&
+#250000
+0!
+0'
+0/
+00
+#275000
+1!
+1'
+1/
+10
+#300000
+0!
+0'
+0/
+00
+#325000
+1!
+1'
+1/
+10
+#350000
+0!
+0'
+0/
+00
+#375000
+1!
+1'
+1/
+10
+#400000
+0!
+0'
+0/
+00
+#425000
+1!
+1'
+1/
+10
+#450000
+0!
+0'
+0/
+00
+#475000
+1!
+1'
+1/
+10
+#500000
+0!
+0'
+0/
+00
+#525000
+1!
+1'
+1/
+10
+#530000
+1$
+0'
+11
+16
+04
+17
+1N
+1J
+1?
+0K
+0H
+0L
+1I
+1M
+#550000
+0!
+1'
+0/
+00
+#570000
+b100 #
+b0 #
+b10 #
+b11 #
+0$
+0'
+1=
+1;
+09
+05
+01
+1B
+1>
+1F
+1<
+0J
+0:
+0N
+08
+06
+14
+07
+1A
+1E
+0I
+0M
+1N
+1J
+0F
+0B
+0?
+1B
+1F
+0J
+0N
+1O
+1K
+0G
+1C
+0C
+1G
+0K
+0O
+#575000
+1!
+1'
+1/
+10
+1H
+1@
+1I
+0A
+1J
+0B
+1K
+1C
+#600000
+0!
+0'
+0/
+00
+#625000
+1!
+1'
+1/
+10
+1L
+1D
+1M
+0E
+1N
+0F
+1O
+0G
+#650000
+0!
+0'
+0/
+00
+#675000
+1!
+1'
+1/
+10
+0H
+1P
+1.
+0I
+1&
+0J
+0K
+#700000
+0!
+0'
+0/
+00
+#720000
+b1011 #
+b1111 #
+b1101 #
+b1100 #
+1'
+0=
+0;
+19
+15
+#725000
+1!
+0'
+1/
+10
+0L
+0M
+0N
+0O
+#730000
+1$
+1'
+11
+16
+04
+17
+1N
+1J
+1?
+1O
+0>
+0<
+1:
+18
+1A
+1E
+0C
+1I
+1G
+1M
+0@
+0D
+0A
+0E
+#750000
+0!
+0'
+0/
+00
+#770000
+0$
+1'
+01
+06
+14
+07
+0?
+#775000
+1!
+0'
+1/
+10
+1H
+0I
+0J
+1K
+#800000
+0!
+1'
+0/
+00
+#825000
+1!
+0'
+1/
+10
+1L
+0M
+0N
+0O
+#850000
+0!
+1'
+0/
+00
+#875000
+1!
+0'
+1/
+10
+0P
+0.
+0&
+#900000
+0!
+1'
+0/
+00
+#925000
+1!
+0'
+1/
+10
+#950000
+0!
+1'
+0/
+00
+#975000
+1!
+0'
+1/
+10
+#1000000

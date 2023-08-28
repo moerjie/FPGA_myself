@@ -1,0 +1,39 @@
+module shift(
+    in,
+    clk,
+    load,
+    en,
+    rst,
+    out);
+
+input clk,load,en,rst;
+input [3:0] in;
+output out;
+
+reg [3:0] Shift_R;
+reg out;
+    
+always @(posedge clk or load or en or rst) begin
+    if(rst) begin
+       Shift_R[3:0]<=0;  
+    end
+    else begin
+        if(load)begin
+            Shift_R[3:0]<=in[3:0];  
+        end  
+
+        else begin
+            if(en)begin
+                Shift_R[3:1]<=Shift_R[2:0];
+                Shift_R[0]<=1'b0;
+                out=Shift_R[3];  
+            end 
+            else begin
+                Shift_R[3:0]<=Shift_R[3:0]; 
+            end 
+        end
+
+    end
+end
+
+endmodule 

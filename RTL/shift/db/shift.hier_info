@@ -1,0 +1,26 @@
+|shift_register
+RST => shift_R[0].ACLR
+RST => shift_R[1].ACLR
+RST => shift_R[2].ACLR
+RST => shift_R[3].ACLR
+RST => shift_R[0].IN0
+RST => OUT~reg0.ENA
+CLK => shift_R[0].CLK
+CLK => shift_R[1].CLK
+CLK => shift_R[2].CLK
+CLK => shift_R[3].CLK
+CLK => OUT~reg0.CLK
+EN => OUT.OUTPUTSELECT
+EN => shift_R[0].ENA
+EN => shift_R[3].ENA
+EN => shift_R[2].ENA
+EN => shift_R[1].ENA
+LOAD => shift_R[0].IN1
+LOAD => OUT.OUTPUTSELECT
+IN[0] => shift_R[0].ADATA
+IN[1] => shift_R[1].ADATA
+IN[2] => shift_R[2].ADATA
+IN[3] => shift_R[3].ADATA
+OUT <= OUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
