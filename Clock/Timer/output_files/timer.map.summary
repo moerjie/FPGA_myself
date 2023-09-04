@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Failed - Tue Aug 29 21:41:56 2023
+Analysis & Synthesis Status : Successful - Mon Sep 04 20:57:37 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : timer
 Top-level Entity Name : timer
 Family : Cyclone III
-Total logic elements : N/A until Partition Merge
-    Total combinational functions : N/A until Partition Merge
-    Dedicated logic registers : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total memory bits : N/A until Partition Merge
-Embedded Multiplier 9-bit elements : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
+Total logic elements : 33
+    Total combinational functions : 33
+    Dedicated logic registers : 24
+Total registers : 24
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

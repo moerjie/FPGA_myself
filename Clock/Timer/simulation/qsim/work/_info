@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim
+vtimer
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 izMc`Kjh0o;49cmn[>]VP0
+I:i=W04X_:2baiATI007;;1
+R0
+Z2 w1693832280
+8timer.vo
+Ftimer.vo
+L0 31
+Z3 OL;L;10.4;61
+!s108 1693832282.014000
+!s107 timer.vo|
+!s90 -work|work|timer.vo|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtimer_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 D4d3dzJ21<J;1kl<Om?]12
+IDhjgAU4MUVcXTIiIX7W0L2
+R0
+R2
+Z5 8Waveform.vwf.vt
+Z6 FWaveform.vwf.vt
+L0 59
+R3
+Z7 !s108 1693832282.066000
+Z8 !s107 Waveform.vwf.vt|
+Z9 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R4
+vtimer_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 CAGz0RB8AF:SXoSdH4MWg2
+IQG>kO?g?2cSVb]1Zn?@KM3
+R0
+R2
+R5
+R6
+L0 29
+R3
+R7
+R8
+R9
+!i113 0
+R4
+vtimer_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 f6H:loZ]Z454PEzZ2k9B`3
+IfR@01j`jEEEYlTR;Nm_:T2
+R0
+R2
+R5
+R6
+L0 193
+R3
+R7
+R8
+R9
+!i113 0
+R4

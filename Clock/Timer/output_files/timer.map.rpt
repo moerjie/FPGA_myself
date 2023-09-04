@@ -1,5 +1,5 @@
 Analysis & Synthesis report for timer
-Tue Aug 29 21:41:56 2023
+Mon Sep 04 20:57:37 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -10,8 +10,14 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |timer
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +43,20 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Aug 29 21:41:56 2023           ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 04 20:57:37 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; timer                                       ;
 ; Top-level Entity Name              ; timer                                       ;
 ; Family                             ; Cyclone III                                 ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 33                                          ;
+;     Total combinational functions  ; 33                                          ;
+;     Dedicated logic registers      ; 24                                          ;
+; Total registers                    ; 24                                          ;
+; Total pins                         ; 6                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -158,37 +164,126 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+; timer.v                          ; yes             ; User Verilog HDL File  ; F:/Git_Repository/FPGA_myself/Clock/Timer/timer.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 33    ;
+;                                             ;       ;
+; Total combinational functions               ; 33    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 10    ;
+;     -- 3 input functions                    ; 1     ;
+;     -- <=2 input functions                  ; 22    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 14    ;
+;     -- arithmetic mode                      ; 19    ;
+;                                             ;       ;
+; Total registers                             ; 24    ;
+;     -- Dedicated logic registers            ; 24    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 6     ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; rtl~0 ;
+; Maximum fan-out                             ; 25    ;
+; Total fan-out                               ; 182   ;
+; Average fan-out                             ; 2.64  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |timer                     ; 33 (33)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |timer              ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 24    ;
+; Number of registers using Synchronous Clear  ; 20    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |timer|cnt_01[3]           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |timer ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; max_val        ; 9     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue Aug 29 21:41:55 2023
+    Info: Processing started: Mon Sep 04 20:57:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off timer -c timer
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file timer.v
     Info (12023): Found entity 1: timer
 Info (12127): Elaborating entity "timer" for the top level hierarchy
-Error (10122): Verilog HDL Event Control error at timer.v(23): mixed single- and double-edge expressions are not supported File: F:/Git_Repository/FPGA_myself/Clock/Timer/timer.v Line: 23
-Warning (10235): Verilog HDL Always Construct warning at timer.v(28): variable "cnt_001" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at timer.v(32): variable "cnt_001" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Error (10122): Verilog HDL Event Control error at timer.v(37): mixed single- and double-edge expressions are not supported File: F:/Git_Repository/FPGA_myself/Clock/Timer/timer.v Line: 37
-Warning (10034): Output port "pul_01" at timer.v(13) has no driver
 Warning (10034): Output port "pul_1" at timer.v(13) has no driver
 Warning (10034): Output port "pul_10" at timer.v(13) has no driver
-Error (12153): Can't elaborate top-level user hierarchy
-Info (144001): Generated suppressed messages file F:/Git_Repository/FPGA_myself/Clock/Timer/output_files/timer.map.smsg
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 5 warnings
-    Error: Peak virtual memory: 4608 megabytes
-    Error: Processing ended: Tue Aug 29 21:41:56 2023
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:00
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in F:/Git_Repository/FPGA_myself/Clock/Timer/output_files/timer.map.smsg.
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "pul_1" is stuck at GND
+    Warning (13410): Pin "pul_10" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 33 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4655 megabytes
+    Info: Processing ended: Mon Sep 04 20:57:37 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

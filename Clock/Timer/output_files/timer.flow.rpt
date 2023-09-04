@@ -1,5 +1,5 @@
 Flow report for timer
-Tue Aug 29 21:41:56 2023
+Mon Sep 04 20:58:00 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Tue Aug 29 21:41:56 2023      ;
+; Flow Status                        ; Successful - Mon Sep 04 20:58:00 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; timer                                       ;
 ; Top-level Entity Name              ; timer                                       ;
 ; Family                             ; Cyclone III                                 ;
 ; Device                             ; EP3C16F484C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 35 / 15,408 ( < 1 % )                       ;
+;     Total combinational functions  ; 33 / 15,408 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 24 / 15,408 ( < 1 % )                       ;
+; Total registers                    ; 24                                          ;
+; Total pins                         ; 6 / 347 ( 2 % )                             ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 516,096 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,54 +64,74 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/29/2023 21:41:56 ;
+; Start date & time ; 09/04/2023 20:57:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; timer               ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 158527627674065.169331651611036 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)              ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                            ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                            ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                      ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 158527627674065.169383225703536                            ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                         ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                  ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                       ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                         ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                          ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                       ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                   ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                      ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                     ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                               ; --            ; --          ; --             ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:04     ; 2.3                     ; 5525 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4595 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4709 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4546 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4558 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4558 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:06                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off timer -c timer
+quartus_fit --read_settings_files=off --write_settings_files=off timer -c timer
+quartus_asm --read_settings_files=off --write_settings_files=off timer -c timer
+quartus_sta timer -c timer
+quartus_eda --read_settings_files=off --write_settings_files=off timer -c timer
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog timer -c timer --vector_source=F:/Git_Repository/FPGA_myself/Clock/Timer/Waveform.vwf --testbench_file=F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/Waveform.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/ timer -c timer
 
 
 
