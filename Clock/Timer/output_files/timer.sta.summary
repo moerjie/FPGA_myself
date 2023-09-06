@@ -3,75 +3,147 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -2.598
-TNS   : -51.216
+Slack : -2.528
+TNS   : -53.730
 
-Type  : Slow 1200mV 85C Model Setup 'cnt_001[0]'
-Slack : -0.480
-TNS   : -1.239
+Type  : Slow 1200mV 85C Model Setup 'pul_out:PG|cnt_001[0]'
+Slack : -0.821
+TNS   : -2.925
+
+Type  : Slow 1200mV 85C Model Setup 'pul_out:PG|cnt_1[0]'
+Slack : -0.496
+TNS   : -1.517
+
+Type  : Slow 1200mV 85C Model Setup 'pul_out:PG|cnt_01[0]'
+Slack : -0.479
+TNS   : -1.304
+
+Type  : Slow 1200mV 85C Model Hold 'pul_out:PG|cnt_001[0]'
+Slack : -1.527
+TNS   : -5.182
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : -1.438
-TNS   : -14.713
+Slack : -1.223
+TNS   : -9.677
 
-Type  : Slow 1200mV 85C Model Hold 'cnt_001[0]'
-Slack : 0.360
+Type  : Slow 1200mV 85C Model Hold 'pul_out:PG|cnt_01[0]'
+Slack : -0.168
+TNS   : -0.663
+
+Type  : Slow 1200mV 85C Model Hold 'pul_out:PG|cnt_1[0]'
+Slack : 0.359
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -23.000
+TNS   : -67.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cnt_001[0]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pul_out:PG|cnt_001[0]'
 Slack : -1.000
-TNS   : -4.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pul_out:PG|cnt_01[0]'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pul_out:PG|cnt_1[0]'
+Slack : -1.000
+TNS   : -8.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -2.294
-TNS   : -44.977
+Slack : -2.229
+TNS   : -42.175
 
-Type  : Slow 1200mV 0C Model Setup 'cnt_001[0]'
-Slack : -0.324
-TNS   : -0.792
+Type  : Slow 1200mV 0C Model Setup 'pul_out:PG|cnt_001[0]'
+Slack : -0.637
+TNS   : -2.159
+
+Type  : Slow 1200mV 0C Model Setup 'pul_out:PG|cnt_1[0]'
+Slack : -0.335
+TNS   : -0.929
+
+Type  : Slow 1200mV 0C Model Setup 'pul_out:PG|cnt_01[0]'
+Slack : -0.319
+TNS   : -0.788
+
+Type  : Slow 1200mV 0C Model Hold 'pul_out:PG|cnt_001[0]'
+Slack : -1.401
+TNS   : -4.870
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : -1.396
-TNS   : -15.714
+Slack : -1.172
+TNS   : -9.481
 
-Type  : Slow 1200mV 0C Model Hold 'cnt_001[0]'
+Type  : Slow 1200mV 0C Model Hold 'pul_out:PG|cnt_01[0]'
+Slack : -0.200
+TNS   : -0.811
+
+Type  : Slow 1200mV 0C Model Hold 'pul_out:PG|cnt_1[0]'
 Slack : 0.312
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -23.000
+TNS   : -67.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cnt_001[0]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pul_out:PG|cnt_001[0]'
 Slack : -1.000
-TNS   : -4.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pul_out:PG|cnt_01[0]'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pul_out:PG|cnt_1[0]'
+Slack : -1.000
+TNS   : -8.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.962
-TNS   : -18.882
+Slack : -0.999
+TNS   : -12.200
 
-Type  : Fast 1200mV 0C Model Setup 'cnt_001[0]'
-Slack : 0.171
+Type  : Fast 1200mV 0C Model Setup 'pul_out:PG|cnt_001[0]'
+Slack : 0.009
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : -0.811
-TNS   : -8.138
+Type  : Fast 1200mV 0C Model Setup 'pul_out:PG|cnt_1[0]'
+Slack : 0.163
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'cnt_001[0]'
+Type  : Fast 1200mV 0C Model Setup 'pul_out:PG|cnt_01[0]'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pul_out:PG|cnt_001[0]'
+Slack : -0.847
+TNS   : -2.690
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.694
+TNS   : -6.123
+
+Type  : Fast 1200mV 0C Model Hold 'pul_out:PG|cnt_01[0]'
+Slack : -0.037
+TNS   : -0.063
+
+Type  : Fast 1200mV 0C Model Hold 'pul_out:PG|cnt_1[0]'
 Slack : 0.187
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -25.004
+TNS   : -79.774
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cnt_001[0]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pul_out:PG|cnt_001[0]'
 Slack : -1.000
-TNS   : -4.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pul_out:PG|cnt_01[0]'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pul_out:PG|cnt_1[0]'
+Slack : -1.000
+TNS   : -8.000
 
 ------------------------------------------------------------

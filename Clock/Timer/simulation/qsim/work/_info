@@ -8,44 +8,196 @@ z2
 !i10f 100
 cModel Technology
 Z0 dF:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim
-vtimer
+vpul
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
-!s100 izMc`Kjh0o;49cmn[>]VP0
-I:i=W04X_:2baiATI007;;1
+!s100 >=GV[1ZbB9@k[AieaOHUK3
+IgoF28<Wg[d@<MfhTcCl`V0
 R0
-Z2 w1693832280
-8timer.vo
-Ftimer.vo
-L0 31
-Z3 OL;L;10.4;61
-!s108 1693832282.014000
-!s107 timer.vo|
-!s90 -work|work|timer.vo|
+w1693990190
+Z2 8timer.vo
+Z3 Ftimer.vo
+Z4 L0 31
+Z5 OL;L;10.4;61
+!s108 1693990191.765000
+Z6 !s107 timer.vo|
+Z7 !s90 -work|work|timer.vo|
 !i113 0
-Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vpul_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 f<7Y5f;[EFOSC1L0CU?;i3
+I5QGP14;0oC:8^FUag;lj63
+R0
+Z9 w1693990189
+Z10 8pul.vwf.vt
+Z11 Fpul.vwf.vt
+Z12 L0 59
+R5
+Z13 !s108 1693990191.825000
+Z14 !s107 pul.vwf.vt|
+Z15 !s90 -work|work|pul.vwf.vt|
+!i113 0
+R8
+vpul_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Oa9WW_l9<]AY@Gd4o?TGU0
+ICkWVONg_N_I8PiZG=A>m`0
+R0
+R9
+R10
+R11
+Z16 L0 29
+R5
+R13
+R14
+R15
+!i113 0
+R8
+vpul_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 =bjLNGHz;AJa@Xj3oWd6?1
+IZ^J>7I5B=C<aJJbQIfoHT3
+R0
+R9
+R10
+R11
+L0 239
+R5
+R13
+R14
+R15
+!i113 0
+R8
+vtimer
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]`J:VkV_Nc`869UEHH_Y@2
+I;d:j[I5DCBeXDWQ5Zjk=o3
+R0
+Z17 w1693980428
+R2
+R3
+R4
+R5
+!s108 1693980429.766000
+R6
+R7
+!i113 0
+R8
+vtimer_bdf
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 @M2kS5ZABVI:CeF>n3OF63
+Ia0<hK:QjjO[=5k=NkL1bl0
+R0
+w1693996385
+R2
+R3
+R4
+R5
+!s108 1693996386.770000
+R6
+R7
+!i113 0
+R8
+vtimer_bdf_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 AE^>hn0hYS<9HU0]HN[Je3
+IH[dY;2VCWE<jWV6WIeP=]1
+R0
+Z18 w1693996384
+Z19 8cnt.vwf.vt
+Z20 Fcnt.vwf.vt
+R12
+R5
+Z21 !s108 1693996386.836000
+Z22 !s107 cnt.vwf.vt|
+Z23 !s90 -work|work|cnt.vwf.vt|
+!i113 0
+R8
+vtimer_bdf_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 mWUbD6VW3jf[fNaXGfTf73
+IcG75LCeCan3e8`INn>VoK0
+R0
+R18
+R19
+R20
+R16
+R5
+R21
+R22
+R23
+!i113 0
+R8
+vtimer_bdf_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Z;AJTL]ko3GCa>Q?]_]9g1
+I?RhRVVA6=g?EF20eObie40
+R0
+R18
+R19
+R20
+L0 771
+R5
+R21
+R22
+R23
+!i113 0
+R8
 vtimer_vlg_check_tst
 R1
 r1
 !s85 0
 31
 !i10b 1
-!s100 D4d3dzJ21<J;1kl<Om?]12
-IDhjgAU4MUVcXTIiIX7W0L2
+!s100 ]=P6RYU_E1E`P;SU635ni0
+I4PF4HlG:DlKdA7ChQYY>Y2
 R0
-R2
-Z5 8Waveform.vwf.vt
-Z6 FWaveform.vwf.vt
-L0 59
-R3
-Z7 !s108 1693832282.066000
-Z8 !s107 Waveform.vwf.vt|
-Z9 !s90 -work|work|Waveform.vwf.vt|
+R17
+Z24 8Waveform.vwf.vt
+Z25 FWaveform.vwf.vt
+R12
+R5
+Z26 !s108 1693980429.827000
+Z27 !s107 Waveform.vwf.vt|
+Z28 !s90 -work|work|Waveform.vwf.vt|
 !i113 0
-R4
+R8
 vtimer_vlg_sample_tst
 R1
 r1
@@ -55,32 +207,32 @@ r1
 !s100 CAGz0RB8AF:SXoSdH4MWg2
 IQG>kO?g?2cSVb]1Zn?@KM3
 R0
-R2
+R17
+R24
+R25
+R16
 R5
-R6
-L0 29
-R3
-R7
-R8
-R9
+R26
+R27
+R28
 !i113 0
-R4
+R8
 vtimer_vlg_vec_tst
 R1
 r1
 !s85 0
 31
 !i10b 1
-!s100 f6H:loZ]Z454PEzZ2k9B`3
-IfR@01j`jEEEYlTR;Nm_:T2
+!s100 ==dZ_H61gQ:Vd^czPK?dj2
+IWG[zjP`7:jOW6==J7fMJe0
 R0
-R2
+R17
+R24
+R25
+L0 238
 R5
-R6
-L0 193
-R3
-R7
-R8
-R9
+R26
+R27
+R28
 !i113 0
-R4
+R8

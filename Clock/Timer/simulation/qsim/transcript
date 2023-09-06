@@ -2,27 +2,27 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 20:58:01 on Sep 04,2023
+# Start time: 18:33:06 on Sep 06,2023
 # vlog -work work timer.vo 
-# -- Compiling module timer
+# -- Compiling module timer_bdf
 # 
 # Top level modules:
-# 	timer
-# End time: 20:58:02 on Sep 04,2023, Elapsed time: 0:00:01
+# 	timer_bdf
+# End time: 18:33:06 on Sep 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 20:58:02 on Sep 04,2023
-# vlog -work work Waveform.vwf.vt 
-# -- Compiling module timer_vlg_sample_tst
-# -- Compiling module timer_vlg_check_tst
-# -- Compiling module timer_vlg_vec_tst
+# Start time: 18:33:06 on Sep 06,2023
+# vlog -work work cnt.vwf.vt 
+# -- Compiling module timer_bdf_vlg_sample_tst
+# -- Compiling module timer_bdf_vlg_check_tst
+# -- Compiling module timer_bdf_vlg_vec_tst
 # 
 # Top level modules:
-# 	timer_vlg_vec_tst
-# End time: 20:58:02 on Sep 04,2023, Elapsed time: 0:00:00
+# 	timer_bdf_vlg_vec_tst
+# End time: 18:33:06 on Sep 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -do "timer.do" 
-# Start time: 20:58:02 on Sep 04,2023
+# Start time: 18:33:06 on Sep 06,2023
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
 # //  ModelSim SE-64 10.4 Dec  3 2014 
@@ -39,22 +39,22 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-# Refreshing F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/work.timer_vlg_vec_tst
-# Loading work.timer_vlg_vec_tst
+# Refreshing F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/work.timer_bdf_vlg_vec_tst
+# Loading work.timer_bdf_vlg_vec_tst
 # ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
 # 
 # No such file or directory. (errno = ENOENT)
 # ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
 # 
 # No such file or directory. (errno = ENOENT)
-# Refreshing F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/work.timer
-# Loading work.timer
+# Refreshing F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/work.timer_bdf
+# Loading work.timer_bdf
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
-# Loading cycloneiii_ver.cycloneiii_lcell_comb
 # Loading cycloneiii_ver.cycloneiii_clkctrl
 # Loading cycloneiii_ver.cycloneiii_mux41
 # Loading cycloneiii_ver.cycloneiii_ena_reg
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
 # Loading altera_ver.dffeas
 # ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
 # 
@@ -62,25 +62,19 @@
 # ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
 # 
 # No such file or directory. (errno = ENOENT)
-# Refreshing F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/work.timer_vlg_sample_tst
-# Loading work.timer_vlg_sample_tst
+# Refreshing F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/work.timer_bdf_vlg_sample_tst
+# Loading work.timer_bdf_vlg_sample_tst
 # ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
 # 
 # No such file or directory. (errno = ENOENT)
 # ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
 # 
 # No such file or directory. (errno = ENOENT)
-# Refreshing F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/work.timer_vlg_check_tst
-# Loading work.timer_vlg_check_tst
+# Refreshing F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/work.timer_bdf_vlg_check_tst
+# Loading work.timer_bdf_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# ERROR! Vector Mismatch for output port pul_001 :: @time = 1090000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port pul_01 :: @time = 1890000.000 ps
-#      Expected value = 0
-#      Real value = 1
-#           2 mismatched vectors : Simulation failed !
-# ** Note: $finish    : Waveform.vwf.vt(189)
-#    Time: 3 us  Iteration: 0  Instance: /timer_vlg_vec_tst/tb_out
-# End time: 20:58:03 on Sep 04,2023, Elapsed time: 0:00:01
+# Simulation passed !
+# ** Note: $finish    : cnt.vwf.vt(767)
+#    Time: 20 us  Iteration: 0  Instance: /timer_bdf_vlg_vec_tst/tb_out
+# End time: 18:33:08 on Sep 06,2023, Elapsed time: 0:00:02
 # Errors: 6, Warnings: 1

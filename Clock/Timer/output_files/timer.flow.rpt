@@ -1,5 +1,5 @@
 Flow report for timer
-Mon Sep 04 20:58:00 2023
+Wed Sep 06 19:05:08 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Sep 04 20:58:00 2023       ;
+; Flow Status                        ; Successful - Wed Sep 06 19:05:08 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; timer                                       ;
 ; Top-level Entity Name              ; timer                                       ;
 ; Family                             ; Cyclone III                                 ;
 ; Device                             ; EP3C16F484C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 35 / 15,408 ( < 1 % )                       ;
-;     Total combinational functions  ; 33 / 15,408 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 24 / 15,408 ( < 1 % )                       ;
-; Total registers                    ; 24                                          ;
-; Total pins                         ; 6 / 347 ( 2 % )                             ;
+; Total logic elements               ; 150 / 15,408 ( < 1 % )                      ;
+;     Total combinational functions  ; 127 / 15,408 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 88 / 15,408 ( < 1 % )                       ;
+; Total registers                    ; 88                                          ;
+; Total pins                         ; 34 / 347 ( 10 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                             ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/04/2023 20:57:37 ;
+; Start date & time ; 09/06/2023 19:04:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; timer               ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                      ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 158527627674065.169383225703536                            ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 158527627674065.169399829520632                            ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                         ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                ; --            ; --          ; eda_simulation ;
@@ -96,14 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:04     ; 2.3                     ; 5525 MB             ; 00:00:03                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4595 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4709 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4653 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 5540 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4588 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4727 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4546 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4558 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4558 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:06                           ;
+; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,8 +115,6 @@ applicable agreement for further details.
 ; Assembler                 ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -130,8 +126,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off timer -c timer
 quartus_asm --read_settings_files=off --write_settings_files=off timer -c timer
 quartus_sta timer -c timer
 quartus_eda --read_settings_files=off --write_settings_files=off timer -c timer
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog timer -c timer --vector_source=F:/Git_Repository/FPGA_myself/Clock/Timer/Waveform.vwf --testbench_file=F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/Git_Repository/FPGA_myself/Clock/Timer/simulation/qsim/ timer -c timer
 
 
 
