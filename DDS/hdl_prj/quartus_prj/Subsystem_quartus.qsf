@@ -42,6 +42,16 @@ set_global_assignment -name TOP_LEVEL_ENTITY Subsystem_quartus
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:10:29  SEPTEMBER 14, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "F:/Git_Repository/FPGA_myself/DDS/hdl_prj/quartus_prj/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name VERILOG_FILE sign2unsign.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/FilterCoef.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/FilterTapSystolicPreAddWvlIn.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/subFilter.v
@@ -55,11 +65,6 @@ set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/Subsystem.v
 set_global_assignment -name SDC_FILE ../hdlsrc/NCO/clock_constraint.sdc
 set_global_assignment -name BDF_FILE Subsystem_quartus.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "F:/Git_Repository/FPGA_myself/DDS/hdl_prj/quartus_prj/simulation/qsim/" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

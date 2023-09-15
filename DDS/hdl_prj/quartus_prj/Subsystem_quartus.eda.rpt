@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Subsystem_quartus
-Thu Sep 14 20:33:01 2023
+Fri Sep 15 16:36:14 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Sep 14 20:33:01 2023 ;
+; EDA Netlist Writer Status ; Successful - Fri Sep 15 16:36:14 2023 ;
 ; Revision Name             ; Subsystem_quartus                     ;
 ; Top-level Entity Name     ; Subsystem_quartus                     ;
 ; Family                    ; Cyclone III                           ;
@@ -93,12 +93,12 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Thu Sep 14 20:33:01 2023
+    Info: Processing started: Fri Sep 15 16:36:14 2023
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/Git_Repository/FPGA_myself/DDS/hdl_prj/quartus_prj/simulation/qsim/ Subsystem_quartus -c Subsystem_quartus
 Info (204019): Generated file Subsystem_quartus.vo in folder "F:/Git_Repository/FPGA_myself/DDS/hdl_prj/quartus_prj/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4577 megabytes
-    Info: Processing ended: Thu Sep 14 20:33:01 2023
+    Info: Peak virtual memory: 4571 megabytes
+    Info: Processing ended: Fri Sep 15 16:36:14 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
