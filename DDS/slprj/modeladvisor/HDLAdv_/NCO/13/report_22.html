@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Model Advisor Report for 'NCO/Subsystem'</title>  
+<style type="text/css">
+<!--
+@media screen {    
+    /* Table Formatting */
+    .AdvTable th { 
+        background:#80a0c1 url(data:image/gif;base64,R0lGODlhAQAaAKIAAHSRr3mXtn+fv2V/mX2cvG2JpVxzi4CgwSH5BAAAAAAALAAAAAABABoAAAMJeLrcLCSAMkwCADs=) repeat-x bottom left; 
+    }
+}
+
+@media all {
+    *{ font-family: sans-serif; }
+
+	H3 {
+		font-size: 14pt;
+		font-weight: 200;
+	}
+	H4 {
+		font-size: 9pt;
+		font-weight: normal;
+	}
+	H5 {
+		font-size: 12pt;
+		font-style: italic;
+		font-weight: bold;
+		color: #333333;
+		margin-bottom: 2px;
+	}
+	a[href] {
+		color: #005FCE;
+	}
+	.subsection {
+		padding-left: 30px;
+	}
+    
+    .CheckHeading {
+		font-size:1.05em;
+		font-weight:bold;
+	}
+
+    /* Table Formatting */
+    table.AdvTable { 
+        border-collapse:collapse; border:1px solid #ececec; border-right:none; border-bottom:none; 
+    }
+
+    .AdvTable th { 
+        padding-left:5px; 
+        padding-right:5px; 
+        color:#fff; 
+        line-height:120%; 
+        background:#80a0c1 url(data:image/gif;base64,R0lGODlhAQAaAKIAAHSRr3mXtn+fv2V/mX2cvG2JpVxzi4CgwSH5BAAAAAAALAAAAAABABoAAAMJeLrcLCSAMkwCADs=) repeat-x bottom left; 
+        border-right: 1px solid #ececec; 
+        border-bottom: 1px solid #ececec; 
+    }
+
+    .AdvTable td { 
+        padding-left:5px; 
+        padding-right:5px; 
+        border-right:1px solid #ececec; 
+        border-bottom: 1px solid #ececec; 
+    }
+    
+    .AdvTable th p { 
+        margin-bottom:0px; 
+    }
+
+    .AdvTable p { 
+        margin-bottom:10px; 
+    }
+    
+    .AdvTableNoBorder p { 
+        margin-bottom:10px; 
+    }
+
+    table+span.SDCollapseControl { 
+        font-size:0.8em; 
+        font-weight:bold; 
+    }
+
+    ul+span.SDCollapseControl { 
+        margin-left:25px; 
+        font-size:0.8em;
+        font-weight:bold; 
+    }
+
+    ol+span.SDCollapseControl { 
+        margin-left:25px; 
+        font-size:0.8em; 
+        font-weight:bold; 
+    }
+
+    .SystemdefinedCollapse { 
+        margin-top:0px;
+        margin-bottom:5px; 
+    }
+
+    div.AllCollapse p, div.AllCollapse table, div.AllCollapse ol, div.AllCollapse ul { 
+        margin-top:0pt;
+        margin-bottom:0pt; 
+        margin-left:18px;
+    }
+
+    div.AllCollapse + div { 
+        margin-top:0pt;
+        margin-bottom:0pt; 
+        margin-left:18px; 
+    }
+
+    img.CollapseAllControlImage { 
+        float:left; 
+    }
+
+    .SubResultsSummary {
+        padding-left:30px;
+    }
+
+    .EmptyFolderMessage {
+        color:gray;
+        margin:10px 0 0 30px;
+        font-size:0.8em;
+    }
+	
+    .CsEml-Symbol-Status-Pass
+    { 
+        color: green;
+        font-family: monospace;
+    }
+
+    .CsEml-Symbol-Status-Warn
+        { 
+        color: orange;
+        font-family: monospace;
+    }
+
+    .CsEml-Symbol-Status-Fail
+    { 
+        color: red;
+        font-family: monospace;
+    }
+    
+    .CsEml-Line-Number
+    {
+        color: #A0A0A0;
+        font-style: italic;
+        font-family: monospace;
+    }
+
+    .CsEml-Code
+    {
+        color: blue;
+        font-family: monospace;
+    }
+
+    .CsEml-Code-Fragment
+    {
+        color: blue;
+        font-weight: bold;
+        font-family: monospace;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .CsEml-Function-Type
+    {
+        color:       #A0A0A0;
+        font-style:  italic;
+        font-family: monospace;
+    }
+
+}
+-->
+</style>
+
+<script type="text/javascript"> <!-- /* Copyright 2013-2017 The MathWorks, Inc */
+/* define String.trim() method if not defined (used by filterByText() function) */
+if(!String.prototype.trim) {
+  String.prototype.trim = function () {
+    return this.replace(/^\s+|\s+$/g,'');
+  };
+}
+
+// rtwreport needs it 
+function init() {
+    var showFailed = document.getElementById("Failed Checkbox");
+    var showPassed = document.getElementById("Passed Checkbox");
+    var showWarning = document.getElementById("Warning Checkbox");
+    var showNotRun = document.getElementById("Not Run Checkbox");
+    var showJustified = document.getElementById("Justified Checkbox");
+    var showIncomplete = document.getElementById("Incomplete Checkbox");      
+    
+    urlQueryStringRegexp = RegExp('\\?(.*)').exec(window.location.search);
+
+    if (urlQueryStringRegexp == null) {
+        /* refresh check boxes and search input */
+        showFailed.checked = true;
+        showPassed.checked = true;
+        showWarning.checked = true;
+        showNotRun.checked = true;
+        showJustified.checked = true;
+        showIncomplete.checked = true;
+    }
+    else 
+    {
+        showFailed.checked = false;
+        showPassed.checked = false;
+        showWarning.checked = false;
+        showNotRun.checked = false;
+        
+        urlQueryString = urlQueryStringRegexp[1];
+        
+        var queryArgs = [];
+        
+        if (urlQueryString.indexOf("&") == -1)
+        {
+            // Only 1 argument
+            queryArgs[0] = urlQueryString;
+        }
+        else
+        {
+            queryArgs = urlQueryString.split("&");
+        }
+        
+        for (var idx = 0; idx < queryArgs.length; ++idx)
+        {
+            // get in
+            if (queryArgs[idx].localeCompare("showPassedChecks") == 0) 
+            {
+                showPassed.checked = true;
+            }
+            else if (queryArgs[idx].localeCompare("showWarningChecks") == 0) 
+            {
+                showWarning.checked = true;
+            }
+            else if (queryArgs[idx].localeCompare("showFailedChecks") == 0)
+            {
+                showFailed.checked = true;
+            }
+            else if (queryArgs[idx].localeCompare("showNotRunChecks") == 0)
+            {
+                showNotRun.checked = true;
+            }
+        }
+            
+        // if nothing is selected, select everything
+        if (!showFailed.checked && !showPassed.checked && 
+            !showWarning.checked && !showNotRun.checked) 
+        {
+            showFailed.checked = true;
+            showPassed.checked = true;
+            showWarning.checked = true;
+            showNotRun.checked = true;
+            showJustified.checked = true;
+            showIncomplete.checked = true;
+        }
+    }
+    
+    updateVisibleChecks();
+}
+
+function markEmptyFolders(){
+	var nodeTypes = ["FailedCheck","PassedCheck",  "WarningCheck", "NotRunCheck"];
+	var folderArray = document.querySelectorAll("div.FolderContent");
+	
+	for (var n=0;n<folderArray.length;n++){
+		/* get direct check result children and check visibility */
+		var childNodes = folderArray[n].childNodes;
+		var noneVisible = true;
+		var noChecksInFolder = true;
+		
+		for (var ni=0;ni<childNodes.length;ni++){
+			if (childNodes[ni].nodeType == 1 && childNodes[ni].tagName.toLowerCase() == "div"){
+				if (childNodes[ni].className == nodeTypes[0] || childNodes[ni].className == nodeTypes[1] || childNodes[ni].className == nodeTypes[2] || childNodes[ni].className == nodeTypes[3]){
+					noChecksInFolder = false;
+					if (childNodes[ni].style.display != "none"){
+						noneVisible = false;
+                        break;
+					}
+				}
+			}
+		}
+		
+		/* Only display hidden message if any checks inside the folders and not just other folders */
+		if (!noChecksInFolder){
+			var hiddenMessage = folderArray[n].querySelector("div.EmptyFolderMessage");
+			
+			if (hiddenMessage && noneVisible == true){
+				hiddenMessage.style.display = "";
+			}else if (hiddenMessage && noneVisible == false){
+				hiddenMessage.style.display = "none";
+			}else{
+				/* hidden message not found */
+			}
+		}
+	}
+
+    return;
+}
+
+function updateVisibleChecks( /* show all flags */ checkbox ){
+	
+	var checkboxes = ["Failed Checkbox", "Passed Checkbox", "Warning Checkbox", "Not Run Checkbox", "Justified Checkbox", "Incomplete Checkbox"];
+	var nodeTypes = ["Failed Check","Passed Check",  "Warning Check", "Not Run Check", "Justified Check", "Incomplete Check"];
+	var textInput = document.getElementById("TxtFilterInput");
+	
+	
+	if (checkbox && textInput && textInput.color=="gray"){
+		var checkType = checkbox.id;
+		var ind = checkboxes.indexOf(checkType);
+		var nodes = document.getElementsByName(nodeTypes[ind]);
+		for (i = 0; i < nodes.length;i++){
+		    nodes[i].style.display = checkbox.checked ? "" : "none";
+		}
+	}
+	else{ /* Update all checks if called from init or if a previous text filter was applied */
+		for (i = 0; i < checkboxes.length; i++){
+			
+			  var show = document.getElementById(checkboxes[i]).checked ? "" : "none";
+			  var nodes = document.getElementsByName(nodeTypes[i]);
+			  for(j = 0; j < nodes.length; j++){
+				  nodes[j].style.display = show;
+			  }
+		   
+		}
+	}
+
+    /* clear text search */
+	if (textInput && checkbox){
+		textInput.value = "Search by check name";
+        textInput.style.color = "gray";
+        textInput.blur;
+	}
+
+    markEmptyFolders();
+
+    return; 
+}
+
+function filterByText(ev){
+	// get all the nodes
+	var allNodeTypes = ["Failed Check","Passed Check",  "Warning Check", "Not Run Check"];
+	var checkboxes = ["Failed Checkbox", "Passed Checkbox", "Warning Checkbox", "Not Run Checkbox"];
+	var nodeTypes = [];
+	
+	// get nodes depending on filter selections
+	for (var n=0; n<checkboxes.length; n++){
+		var checkbox = document.getElementById(checkboxes[n]);
+		if (checkbox && checkbox.checked){
+			nodeTypes.push(allNodeTypes[n]);
+		}
+	}
+	
+    var searchNodes = [".CheckHeading"];
+    var allnodes = [];
+	var alltext = [];
+	if (!ev) return;
+	var target = ev.target ? ev.target : window.event.srcElement;
+	var searchString = target.value;
+	
+	if (!searchString){
+        updateVisibleChecks();  // clear all and display by other filters
+	}else{
+		for (i = 0; i < nodeTypes.length; i++){
+			var nodes = document.getElementsByName(nodeTypes[i]);
+			for (j = 0; j < nodes.length; j++){
+				// get text from check heading
+				var checkContent = nodes[j].querySelector(searchNodes).innerHTML;
+				// creaet a regular expression to ignore case
+				var ss = new RegExp(searchString.trim(), "i");
+				if (ss.exec(checkContent)){
+				   nodes[j].style.display = "";
+				}else{
+				   nodes[j].style.display = "none";
+				}
+			}
+		}
+        markEmptyFolders();
+	}	
+}
+
+
+function MATableShrink(o,tagNameStr){
+    var temp = document.getElementsByName(tagNameStr);
+    var classUsed = document.getElementsByName('EmbedImages'); 
+    var embeddedMode = !(classUsed.length == 0);
+    var img = o.querySelector("img");
+
+    if (temp[0].style.display == "") 
+    {
+        temp[0].style.display = "none";
+        if (embeddedMode)
+        {
+            img.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAkUlEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAEfQCCwt+JQABRHEYAAQQCzE2w9h//vzDUAcQQDgNgCkGacamEQYAAohiLwAEEEED8NkOAgABxEJMVOEDAAHESGlmAgggisMAIIAoNgAgwAC+/BqtC+40NQAAAABJRU5ErkJggg==";
+        }
+        else
+        {
+            img.src = "plus.png";
+        }
+    } 
+    else 
+    {
+        temp[0].style.display = "";
+        if (embeddedMode)
+        {
+            img.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAhklEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAUewFgACi2ACAAGLBKcGCafafP/8wxAACCKcB2BRjAwABRLEXAAKIYgMAAoiFmKjCBwACiJHSzAQQQBR7ASCAKDYAIMAAUtQUow+YsTsAAAAASUVORK5CYII=";
+        }
+        else
+        {
+            img.src = "minus.png";
+        }
+    }
+}
+
+// rtwreport needs it 
+function updateHyperlink() {
+    docObj = window.document;
+    loc = document.location;
+    var aHash = "";
+    var externalweb = "false";
+    if (loc.search || loc.hash) {
+        if (loc.search)
+            aHash = loc.search.substring(1);
+        else
+            aHash = loc.hash.substring(1);
+    }    
+    var args = new Array();
+    args = aHash.split('&');
+    for (var i = 0; i < args.length; ++i) {
+        var arg = args[i];
+          sep = arg.indexOf('=');
+        if (sep != -1) {
+            var cmd = arg.substring(0,sep);
+            var opt = arg.substring(sep+1);
+            switch (cmd.toLowerCase()) {
+            case "externalweb":
+                externalweb = opt;
+                break;
+            }
+        }
+    }        
+    if (externalweb === "true") {        
+        var objs = docObj.getElementsByTagName("a");
+        if (objs.length > 0 && objs[0].removeAttribute) {
+            for (var i = 0; i < objs.length; ++i) {           
+                if (objs[i].href.indexOf('matlab') > -1)           
+                    objs[i].removeAttribute("href");                
+            }
+        }
+    }
+    init();
+}
+    
+function findParentNode(e) {
+   var parent = e.parentElement;
+   if (!!parent) {
+    if (parent.id == "") {   
+       return findParentNode(parent);
+    } else {
+       return parent;
+    }
+   } else {
+    return null;
+   }
+}
+
+function expandParentNode(e) {
+   var parent = findParentNode(e);
+   while (!!parent) { 
+    var prefix = "FolderControl_";
+    var folderControl = document.getElementById(prefix.concat(parent.id));
+    if (parent.style.display == "none") {       
+       MATableShrink(folderControl,parent.id);
+    }
+    parent = findParentNode(parent);
+   }
+}
+
+function isHidden(e) {
+    return (e.offsetParent === null)
+}
+
+function navigateToElement(eleID) {
+   var e = document.getElementById(eleID);
+   if (isHidden(e)) {
+       expandParentNode(e);
+   }       
+   if (!!e && e.scrollIntoView) {
+       e.scrollIntoView();
+   }
+}
+
+function setTextContent(element, value) {
+    var content = element.textContent;
+    if (value === undefined) return;
+    
+    if (content !== undefined) element.textContent = value;
+    else element.innerText = value;
+}
+
+function hideControlPanel(control){
+	var panelComponents = ["ControlsCheckFiltering", "ControlsView", "ControlsTOC"];
+	var reportContent = document.querySelector(".ReportContent");
+	var controlPanel = document.getElementById("ControlPanel");
+	var isHidden = false;
+	
+    if (reportContent && control && controlPanel) {
+    	for (var n=0; n<panelComponents.length; n++){
+			var component = document.getElementById(panelComponents[n]);
+			
+			if (component && component.style.display == ""){
+				component.style.display = "none";
+            } else if (component && component.style.display == "none"){
+				component.style.display = "";
+			}
+		}
+		
+		if (controlPanel.style.width != "6px"){
+			reportContent.style.marginLeft = "25px";
+	    	controlPanel.style.width = "6px";
+	    	control.style.left = "0px";
+	       	var innerDiv = control.querySelector("#HidePanelControlInner");
+	       	setTextContent(innerDiv, "\u25BA");
+	    } else {
+	    	reportContent.style.marginLeft = "225px";
+        	controlPanel.style.width = "210px";
+        	control.style.left = "204px";
+        	var innerDiv = control.querySelector("#HidePanelControlInner");
+        	setTextContent(innerDiv, "\u25C0");
+        }
+    }
+}
+/* Copyright 2013 The MathWorks, Inc. */
+//COLLAPSIBLE FEATURE
+
+// global variables
+var GlobalCollapseState = "off";
+
+function collapseSDHelper(o, CollElementParent, disp, mode){
+    var CollElement = CollElementParent; /* ul/ol with lists, tbody with table */
+
+    if (CollElement.nodeName == "UL" || CollElement.nodeName == "OL"){
+        var CollName = "LI";
+    }else if (CollElement.nodeName == "TABLE"){
+        if (CollElement.querySelector('tbody')) {
+            /* tr modes are child nodes of tbody node */
+            CollElement = CollElement.querySelector('tbody');
+        }
+        var CollName = "TR";
+    }
+    
+    // get children (li for list and tr for table)
+    var children = CollElement.childNodes;
+
+    var nElements = 0;
+    for (var i=0;i<children.length;i++){
+        if (children[i].nodeName == CollName){
+            nElements = nElements + 1;
+            if (nElements > 5){
+                children[i].style.display = disp;
+            }
+        }
+    }
+    if (disp == "none"){
+        if (CollName == "LI"){
+            var text = " items)";
+        }else{
+            var text = " rows)";
+        }
+        
+        var textNode = document.createTextNode(("\u2228 More (" + (nElements-5) + text));
+        o.replaceChild(textNode,o.firstChild);
+
+        CollElementParent.setAttribute("dataCollapse", "on");
+
+        /* scroll to element if it is not visible */
+        if (mode == "single" && CollElement.offsetTop < document.documentElement.scrollTop){
+			CollElement.scrollIntoView();
+		}
+    }else{
+        var textNode = document.createTextNode(("\u2227 " + "Less"));
+        o.replaceChild(textNode,o.firstChild);
+
+        CollElementParent.setAttribute("dataCollapse", "off");
+    }
+}
+
+function collapseSD(o, ID){
+    var CollElement = document.getElementById(ID);
+    if (CollElement != null){
+        if (CollElement.getAttribute("dataCollapse") == "off"){
+            var disp="none";
+        }else{
+            var disp="";
+        }
+        collapseSDHelper(o, CollElement, disp, "single");
+    }
+}
+
+function collapseAllHelper(o, CollElement, CollInfo, disp){
+
+    if (CollElement != null){
+        var img = o.querySelector("img");
+        if (disp == "none"){
+            CollElement.style.display = disp;
+			img.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAkUlEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAEfQCCwt+JQABRHEYAAQQCzE2w9h//vzDUAcQQDgNgCkGacamEQYAAohiLwAEEEED8NkOAgABxEJMVOEDAAHESGlmAgggisMAIIAoNgAgwAC+/BqtC+40NQAAAABJRU5ErkJggg==";
+        }else{
+            CollElement.style.display = disp;
+			img.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAhklEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAUewFgACi2ACAAGLBKcGCafafP/8wxAACCKcB2BRjAwABRLEXAAKIYgMAAoiFmKjCBwACiJHSzAQQQBR7ASCAKDYAIMAAUtQUow+YsTsAAAAASUVORK5CYII=";
+        }
+
+        if (CollInfo != null){
+            if (disp == "none"){
+                CollInfo.style.display = "";
+            }else{
+                CollInfo.style.display = "none";
+            }
+        }
+    }
+}
+
+function collapseAll(o, ID, ID2){
+    var CollElement = document.getElementById(ID);
+    var CollInfo = document.getElementById(ID2);
+
+    if (CollElement.style.display == ""){
+        var disp = "none";
+    }else{
+        var disp = "";
+    }
+
+    collapseAllHelper(o, CollElement, CollInfo, disp);
+}
+
+function expandCollapseAll(o){
+	/* IE has no method for getting elements by class name. Use querySelectorAll instead 
+       Note: requires IE not to be in IE7 compatability mode */
+    var SDCollapse = document.querySelectorAll(".SystemdefinedCollapse");
+    var Button = null;
+
+    if (GlobalCollapseState == "off"){
+        var disp = "none";
+        GlobalCollapseState = "on";
+
+        if (o && o.firstChild.nodeType == 3) {
+            var textNode = o.firstChild;
+        	textNode.nodeValue = " Show check details";
+		}
+    }else{
+        var disp = "";
+        GlobalCollapseState = "off";
+
+        if (o && o.firstChild.nodeType == 3) {
+            var textNode = o.firstChild;
+        	textNode.nodeValue = " Hide check details";
+		}
+    }
+
+    for (var i=0;i<SDCollapse.length;i++){
+        Button = SDCollapse[i].nextSibling;
+        while(Button.nodeType !== 1){
+            Button = Button.nextSibling;
+        }
+        //Button = SDCollapse[i].parentNode.querySelector("span.SDCollapseControl");
+        collapseSDHelper(Button, SDCollapse[i], disp, "all");
+    }
+		
+    var AllCollapse = document.querySelectorAll(".AllCollapse");
+
+    for (i=0;i<AllCollapse.length;i++){
+        // get children of top level collapsible div
+        var children = AllCollapse[i].parentNode.children;
+        
+        // collapsible button is first child
+		Button = children[0];
+        
+        // get content to display in collapsed state
+        // this is optional and last child of collapsible div 
+        if (Button)
+        {
+            if (children.length>2)
+            {
+                collapseAllHelper(Button, AllCollapse[i], children[2], disp);
+            }
+            else
+            {
+                collapseAllHelper(Button, AllCollapse[i], null, disp);
+            }
+        }
+    }
+}
+
+
+function expandCollapseAllOnLoad(){
+    GlobalCollapseState = "on";
+    var Switch = document.getElementById("ExpandCollapseAll");
+    expandCollapseAll(Switch);
+}
+//END COLLAPSIBLE
+
+ --></script></head>  
+<body onload="updateHyperlink(); expandCollapseAllOnLoad();">  
+<span id="top">
+
+</span>
+<!-- mdladv_ignore_start --><div id="Container"><!-- mdladv_ignore_finish -->
+<!-- mdladv_ignore_start --><div class="ReportContent" id="NCO/Subsystem"><!-- mdladv_ignore_finish --><table class="AdvTableNoBorder" width="100%" border="0">
+<tr>
+<td colspan="2" align="center">
+<b>
+Model Advisor Report - <font color="#800000">NCO.slx</font>
+</b>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<b>
+Simulink version: <font color="#800000">10.7</font>
+</b>
+
+</td>
+<td align="right" valign="top">
+<b>
+Model version: <font color="#800000">1.2</font>
+</b>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<b>
+System: <font color="#800000">NCO/Subsystem</font>
+</b>
+
+</td>
+<td align="right" valign="top">
+<b>
+Current run: <font color="#800000">14-Sep-2023 18:52:51</font>
+</b>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<b>
+Treat as Referenced Model: <font color="#800000">off</font>
+</b>
+
+</td>
+<td align="right" valign="top">
+&#160;
+</td>
+
+</tr>
+
+</table>
+<br /><font color="#800000"><b>Run Summary</b></font><br /><table class="AdvTableNoBorder" width="60%" border="0">
+<tr>
+<th align="left" valign="top">
+<b>
+Incomplete
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Failed
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Warning
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Justified
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Passed
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Not Run
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Total
+</b>
+
+</th>
+<th align="left" valign="top">
+&#160;
+</th>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+&#160;&#160;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEQSURBVHgBrVI7csIwEH3rMK7dZdI5J0jKZNLQJJM+aRPICRJuEG7gI+Ch5QD8ChoGOnwEOobONRgvWo0QDB9jD7xGK+3u05P2AReC9g+4XPbgLn5VWAXDN2WRykS4SevUHk9PEvDbSwUpB+rUw3HEcLhOnVFwQMCvz+pWCpBLN1WpOwwtAb8/+UicScbNh0qW7j0NBrGjtwn9F2gWeCgt/iRwjKYHFAWhIkvJbB712mwBt3fZjfMZ8PUpkb+jwIAJZ7FXYxTwVCV8fH+gAKKtgpRCFMcOQeIGynVx7lapVa60BDJPUFrLTQC2lrafSL1xA8y1TCWSW+GH+kesbGu0K5WxxBub8UJ/cihP1WqviTVjXFeRN9ClYgAAAABJRU5ErkJggg=="  /> 0
+</td>
+<td align="left" valign="top">
+&#160;&#160;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEDSURBVHgBrVIxCsJAENwVGzux1MZCxDKg+AYVLHxBYmXjI/IECxsr4wsshPgHEUkZxCJNLCWdnWf2SI41uYBBpzhud2fm9vYO4EcgD9x+18QXruJtvYAfCCHsiXfd5QwSsQNfIDaxUpMKF7emMxhdfOgsljkR5ahGHER0XKNrKoNYbGfJ3CQbSw3Kq0I1idu0hIc91JotrQHhtllLToI6N1Agku5Uyqc1jgpoQMTH+aRi2uvEhQZ0cmMwVDHtdYPVGvDWedu6QRI+ZkBPpBNzg+c95INUHUTcKCsuGGBAi/yJR6NnAYotlIHA+djzHfWVS5kkYmBXAJmIC2lrBYi4+C94A/a+eag5PUw2AAAAAElFTkSuQmCC"  /> 0
+</td>
+<td align="left" valign="top">
+&#160;&#160;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD3SURBVHgBzZI7EsFQFIb/I4oQRTSUsgOlNlqPGTtgB+yAHRg9Ywka/c0WFGp0aCgYxuvIZcwk8phkRuGr7uPc///P3AP8NVY9vbBqmgirSQRdiIrWApNhL01RTXUQB9FQDel+Wi/5tFmynWInTF2PnIDuSlu6q/kC1FxBHunIXDqRBKQ7GJ5iArX9UngTXJUe/NFJu/ZDBaQ7EZoIgtAStYwZKEA3ZeLcnzcrnLerLw3uuvcfd/vbKIExIsCgcnl6sFwJSHErS0rDOUqjuUeAiMeuFhxDEw2G8RmuVwtyaGIJvNmb02M2+RJ80MDuvxjnNT8wwy94AjZHSy+aGaDFAAAAAElFTkSuQmCC"  /> 0
+</td>
+<td align="left" valign="top">
+&#160;&#160;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADqSURBVHgBpZKvC8JAFMffZAPFslXTLBYNitVimBYx+A/of+CibYs2rcZVg4gYBYtFUJdWLFsxb0UUDOod3Insx43dBw7e4/i++753T3h/AQ5ywIlIAuvsgb65QPB8JQpUpQimVoNhU8W5QFooT7fg+XdIg1yQwDcHOKYtsMToRb1VwXHw+LlMNQMkRrbXzi10F1kAvWSPOyDnJSpuL/aRLsWoAvPDFeolBWy9i/M4cawDxGh5BOvkJopjHRDMnQMs/hy4kx4+afNQgSzQRVKMFXMLCWgbiRPqYNZv4AsW6GsNrRp2kBXuGXwAIu1X3q8Yjd0AAAAASUVORK5CYII="  /> 0
+</td>
+<td align="left" valign="top">
+&#160;&#160;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHTSURBVHgBrVO9ThtBEP7mLomDFEWXpEhFbD9BlC5SUGynSkdSpoiOMt2lovXdG0CqpEpIR2cXtPxJSNAgIyoaOKBBAuEzDRYSHmb29hYbRAWjk3a1O9/PzM4B9wy6dRIHAeBFBJpioJInUIfBHeAyQZyldxL4yatwwJgRYGAvGETEPGBLlDFxgubprMM4dPIyAtNv2T0dYid2e9L9mOw+o1FKsdzf0nPP2q4IOFZFHnLEziJRJXiDuDaNF6XnUo0/k5daEMBXcMCaidFQEgUvhi0069P4WJ3QlAADL3IEYu/tKIa5IFLwUtg2a+doG6vpWu7KRzjkgA3BXrSJ3WhT7JY1h6sG3BLwOLYE/GluEt1+TxSkUqaqI2BbatY/s4ot1MofaNEqK7gxN8lduS8aWti1JSDV9ev8d6TZQU4y1XbKjf9fRPmMhvsCMxfOAf0TVuxnh6pkSDSsMrLzHuNWUMeKw06fv2e6axo3jnp5Au2dBVPWtarzkAGDdzqV16+WBCGx/7d4SjYvQeZjvmGAvJ9oHs/mj1GETlZtrCeA9zDTODoSlJuQe/xA8+RPce6PMK+cr6NempfWBJr/7LH/+skjjy4uORWKX/IzfUPc3cBDxhXE6LNA6WFItQAAAABJRU5ErkJggg=="  /> 1
+</td>
+<td align="left" valign="top">
+&#160;&#160;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADhSURBVHgBtZI/CoMwFIdfQg/QyU3o4ubopjdw8gS9heANdOsVegGv0A66F3RzqOCkU92ypUYSCM0flOIHIY/k5cdHEoA/QaLI8/y9TBdLb48xTtI0fZkCqOd5wMYv8zxDXdes/FBKkyzLnmIPy43TNMEwDNrBOSOEHkVRXMXCSQ5wHAd83wcdYRiuc9M00LbtbSnvSgAz4KpGxnFcTYwGQRBYA7gBaAN2GOgDXNeFKIqsAVVVmQ3YhnTjWgghZgP2AocbsE9lNYjjWHuwLEvouk5ZVwxkvS3IX7mH7ezptfMFbNhwT85bFwwAAAAASUVORK5CYII="  /> 0
+</td>
+<td align="left" valign="top">
+ 1
+</td>
+<td align="left" valign="top">
+&#160;
+</td>
+
+</tr>
+
+</table>
+<!-- Compile Status Flag --><!-- Service Status Flag -->
+<!-- mdladv_ignore_start --><div name = "Passed Check"  id = "Passed Check" class="PassedCheck" style="margin-left: 0pt;"><!-- mdladv_ignore_finish -->
+<p><hr /></p>  <a name="CheckRecord_52"></a><div class="CheckHeader" id="Header_com.mathworks.HDL.RunLogicSynthesis">
+<!-- mdladv_ignore_start --><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHTSURBVHgBrVO9ThtBEP7mLomDFEWXpEhFbD9BlC5SUGynSkdSpoiOMt2lovXdG0CqpEpIR2cXtPxJSNAgIyoaOKBBAuEzDRYSHmb29hYbRAWjk3a1O9/PzM4B9wy6dRIHAeBFBJpioJInUIfBHeAyQZyldxL4yatwwJgRYGAvGETEPGBLlDFxgubprMM4dPIyAtNv2T0dYid2e9L9mOw+o1FKsdzf0nPP2q4IOFZFHnLEziJRJXiDuDaNF6XnUo0/k5daEMBXcMCaidFQEgUvhi0069P4WJ3QlAADL3IEYu/tKIa5IFLwUtg2a+doG6vpWu7KRzjkgA3BXrSJ3WhT7JY1h6sG3BLwOLYE/GluEt1+TxSkUqaqI2BbatY/s4ot1MofaNEqK7gxN8lduS8aWti1JSDV9ev8d6TZQU4y1XbKjf9fRPmMhvsCMxfOAf0TVuxnh6pkSDSsMrLzHuNWUMeKw06fv2e6axo3jnp5Au2dBVPWtarzkAGDdzqV16+WBCGx/7d4SjYvQeZjvmGAvJ9oHs/mj1GETlZtrCeA9zDTODoSlJuQe/xA8+RPce6PMK+cr6NempfWBJr/7LH/+skjjy4uORWKX/IzfUPc3cBDxhXE6LNA6WFItQAAAABJRU5ErkJggg=="  />&#160;<!-- mdladv_ignore_finish --><span class="CheckHeading" id="Heading_com.mathworks.HDL.RunLogicSynthesis">
+4.2.1. Perform Logic Synthesis</span>
+<!-- mdladv_ignore_start --><!-- mdladv_ignore_finish --><!-- mdladv_ignore_start --><!-- mdladv_ignore_finish --></div>
+<!-- mdladv_ignore_start --><div class="subsection"><!-- mdladv_ignore_finish --><p /><font color="Green">
+Passed
+</font>
+Logic Synthesis.<p /><pre>Task "Perform Logic Synthesis" successful.
+Generated logfile: <a href="matlab:edit('hdl_prj\hdlsrc\NCO\workflow_task_PerformLogicSynthesis.log')">hdl_prj\hdlsrc\NCO\workflow_task_PerformLogicSynthesis.log</a>
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Thu Sep 14 18:52:52 2023
+Info: Command: quartus_sta -t Subsystem_Altera_QUARTUS_II_run.tcl
+### Open existing Altera QUARTUS II 13.1.0 project hdl_prj\quartus_prj\Subsystem_quartus.qpf
+### Running Synthesis in Altera QUARTUS II 13.1.0 ...
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis &amp; Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Thu Sep 14 18:53:05 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Subsystem_quartus -c Subsystem_quartus
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/filtercoef.v
+    Info (12023): Found entity 1: FilterCoef
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/filtertapsystolicpreaddwvlin.v
+    Info (12023): Found entity 1: FilterTapSystolicPreAddWvlIn
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/subfilter.v
+    Info (12023): Found entity 1: subFilter
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/filter.v
+    Info (12023): Found entity 1: Filter
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/discrete_fir_filter.v
+    Info (12023): Found entity 1: Discrete_FIR_Filter
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/dithergen.v
+    Info (12023): Found entity 1: DitherGen
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/lookuptablegen.v
+    Info (12023): Found entity 1: LookUpTableGen
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/waveformgen.v
+    Info (12023): Found entity 1: WaveformGen
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/nco.v
+    Info (12023): Found entity 1: NCO
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/hdl_prj/hdlsrc/nco/subsystem.v
+    Info (12023): Found entity 1: Subsystem
+Info (12127): Elaborating entity "Subsystem" for the top level hierarchy
+Info (12128): Elaborating entity "NCO" for hierarchy "NCO:u_NCO"
+Info (12128): Elaborating entity "DitherGen" for hierarchy "NCO:u_NCO|DitherGen:u_dither_inst"
+Info (12128): Elaborating entity "WaveformGen" for hierarchy "NCO:u_NCO|WaveformGen:u_Wave_inst"
+Info (12128): Elaborating entity "LookUpTableGen" for hierarchy "NCO:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst"
+Info (12128): Elaborating entity "Discrete_FIR_Filter" for hierarchy "Discrete_FIR_Filter:u_Discrete_FIR_Filter"
+Info (12128): Elaborating entity "Filter" for hierarchy "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank"
+Info (12128): Elaborating entity "FilterCoef" for hierarchy "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|FilterCoef:u_CoefTable_1"
+Info (12128): Elaborating entity "subFilter" for hierarchy "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re"
+Info (12128): Elaborating entity "FilterTapSystolicPreAddWvlIn" for hierarchy "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1"
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276031): Inferred altsyncram megafunction from the following design logic: "NCO:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|Mux14_rtl_0"
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 15
+        Info (286033): Parameter WIDTHAD_A set to 10
+        Info (286033): Parameter NUMWORDS_A set to 1024
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
+        Info (286033): Parameter INIT_FILE set to Subsystem_quartus.Subsystem0.rtl.mif
+Info (278001): Inferred 40 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_30|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_25|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_28|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_29|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_27|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_26|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_24|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_23|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_22|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_16|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_20|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_21|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_14|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_13|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_11|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_19|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_9|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_15|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_3|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_12|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_2|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_6|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_5|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_7|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_8|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_4|Mult0"
+Info (12130): Elaborated megafunction instantiation "NCO:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|altsyncram:Mux14_rtl_0"
+Info (12133): Instantiated megafunction "NCO:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|altsyncram:Mux14_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "15"
+    Info (12134): Parameter "WIDTHAD_A" = "10"
+    Info (12134): Parameter "NUMWORDS_A" = "1024"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info (12134): Parameter "INIT_FILE" = "Subsystem_quartus.Subsystem0.rtl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gr11.tdf
+    Info (12023): Found entity 1: altsyncram_gr11
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "33"
+    Info (12134): Parameter "LPM_WIDTHR" = "33"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_s4t.tdf
+    Info (12023): Found entity 1: mult_s4t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "33"
+    Info (12134): Parameter "LPM_WIDTHR" = "33"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "33"
+    Info (12134): Parameter "LPM_WIDTHR" = "33"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "15"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_q4t.tdf
+    Info (12023): Found entity 1: mult_q4t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "13"
+    Info (12134): Parameter "LPM_WIDTHP" = "30"
+    Info (12134): Parameter "LPM_WIDTHR" = "30"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_m4t.tdf
+    Info (12023): Found entity 1: mult_m4t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "13"
+    Info (12134): Parameter "LPM_WIDTHP" = "30"
+    Info (12134): Parameter "LPM_WIDTHR" = "30"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "14"
+    Info (12134): Parameter "LPM_WIDTHP" = "31"
+    Info (12134): Parameter "LPM_WIDTHR" = "31"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_o4t.tdf
+    Info (12023): Found entity 1: mult_o4t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "14"
+    Info (12134): Parameter "LPM_WIDTHP" = "31"
+    Info (12134): Parameter "LPM_WIDTHR" = "31"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "13"
+    Info (12134): Parameter "LPM_WIDTHP" = "30"
+    Info (12134): Parameter "LPM_WIDTHR" = "30"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "12"
+    Info (12134): Parameter "LPM_WIDTHP" = "29"
+    Info (12134): Parameter "LPM_WIDTHR" = "29"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_t4t.tdf
+    Info (12023): Found entity 1: mult_t4t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_30|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_30|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "11"
+    Info (12134): Parameter "LPM_WIDTHP" = "28"
+    Info (12134): Parameter "LPM_WIDTHR" = "28"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_r4t.tdf
+    Info (12023): Found entity 1: mult_r4t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_25|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_25|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "10"
+    Info (12134): Parameter "LPM_WIDTHP" = "27"
+    Info (12134): Parameter "LPM_WIDTHR" = "27"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_p4t.tdf
+    Info (12023): Found entity 1: mult_p4t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_28|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_28|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "13"
+    Info (12134): Parameter "LPM_WIDTHP" = "30"
+    Info (12134): Parameter "LPM_WIDTHR" = "30"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_29|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_29|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "13"
+    Info (12134): Parameter "LPM_WIDTHP" = "30"
+    Info (12134): Parameter "LPM_WIDTHR" = "30"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_27|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_27|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "12"
+    Info (12134): Parameter "LPM_WIDTHP" = "29"
+    Info (12134): Parameter "LPM_WIDTHR" = "29"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_26|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_26|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "11"
+    Info (12134): Parameter "LPM_WIDTHP" = "28"
+    Info (12134): Parameter "LPM_WIDTHR" = "28"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_24|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_24|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "12"
+    Info (12134): Parameter "LPM_WIDTHP" = "29"
+    Info (12134): Parameter "LPM_WIDTHR" = "29"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "11"
+    Info (12134): Parameter "LPM_WIDTHP" = "28"
+    Info (12134): Parameter "LPM_WIDTHR" = "28"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_23|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_23|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "12"
+    Info (12134): Parameter "LPM_WIDTHP" = "29"
+    Info (12134): Parameter "LPM_WIDTHR" = "29"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "10"
+    Info (12134): Parameter "LPM_WIDTHP" = "27"
+    Info (12134): Parameter "LPM_WIDTHR" = "27"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_22|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_22|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "11"
+    Info (12134): Parameter "LPM_WIDTHP" = "28"
+    Info (12134): Parameter "LPM_WIDTHR" = "28"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_16|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_16|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "9"
+    Info (12134): Parameter "LPM_WIDTHP" = "26"
+    Info (12134): Parameter "LPM_WIDTHR" = "26"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_g3t.tdf
+    Info (12023): Found entity 1: mult_g3t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_20|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_20|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "9"
+    Info (12134): Parameter "LPM_WIDTHP" = "26"
+    Info (12134): Parameter "LPM_WIDTHR" = "26"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_21|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_21|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "10"
+    Info (12134): Parameter "LPM_WIDTHP" = "27"
+    Info (12134): Parameter "LPM_WIDTHR" = "27"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_14|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_14|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "9"
+    Info (12134): Parameter "LPM_WIDTHP" = "26"
+    Info (12134): Parameter "LPM_WIDTHR" = "26"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_13|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_13|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "9"
+    Info (12134): Parameter "LPM_WIDTHP" = "26"
+    Info (12134): Parameter "LPM_WIDTHR" = "26"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_11|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_11|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "7"
+    Info (12134): Parameter "LPM_WIDTHP" = "24"
+    Info (12134): Parameter "LPM_WIDTHR" = "24"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_c3t.tdf
+    Info (12023): Found entity 1: mult_c3t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_19|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_19|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "11"
+    Info (12134): Parameter "LPM_WIDTHP" = "28"
+    Info (12134): Parameter "LPM_WIDTHR" = "28"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_9|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_9|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "25"
+    Info (12134): Parameter "LPM_WIDTHR" = "25"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_e3t.tdf
+    Info (12023): Found entity 1: mult_e3t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_15|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_15|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "25"
+    Info (12134): Parameter "LPM_WIDTHR" = "25"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_3|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_3|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "6"
+    Info (12134): Parameter "LPM_WIDTHP" = "23"
+    Info (12134): Parameter "LPM_WIDTHR" = "23"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_a3t.tdf
+    Info (12023): Found entity 1: mult_a3t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_12|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_12|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "9"
+    Info (12134): Parameter "LPM_WIDTHP" = "26"
+    Info (12134): Parameter "LPM_WIDTHR" = "26"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_2|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_2|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "6"
+    Info (12134): Parameter "LPM_WIDTHP" = "23"
+    Info (12134): Parameter "LPM_WIDTHR" = "23"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "5"
+    Info (12134): Parameter "LPM_WIDTHP" = "22"
+    Info (12134): Parameter "LPM_WIDTHR" = "22"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_83t.tdf
+    Info (12023): Found entity 1: mult_83t
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_6|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_6|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "6"
+    Info (12134): Parameter "LPM_WIDTHP" = "23"
+    Info (12134): Parameter "LPM_WIDTHR" = "23"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_5|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_5|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "5"
+    Info (12134): Parameter "LPM_WIDTHP" = "22"
+    Info (12134): Parameter "LPM_WIDTHR" = "22"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_7|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_7|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "7"
+    Info (12134): Parameter "LPM_WIDTHP" = "24"
+    Info (12134): Parameter "LPM_WIDTHR" = "24"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "7"
+    Info (12134): Parameter "LPM_WIDTHP" = "24"
+    Info (12134): Parameter "LPM_WIDTHR" = "24"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_8|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_8|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "25"
+    Info (12134): Parameter "LPM_WIDTHR" = "25"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_4|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_4|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "6"
+    Info (12134): Parameter "LPM_WIDTHP" = "23"
+    Info (12134): Parameter "LPM_WIDTHR" = "23"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 390 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 5063 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 4920 logic cells
+    Info (21064): Implemented 15 RAM segments
+    Info (21062): Implemented 80 DSP elements
+Info: Quartus II 32-bit Analysis &amp; Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 502 megabytes
+    Info: Processing ended: Thu Sep 14 18:53:19 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:05
+### Synthesis Complete.
+### Close Altera QUARTUS II 13.1.0 project.
+Info (23030): Evaluation of Tcl script Subsystem_Altera_QUARTUS_II_run.tcl was successful
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 351 megabytes
+    Info: Processing ended: Thu Sep 14 18:53:20 2023
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:00
+
+Elapsed time is 28.3332 seconds.
+</pre><!-- mdladv_ignore_start --></div><!-- mdladv_ignore_finish --><!-- mdladv_ignore_start --></div><!-- mdladv_ignore_finish -->
+<span name = "EmbedImages" id="EmbedImages"></span><!-- mdladv_ignore_start -->
+</div><!-- mdladv_ignore_finish --><!-- mdladv_ignore_start -->
+</div><!-- mdladv_ignore_finish -->
+</body>  
+</html>  
