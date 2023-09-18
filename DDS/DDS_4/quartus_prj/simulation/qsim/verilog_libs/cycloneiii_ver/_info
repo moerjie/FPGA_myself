@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dF:/Git_Repository/FPGA_myself/DDS/DDS_4/quartus_prj/simulation/qsim
 vcycloneiii_and1
-Z1 !s110 1695014342
+Z1 !s110 1695033416
 !i10b 1
 !s100 XlocMKg_ld;hac3WMePko0
 I@gJ]X:hO51o]^2ZoKBcnN3
@@ -23,7 +23,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-Z7 !s108 1695014342.112000
+Z7 !s108 1695033416.003000
 Z8 !s107 f:/app_download/quartus_13/quartus/eda/sim_lib/cycloneiii_atoms.v|
 Z9 !s90 -work|cycloneiii_ver|-vlog01compat|f:/app_download/quartus_13/quartus/eda/sim_lib/cycloneiii_atoms.v|
 !i113 0
@@ -384,115 +384,119 @@ R9
 !i113 0
 R10
 vcycloneiii_m_cntr
-R1
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 67S62:7[?@57BQlO7VT`O1
 IoEYXdoWR:]_W]m;=0n3fA2
-R2
 R0
 R3
 R4
 R5
 L0 491
 R6
-r1
-!s85 0
-31
 R7
 R8
 R9
 !i113 0
 R10
 vcycloneiii_mac_data_reg
-R2
-r1
-!s85 0
-31
+R1
 !i10b 1
 !s100 7nhjcYXm=`?W4eMf9hGnd3
 IIRUE;B5GB;7fQG[3Z9AQX0
+R2
 R0
 R3
 R4
 R5
 L0 5769
 R6
+r1
+!s85 0
+31
 R7
 R8
 R9
 !i113 0
 R10
 vcycloneiii_mac_mult
-R2
-r1
-!s85 0
-31
+R1
 !i10b 1
 !s100 hS^Qc_>`_OO2o:SjJ0Wfm0
 IUl>O6;IXV[gV03hHhoH_B1
+R2
 R0
 R3
 R4
 R5
 L0 6074
 R6
+r1
+!s85 0
+31
 R7
 R8
 R9
 !i113 0
 R10
 vcycloneiii_mac_mult_internal
-R2
-r1
-!s85 0
-31
+R1
 !i10b 1
 !s100 zEU8ZFlKIG05;S?Og[1kh3
 IXVkRWZlPcW3k5BdXLh>bZ0
+R2
 R0
 R3
 R4
 R5
 L0 5989
 R6
+r1
+!s85 0
+31
 R7
 R8
 R9
 !i113 0
 R10
 vcycloneiii_mac_out
-R2
-r1
-!s85 0
-31
+R1
 !i10b 1
 !s100 m2b??[66QQbAWjMRhTd@R1
 Ik]Ab9<Bf?N6PHgB]I12aM2
+R2
 R0
 R3
 R4
 R5
 L0 6227
 R6
+r1
+!s85 0
+31
 R7
 R8
 R9
 !i113 0
 R10
 vcycloneiii_mac_sign_reg
-R2
-r1
-!s85 0
-31
+R1
 !i10b 1
 !s100 kV8H:h50YdznF2eL^iLLj0
 I3j6AN?8cEFiN_GBgFE2h_2
+R2
 R0
 R3
 R4
 R5
 L0 5901
 R6
+r1
+!s85 0
+31
 R7
 R8
 R9
@@ -538,20 +542,19 @@ R9
 !i113 0
 R10
 vcycloneiii_n_cntr
-R1
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 OL;ac3H?JEgSN1=gj;3T21
 INJjVIlkFWR[XaGGMW]P`F2
-R2
 R0
 R3
 R4
 R5
 L0 572
 R6
-r1
-!s85 0
-31
 R7
 R8
 R9
@@ -598,20 +601,19 @@ R9
 !i113 0
 R10
 vcycloneiii_pll
-R1
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 9nkHaCbRo9DIOhUD_11g[0
 IH]b^2WH_[dR7X;F8bb_cF2
-R2
 R0
 R3
 R4
 R5
 L0 824
 R6
-r1
-!s85 0
-31
 R7
 R8
 R9
@@ -721,57 +723,60 @@ R9
 !i113 0
 R10
 vcycloneiii_ram_block
-R2
-r1
-!s85 0
-31
+R1
 !i10b 1
 !s100 9VZ2=9MCAC`hASFj5P3GT0
 IPB_X52ICc305nR]R0OUVP2
+R2
 R0
 R3
 R4
 R5
 L0 4575
 R6
+r1
+!s85 0
+31
 R7
 R8
 R9
 !i113 0
 R10
 vcycloneiii_ram_pulse_generator
-R2
-r1
-!s85 0
-31
+R1
 !i10b 1
 !s100 O0g;jf<R`4WB3d@KOUfJb3
 I[:2[[ijU0a8:4bEZB^2E10
+R2
 R0
 R3
 R4
 R5
 L0 4444
 R6
+r1
+!s85 0
+31
 R7
 R8
 R9
 !i113 0
 R10
 vcycloneiii_ram_register
-R2
-r1
-!s85 0
-31
+R1
 !i10b 1
 !s100 IXNak<`MgVfGbJYD<IlG41
 IW[3z39CYZN8D3bAl@CY;P1
+R2
 R0
 R3
 R4
 R5
 L0 4492
 R6
+r1
+!s85 0
+31
 R7
 R8
 R9
@@ -818,20 +823,19 @@ R9
 !i113 0
 R10
 vcycloneiii_scale_cntr
-R1
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 AHzCj?TSR@OS1NZl7IblX1
 I1MCMVTD?RUd:4O;RK5d9:1
-R2
 R0
 R3
 R4
 R5
 L0 643
 R6
-r1
-!s85 0
-31
 R7
 R8
 R9

@@ -1,5 +1,5 @@
 --altsyncram CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" CYCLONEII_M4K_COMPATIBILITY="ON" DEVICE_FAMILY="Cyclone III" INIT_FILE="NCO_quartus.NCO0.rtl.mif" LOW_POWER_MODE="AUTO" NUMWORDS_A=1024 OPERATION_MODE="ROM" OUTDATA_REG_A="UNREGISTERED" RAM_BLOCK_TYPE="AUTO" WIDTH_A=7 WIDTHAD_A=10 address_a clock0 clocken0 q_a CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48
---VERSION_BEGIN 13.1 cbx_altsyncram 2013:10:24:09:15:20:SJ cbx_cycloneii 2013:10:24:09:15:20:SJ cbx_lpm_add_sub 2013:10:24:09:15:20:SJ cbx_lpm_compare 2013:10:24:09:15:20:SJ cbx_lpm_decode 2013:10:24:09:15:20:SJ cbx_lpm_mux 2013:10:24:09:15:20:SJ cbx_mgl 2013:10:24:09:16:30:SJ cbx_stratix 2013:10:24:09:15:20:SJ cbx_stratixii 2013:10:24:09:15:20:SJ cbx_stratixiii 2013:10:24:09:15:20:SJ cbx_stratixv 2013:10:24:09:15:20:SJ cbx_util_mgl 2013:10:24:09:15:20:SJ  VERSION_END
+--VERSION_BEGIN 13.1 cbx_altsyncram 2013:10:23:18:05:48:SJ cbx_cycloneii 2013:10:23:18:05:48:SJ cbx_lpm_add_sub 2013:10:23:18:05:48:SJ cbx_lpm_compare 2013:10:23:18:05:48:SJ cbx_lpm_decode 2013:10:23:18:05:48:SJ cbx_lpm_mux 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ cbx_stratix 2013:10:23:18:05:48:SJ cbx_stratixii 2013:10:23:18:05:48:SJ cbx_stratixiii 2013:10:23:18:05:48:SJ cbx_stratixv 2013:10:23:18:05:48:SJ cbx_util_mgl 2013:10:23:18:05:48:SJ  VERSION_END
 
 
 -- Copyright (C) 1991-2013 Altera Corporation

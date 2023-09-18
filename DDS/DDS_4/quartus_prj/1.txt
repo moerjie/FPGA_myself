@@ -1,4 +1,0 @@
-Error (169026): Pin DAT_DAC[7] is incompatible with I/O bank 3. It uses I/O standard 2.5 V,
-which has VCCIO requirement of 2.5V.  That requirement is incompatible with bank's VCCIO setting or other output or bidirectional pins in the bank using VCCIO 3.3V.
-	Info (169073): Pin DAT_DAC[9] in I/O bank 3 uses VCCIO 3.3V
-	Info (169073): Pin DAT_DAC[8] in I/O bank 3 uses VCCIO 3.3V

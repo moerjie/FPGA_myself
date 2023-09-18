@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dF:/Git_Repository/FPGA_myself/DDS/DDS_4/quartus_prj/simulation/qsim
 va_graycounter
-Z1 !s110 1695014339
+Z1 !s110 1695033413
 !i10b 1
 !s100 FI?[k<oCFi9HWYigXHGcf0
 I12BLA`VF[EmeL2<YfdPM51
@@ -23,7 +23,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-Z7 !s108 1695014339.589000
+Z7 !s108 1695033413.476000
 Z8 !s107 f:/app_download/quartus_13/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -work|altera_mf_ver|-vlog01compat|f:/app_download/quartus_13/quartus/eda/sim_lib/altera_mf.v|
 !i113 0

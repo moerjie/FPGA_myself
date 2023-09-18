@@ -18,7 +18,7 @@
 #
 # Quartus II 32-bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-# Date created = 13:12:58  September 18, 2023
+# Date created = 18:20:56  September 18, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -37,18 +37,14 @@
 
 
 set_global_assignment -name FAMILY "Cyclone III"
-set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY NCO_quartus
+set_global_assignment -name DEVICE EP3C16F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY NCO
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:12:58  SEPTEMBER 18, 2023"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:20:56  SEPTEMBER 18, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "F:/Git_Repository/FPGA_myself/DDS/DDS_4/quartus_prj/simulation/qsim/" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VERILOG_FILE ../hdlsrc/rtl_module.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/pll_DAC_ADC.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/FilterCoef.v
@@ -63,13 +59,4 @@ set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/NCO_block.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/Subsystem.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/NCO.v
 set_global_assignment -name SDC_FILE ../hdlsrc/NCO/clock_constraint.sdc
-set_global_assignment -name BDF_FILE NCO_quartus.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAT_DAC[9]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAT_DAC[8]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
-set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484

@@ -2,16 +2,16 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 13:23:12 on Sep 18,2023
+# Start time: 18:37:26 on Sep 18,2023
 # vlog -work work NCO_quartus.vo 
 # -- Compiling module NCO_quartus
 # 
 # Top level modules:
 # 	NCO_quartus
-# End time: 13:23:12 on Sep 18,2023, Elapsed time: 0:00:00
+# End time: 18:37:26 on Sep 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 13:23:12 on Sep 18,2023
+# Start time: 18:37:26 on Sep 18,2023
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module NCO_quartus_vlg_sample_tst
 # -- Compiling module NCO_quartus_vlg_check_tst
@@ -19,10 +19,10 @@
 # 
 # Top level modules:
 # 	NCO_quartus_vlg_vec_tst
-# End time: 13:23:12 on Sep 18,2023, Elapsed time: 0:00:00
+# End time: 18:37:26 on Sep 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -do "NCO_quartus.do" 
-# Start time: 13:23:12 on Sep 18,2023
+# Start time: 18:37:26 on Sep 18,2023
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
 # //  ModelSim SE-64 10.4 Dec  3 2014 
@@ -51,19 +51,15 @@
 # Loading work.NCO_quartus
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_pll
+# Loading cycloneiii_ver.cycloneiii_m_cntr
+# Loading cycloneiii_ver.cycloneiii_n_cntr
+# Loading cycloneiii_ver.cycloneiii_scale_cntr
 # Loading cycloneiii_ver.cycloneiii_clkctrl
 # Loading cycloneiii_ver.cycloneiii_mux41
 # Loading cycloneiii_ver.cycloneiii_ena_reg
 # Loading cycloneiii_ver.cycloneiii_lcell_comb
 # Loading altera_ver.dffeas
-# Loading cycloneiii_ver.cycloneiii_ram_block
-# Loading cycloneiii_ver.cycloneiii_ram_register
-# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator
-# Loading cycloneiii_ver.cycloneiii_mac_mult
-# Loading cycloneiii_ver.cycloneiii_mac_data_reg
-# Loading cycloneiii_ver.cycloneiii_mac_sign_reg
-# Loading cycloneiii_ver.cycloneiii_mac_mult_internal
-# Loading cycloneiii_ver.cycloneiii_mac_out
 # ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
 # 
 # No such file or directory. (errno = ENOENT)
@@ -81,38 +77,13 @@
 # Refreshing F:/Git_Repository/FPGA_myself/DDS/DDS_4/quartus_prj/simulation/qsim/work.NCO_quartus_vlg_check_tst
 # Loading work.NCO_quartus_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# ERROR! Vector Mismatch for output port CE :: @time = 1000000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port NCO_EN :: @time = 1000000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port DAT_OUT[0] :: @time = 1360000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111111
-# ERROR! Vector Mismatch for output port DAT_OUT[1] :: @time = 1360000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111111
-# ERROR! Vector Mismatch for output port DAT_OUT[2] :: @time = 1360000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111111
-# ERROR! Vector Mismatch for output port DAT_OUT[3] :: @time = 1360000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111111
-# ERROR! Vector Mismatch for output port DAT_OUT[4] :: @time = 1360000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111111
-# ERROR! Vector Mismatch for output port DAT_OUT[5] :: @time = 1360000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111111
-# ERROR! Vector Mismatch for output port DAT_OUT[6] :: @time = 1360000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111111
-# ERROR! Vector Mismatch for output port DAT_OUT[7] :: @time = 1360000.000 ps
-#      Expected value = 00000000
-#      Real value = 11111111
-#          10 mismatched vectors : Simulation failed !
-# ** Note: $finish    : Waveform.vwf.vt(343)
+#  Note : Cyclone III PLL locked to incoming clock
+# Time: 90000.000 ps  Instance: NCO_quartus_vlg_vec_tst.i1.\inst3|altpll_component|auto_generated|pll1 
+# ERROR! Vector Mismatch for output port DAT_DAC[11] :: @time = 1000000.000 ps
+#      Expected value = 000000000000
+#      Real value = 100000000000
+#           1 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(364)
 #    Time: 10 us  Iteration: 0  Instance: /NCO_quartus_vlg_vec_tst/tb_out
-# End time: 13:23:15 on Sep 18,2023, Elapsed time: 0:00:03
+# End time: 18:37:27 on Sep 18,2023, Elapsed time: 0:00:01
 # Errors: 6, Warnings: 1

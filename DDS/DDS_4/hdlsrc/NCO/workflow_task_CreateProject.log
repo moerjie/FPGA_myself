@@ -16,7 +16,7 @@ Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Mon Sep 18 13:12:57 2023
+    Info: Processing started: Mon Sep 18 18:20:55 2023
 Info: Command: quartus_sta -t NCO_Altera_QUARTUS_II_run.tcl
 ### Create new Altera QUARTUS II 13.1.0 project <a href="matlab:downstream.handle('Model','NCO').openTargetTool;">F:\Git_Repository\FPGA_myself\DDS\DDS_4\quartus_prj\NCO_quartus.qpf</a>
 ### Set Altera QUARTUS II 13.1.0 project properties
@@ -26,8 +26,8 @@ Info (125061): Changed top-level design entity name to "NCO"
 Info (23030): Evaluation of Tcl script NCO_Altera_QUARTUS_II_run.tcl was successful
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 347 megabytes
-    Info: Processing ended: Mon Sep 18 13:12:58 2023
+    Info: Processing ended: Mon Sep 18 18:20:56 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
-Elapsed time is 0.9411 seconds.
+Elapsed time is 1.0597 seconds.
