@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Git_Repository/FPGA_myself/TEST/simulation/qsim
+vclock
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 1>j^2z4DSQR[HBCDo^gK^2
+I:e8T5WgCFhhiRUhSXT1el3
+R0
+w1694936740
+8clock.vo
+Fclock.vo
+L0 31
+Z2 OL;L;10.4;61
+!s108 1694936741.363000
+!s107 clock.vo|
+!s90 -work|work|clock.vo|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vclock_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 7:A<DV`AVcF=j2SSa9]QS2
+IzN<hjC^nV7olc[5z3V^5E0
+R0
+Z4 w1694936739
+Z5 8Waveform.vwf.vt
+Z6 FWaveform.vwf.vt
+L0 59
+R2
+Z7 !s108 1694936741.531000
+Z8 !s107 Waveform.vwf.vt|
+Z9 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R3
+vclock_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 aMO0ZkjHh:IQXg^gAV?d81
+IG<EFIE3:KW4<TPBkoW5G:0
+R0
+R4
+R5
+R6
+L0 29
+R2
+R7
+R8
+R9
+!i113 0
+R3
+vclock_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 8im8]SHMj`FCTedHRMQVP1
+I=6kZRNggNV;4Zjn0n=HKH2
+R0
+R4
+R5
+R6
+L0 364
+R2
+R7
+R8
+R9
+!i113 0
+R3

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dF:/Git_Repository/FPGA_myself/DDS/hdl_prj/quartus_prj/simulation/qsim
 vio_buf_opdrn
-Z1 !s110 1694691067
+Z1 !s110 1694784307
 !i10b 1
 !s100 =^<AH`I:TA`[9YUe=h1;_1
 I3IziN;Rh40R9`>BFX;6:O0
@@ -23,7 +23,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-Z7 !s108 1694691067.326000
+Z7 !s108 1694784307.906000
 Z8 !s107 f:/app_download/quartus_13/quartus/eda/sim_lib/sgate.v|
 Z9 !s90 -work|sgate_ver|-vlog01compat|f:/app_download/quartus_13/quartus/eda/sim_lib/sgate.v|
 !i113 0

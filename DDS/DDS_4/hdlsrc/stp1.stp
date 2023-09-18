@@ -1,0 +1,212 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C16/EP4CE15 (0x020F20DD)" sof_file="../quartus_prj/NCO_quartus.sof">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2023/09/18 14:01:29  #0">
+      <clock name="CLOCK_50" polarity="posedge" tap_mode="probeonly"/>
+      <config ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="DAC_interface:inst2|DAT2DAC[10]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[11]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[1]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[2]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[3]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[4]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[5]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[6]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[7]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[8]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[9]" tap_mode="probeonly"/>
+          <wire name="SW[0]" tap_mode="probeonly"/>
+          <wire name="SW[1]" tap_mode="probeonly"/>
+          <wire name="SW[2]" tap_mode="probeonly"/>
+          <wire name="SW[3]" tap_mode="probeonly"/>
+          <wire name="SW[4]" tap_mode="probeonly"/>
+          <wire name="SW[5]" tap_mode="probeonly"/>
+          <wire name="SW[6]" tap_mode="probeonly"/>
+          <wire name="SW[7]" tap_mode="probeonly"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="DAC_interface:inst2|DAT2DAC[10]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[11]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[1]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[2]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[3]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[4]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[5]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[6]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[7]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[8]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[9]" tap_mode="probeonly"/>
+          <wire name="SW[0]" tap_mode="probeonly"/>
+          <wire name="SW[1]" tap_mode="probeonly"/>
+          <wire name="SW[2]" tap_mode="probeonly"/>
+          <wire name="SW[3]" tap_mode="probeonly"/>
+          <wire name="SW[4]" tap_mode="probeonly"/>
+          <wire name="SW[5]" tap_mode="probeonly"/>
+          <wire name="SW[6]" tap_mode="probeonly"/>
+          <wire name="SW[7]" tap_mode="probeonly"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="DAC_interface:inst2|DAT2DAC[10]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[11]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[1]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[2]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[3]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[4]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[5]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[6]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[7]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[8]" tap_mode="probeonly"/>
+          <wire name="DAC_interface:inst2|DAT2DAC[9]" tap_mode="probeonly"/>
+          <wire name="SW[0]" tap_mode="probeonly"/>
+          <wire name="SW[1]" tap_mode="probeonly"/>
+          <wire name="SW[2]" tap_mode="probeonly"/>
+          <wire name="SW[3]" tap_mode="probeonly"/>
+          <wire name="SW[4]" tap_mode="probeonly"/>
+          <wire name="SW[5]" tap_mode="probeonly"/>
+          <wire name="SW[6]" tap_mode="probeonly"/>
+          <wire name="SW[7]" tap_mode="probeonly"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node name="SW[0..7]" order="lsb_to_msb" type="input pin">
+            <node data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="probeonly" trigger_index="11" type="unknown"/>
+            <node data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="probeonly" trigger_index="12" type="unknown"/>
+            <node data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="probeonly" trigger_index="13" type="unknown"/>
+            <node data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="probeonly" trigger_index="14" type="unknown"/>
+            <node data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="probeonly" trigger_index="15" type="unknown"/>
+            <node data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="probeonly" trigger_index="16" type="unknown"/>
+            <node data_index="17" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="17" tap_mode="probeonly" trigger_index="17" type="unknown"/>
+            <node data_index="18" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="18" tap_mode="probeonly" trigger_index="18" type="unknown"/>
+          </node>
+          <node name="DAC_interface:inst2|DAT2DAC[1..11]" order="lsb_to_msb" radix="line" type="register">
+            <node data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="probeonly" trigger_index="3" type="unknown"/>
+            <node data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="probeonly" trigger_index="4" type="unknown"/>
+            <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="probeonly" trigger_index="5" type="unknown"/>
+            <node data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="probeonly" trigger_index="2" type="unknown"/>
+            <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="probeonly" trigger_index="6" type="unknown"/>
+            <node data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="probeonly" trigger_index="7" type="unknown"/>
+            <node data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="probeonly" trigger_index="8" type="unknown"/>
+            <node data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="probeonly" trigger_index="9" type="unknown"/>
+            <node data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="probeonly" trigger_index="10" type="unknown"/>
+            <node data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="probeonly" trigger_index="0" type="unknown"/>
+            <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="probeonly" trigger_index="1" type="unknown"/>
+          </node>
+        </unified_setup_data_view>
+        <data_view>
+          <bus name="SW[0..7]" order="lsb_to_msb" type="input pin">
+            <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="probeonly" trigger_index="11" type="unknown"/>
+            <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="probeonly" trigger_index="12" type="unknown"/>
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="probeonly" trigger_index="13" type="unknown"/>
+            <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="probeonly" trigger_index="14" type="unknown"/>
+            <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="probeonly" trigger_index="15" type="unknown"/>
+            <net data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="probeonly" trigger_index="16" type="unknown"/>
+            <net data_index="17" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="17" tap_mode="probeonly" trigger_index="17" type="unknown"/>
+            <net data_index="18" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="18" tap_mode="probeonly" trigger_index="18" type="unknown"/>
+          </bus>
+          <bus name="DAC_interface:inst2|DAT2DAC[1..11]" order="lsb_to_msb" radix="line" type="register">
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="probeonly" trigger_index="3" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="probeonly" trigger_index="4" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="probeonly" trigger_index="5" type="unknown"/>
+            <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="probeonly" trigger_index="2" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="probeonly" trigger_index="6" type="unknown"/>
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="probeonly" trigger_index="7" type="unknown"/>
+            <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="probeonly" trigger_index="8" type="unknown"/>
+            <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="probeonly" trigger_index="9" type="unknown"/>
+            <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="probeonly" trigger_index="10" type="unknown"/>
+            <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="probeonly" trigger_index="0" type="unknown"/>
+            <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="probeonly" trigger_index="1" type="unknown"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus name="SW[0..7]" order="lsb_to_msb" type="input pin">
+            <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="probeonly" trigger_index="11" type="unknown"/>
+            <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="probeonly" trigger_index="12" type="unknown"/>
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="probeonly" trigger_index="13" type="unknown"/>
+            <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="probeonly" trigger_index="14" type="unknown"/>
+            <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="probeonly" trigger_index="15" type="unknown"/>
+            <net data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="probeonly" trigger_index="16" type="unknown"/>
+            <net data_index="17" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="17" tap_mode="probeonly" trigger_index="17" type="unknown"/>
+            <net data_index="18" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="SW[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="18" tap_mode="probeonly" trigger_index="18" type="unknown"/>
+          </bus>
+          <bus name="DAC_interface:inst2|DAT2DAC[1..11]" order="lsb_to_msb" radix="line" type="register">
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="probeonly" trigger_index="3" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="probeonly" trigger_index="4" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="probeonly" trigger_index="5" type="unknown"/>
+            <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="probeonly" trigger_index="2" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="probeonly" trigger_index="6" type="unknown"/>
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="probeonly" trigger_index="7" type="unknown"/>
+            <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="probeonly" trigger_index="8" type="unknown"/>
+            <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="probeonly" trigger_index="9" type="unknown"/>
+            <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="probeonly" trigger_index="10" type="unknown"/>
+            <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="probeonly" trigger_index="0" type="unknown"/>
+            <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DAC_interface:inst2|DAT2DAC[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="probeonly" trigger_index="1" type="unknown"/>
+          </bus>
+        </setup_view>
+        <trigger_in_editor/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger CRC="17528864" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2023/09/18 14:01:29  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up><op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>1111111111111111111
+            <pwr_up_transitional>1111111111111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2023/09/18 14:17:21  #0" power_up_mode="false" sample_depth="128" trigger_position="16">10000000100111111111000000010011111111100001001001111111110000100100111111111000011010011111111100000011001111111110000001100111111111000001110011111111100000111001111111110000000010111111111000010001011111111100001000101111111110000110010111111111000011001011111111100001010101111111110000111010111111111000011101011111111100001001101111111110000100110111111111000000111011111111100001011101111111110000101110111111111000000000111111111100000000011111111110000010001111111111000000100111111111100000010011111111110000011001111111111000001100111111111100001001011111111110000110101111111111000011010111111111100000111011111111110000011101111111111000010001111111111100000100111111111110000010011111111111000010101111111111100001010111111111110000000111111111111000001011111111111100000101111111111110000101111111111111000010111111111111010000000001111111101000010000111111110100001000011111111010001010001111111101000101000111111110100000010011111111010000101001111111101000010100111111110100010110011111111010001011001111111101000000010111111110100010001011111111010001000101111111101000001010111111110100000101011111111010001110101111111101000100110111111110100010011011111111010001101101111111101000110110111111110100001111011111111010001111101111111101000111110111111110100001000111111111010000100011111111101000101001111111110100001100111111111010000110011111111101000000101111111110100000010111111111010001101011111111101000001101111111110100000110111111111010000111011111111101000011101111111110100000001111111111010001000111111111101000100011111111110100011001111111111010001100111111111101000101011111111110100001101111111111010000110111111111101000111011111111110100011101111111111010001001111111111101000100111111111110100010011111111111010001101111111111101000110111111111110100000111111111111010000011111111111101000001111111111110100010111111111111010001011111111111101000011111111111110100001111111111111010000111111111111101000111111111111110100011111111111111010001111111111111101000111111111111110100011111111111111010001111111111111101000111111111111110100011111111111111010001111111111111101000111111111111110100011111111111111010001111111111111101000011111111111110100001111111111111010000111111111111101000101111111111110100010111111111111010001011111111111101000001111111111110100000111111111111010001101111111111101000110111111111110100001011111111111010001001111111111101000100111111111110100000011111111111</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="130944"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <single attribute="sof manager visible" value="1"/>
+    <multi attribute="frame size" size="2" value="1920,1009"/>
+    <multi attribute="jtag widget size" size="2" value="348,189"/>
+  </global_info>
+</session>

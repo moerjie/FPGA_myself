@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Sep 16 19:30:54 2023
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : nco_quartus
+Top-level Entity Name : nco_quartus
+Family : Cyclone III
+Device : EP3C16U484C6
+Timing Models : Final
+Total logic elements : 501 / 15,408 ( 3 % )
+    Total combinational functions : 393 / 15,408 ( 3 % )
+    Dedicated logic registers : 368 / 15,408 ( 2 % )
+Total registers : 368
+Total pins : 22 / 347 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 128 / 516,096 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

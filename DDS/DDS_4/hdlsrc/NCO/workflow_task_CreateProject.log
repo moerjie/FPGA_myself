@@ -1,0 +1,33 @@
+Task "Create Project" successful.
+Generated logfile: 
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Mon Sep 18 13:12:57 2023
+Info: Command: quartus_sta -t NCO_Altera_QUARTUS_II_run.tcl
+### Create new Altera QUARTUS II 13.1.0 project <a href="matlab:downstream.handle('Model','NCO').openTargetTool;">F:\Git_Repository\FPGA_myself\DDS\DDS_4\quartus_prj\NCO_quartus.qpf</a>
+### Set Altera QUARTUS II 13.1.0 project properties
+### Update Altera QUARTUS II 13.1.0 project with HDL source files
+Info (125061): Changed top-level design entity name to "NCO"
+### Close Altera QUARTUS II 13.1.0 project.
+Info (23030): Evaluation of Tcl script NCO_Altera_QUARTUS_II_run.tcl was successful
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 347 megabytes
+    Info: Processing ended: Mon Sep 18 13:12:58 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+Elapsed time is 0.9411 seconds.

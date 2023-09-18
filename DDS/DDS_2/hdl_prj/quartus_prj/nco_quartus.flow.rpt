@@ -1,0 +1,155 @@
+Flow report for nco_quartus
+Sat Sep 16 19:31:42 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Flow Failed - Sat Sep 16 19:31:42 2023      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; nco_quartus                                 ;
+; Top-level Entity Name              ; nco_quartus                                 ;
+; Family                             ; Cyclone III                                 ;
+; Device                             ; EP3C16U484C6                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 580 / 15,408 ( 4 % )                        ;
+;     Total combinational functions  ; 416 / 15,408 ( 3 % )                        ;
+;     Dedicated logic registers      ; 420 / 15,408 ( 3 % )                        ;
+; Total registers                    ; 420                                         ;
+; Total pins                         ; 21 / 347 ( 6 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 640 / 516,096 ( < 1 % )                     ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/16/2023 19:27:50 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; nco_quartus         ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                  ;
++-------------------------------------+------------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                                        ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+------------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 158527627674065.169486367004380                                              ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                           ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; F:/Git_Repository/FPGA_myself/DDS/DDS_2/hdl_prj/quartus_prj/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                    ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                                         ; --            ; --          ; eda_simulation ;
+; PARTITION_COLOR                     ; 16764057                                                                     ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                        ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                       ; --            ; --          ; Top            ;
++-------------------------------------+------------------------------------------------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4748 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:10     ; 1.8                     ; 5615 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4613 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.5                     ; 4778 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4581 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4577 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4593 MB             ; 00:00:00                           ;
+; Analysis & Synthesis      ; 00:00:06     ; 2.0                     ; 4734 MB             ; 00:00:03                           ;
+; Partition Merge           ; 00:00:01     ; 1.0                     ; 4666 MB             ; 00:00:00                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 5551 MB             ; 00:00:02                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 4609 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4726 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4560 MB             ; 00:00:00                           ;
+; Analysis & Synthesis      ; 00:00:06     ; 1.4                     ; 4735 MB             ; 00:00:03                           ;
+; Total                     ; 00:00:38     ; --                      ; --                  ; 00:00:19                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off nco_quartus -c nco_quartus
+quartus_fit --read_settings_files=off --write_settings_files=off nco_quartus -c nco_quartus
+quartus_asm --read_settings_files=off --write_settings_files=off nco_quartus -c nco_quartus
+quartus_sta nco_quartus -c nco_quartus
+quartus_eda --read_settings_files=off --write_settings_files=off nco_quartus -c nco_quartus
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog nco_quartus -c nco_quartus --vector_source=F:/Git_Repository/FPGA_myself/DDS/hdl_prj/Waveform.vwf --testbench_file=F:/Git_Repository/FPGA_myself/DDS/DDS_2/hdl_prj/quartus_prj/simulation/qsim/Waveform.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/Git_Repository/FPGA_myself/DDS/DDS_2/hdl_prj/quartus_prj/simulation/qsim/ nco_quartus -c nco_quartus
+quartus_map --read_settings_files=on --write_settings_files=off nco_quartus -c nco_quartus
+quartus_cdb --read_settings_files=off --write_settings_files=off nco_quartus -c nco_quartus --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off nco_quartus -c nco_quartus
+quartus_asm --read_settings_files=off --write_settings_files=off nco_quartus -c nco_quartus
+quartus_sta nco_quartus -c nco_quartus
+quartus_eda --read_settings_files=off --write_settings_files=off nco_quartus -c nco_quartus
+quartus_map --read_settings_files=on --write_settings_files=off nco_quartus -c nco_quartus
+quartus_cdb --read_settings_files=off --write_settings_files=off nco_quartus -c nco_quartus --merge=on
+
+
+

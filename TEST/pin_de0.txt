@@ -1,0 +1,49 @@
+to, location
+# Seven Segment Digit 0 to Seven Segment Digit 3   
+#    0
+#  +---+ 
+# 5|   | 1
+#  +-6-+  
+# 4|   |2
+#  +---+ DP
+#    3
+
+HEX0_D[0] , PIN_E11  
+HEX0_D[1] , PIN_F11 
+HEX0_D[2] , PIN_H12 
+HEX0_D[3] , PIN_H13 
+HEX0_D[4] , PIN_G12 
+HEX0_D[5] , PIN_F12 
+HEX0_D[6] , PIN_F13 
+HEX0_DP   , PIN_D13 
+HEX1_D[0] , PIN_A13 
+HEX1_D[1] , PIN_B13 
+HEX1_D[2] , PIN_C13 
+HEX1_D[3] , PIN_A14 
+HEX1_D[4] , PIN_B14 
+HEX1_D[5] , PIN_E14 
+HEX1_D[6] , PIN_A15 
+HEX1_DP   , PIN_B15 
+HEX2_D[0] , PIN_D15 
+HEX2_D[1] , PIN_A16 
+HEX2_D[2] , PIN_B16 
+HEX2_D[3] , PIN_E15 
+HEX2_D[4] , PIN_A17 
+HEX2_D[5] , PIN_B17 
+HEX2_D[6] , PIN_F14 
+HEX2_DP   , PIN_A18 
+HEX3_D[0] , PIN_B18 
+HEX3_D[1] , PIN_F15 
+HEX3_D[2] , PIN_A19 
+HEX3_D[3] , PIN_B19 
+HEX3_D[4] , PIN_C19 
+HEX3_D[5] , PIN_D19 
+HEX3_D[6] , PIN_G15 
+HEX3_DP   , PIN_G16 
+
+
+# Button
+BUTTON[0] , PIN_H2
+BUTTON[1] , PIN_G3
+BUTTON[2] , PIN_F1
+

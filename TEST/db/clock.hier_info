@@ -1,0 +1,197 @@
+|clock
+OV <= mux2to1:inst.out
+CLK => mux2to1:inst.clk
+CLK => cnt_en_0to12:inst11.CLK
+CLK => dec1to2:inst12.clk
+CLK => cnt_sync:i9nst.CLK
+CLK => cnt_en_12to0:inst9.CLK
+CLK => mux2to1_mul:inst16.clk
+CTRL_DW => mux2to1:inst.sel
+CTRL_DW => dec1to2:inst12.sel
+CTRL_DW => mux2to1_mul:inst16.sel
+CNT_OUT[0] <= cnt_en_0to12:inst11.CNTVAL[0]
+CNT_OUT[1] <= cnt_en_0to12:inst11.CNTVAL[1]
+CNT_OUT[2] <= cnt_en_0to12:inst11.CNTVAL[2]
+CNT_OUT[3] <= cnt_en_0to12:inst11.CNTVAL[3]
+CNT_OUT[4] <= cnt_en_0to12:inst11.CNTVAL[4]
+HEX0_D[0] <= mux2to1_mul:inst16.out[0]
+HEX0_D[1] <= mux2to1_mul:inst16.out[1]
+HEX0_D[2] <= mux2to1_mul:inst16.out[2]
+HEX0_D[3] <= mux2to1_mul:inst16.out[3]
+HEX0_D[4] <= mux2to1_mul:inst16.out[4]
+HEX0_D[5] <= mux2to1_mul:inst16.out[5]
+HEX0_D[6] <= mux2to1_mul:inst16.out[6]
+
+
+|clock|mux2to1:inst
+clk => ~NO_FANOUT~
+sel => out.OUTPUTSELECT
+in1 => out.DATAB
+in2 => out.DATAA
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|cnt_en_0to12:inst11
+CLK => CNTVAL[0]~reg0.CLK
+CLK => CNTVAL[1]~reg0.CLK
+CLK => CNTVAL[2]~reg0.CLK
+CLK => CNTVAL[3]~reg0.CLK
+CLK => CNTVAL[4]~reg0.CLK
+CNTVAL[0] <= CNTVAL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[1] <= CNTVAL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[2] <= CNTVAL[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[3] <= CNTVAL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[4] <= CNTVAL[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EN => CNTVAL[2]~reg0.ENA
+EN => CNTVAL[1]~reg0.ENA
+EN => CNTVAL[0]~reg0.ENA
+EN => CNTVAL[3]~reg0.ENA
+EN => CNTVAL[4]~reg0.ENA
+OV <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+enable <= <VCC>
+
+
+|clock|dec1to2:inst12
+clk => ~NO_FANOUT~
+sel => out_inc$latch.LATCH_ENABLE
+sel => out_dec$latch.LATCH_ENABLE
+in => out_dec$latch.DATAIN
+in => out_inc$latch.DATAIN
+out_inc <= out_inc$latch.DB_MAX_OUTPUT_PORT_TYPE
+out_dec <= out_dec$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|cnt_sync:i9nst
+CLK => CNTVAL[0]~reg0.CLK
+CLK => CNTVAL[1]~reg0.CLK
+CLK => CNTVAL[2]~reg0.CLK
+CLK => CNTVAL[3]~reg0.CLK
+CLK => CNTVAL[4]~reg0.CLK
+CLK => CNTVAL[5]~reg0.CLK
+CLK => CNTVAL[6]~reg0.CLK
+CLK => CNTVAL[7]~reg0.CLK
+CLK => CNTVAL[8]~reg0.CLK
+CLK => CNTVAL[9]~reg0.CLK
+CLK => CNTVAL[10]~reg0.CLK
+CLK => CNTVAL[11]~reg0.CLK
+CLK => CNTVAL[12]~reg0.CLK
+CLK => CNTVAL[13]~reg0.CLK
+CLK => CNTVAL[14]~reg0.CLK
+CLK => CNTVAL[15]~reg0.CLK
+CLK => CNTVAL[16]~reg0.CLK
+CLK => CNTVAL[17]~reg0.CLK
+CLK => CNTVAL[18]~reg0.CLK
+CLK => CNTVAL[19]~reg0.CLK
+CLK => CNTVAL[20]~reg0.CLK
+CLK => CNTVAL[21]~reg0.CLK
+CLK => CNTVAL[22]~reg0.CLK
+CLK => CNTVAL[23]~reg0.CLK
+CLK => CNTVAL[24]~reg0.CLK
+CLK => CNTVAL[25]~reg0.CLK
+CLK => CNTVAL[26]~reg0.CLK
+CLK => CNTVAL[27]~reg0.CLK
+CLK => CNTVAL[28]~reg0.CLK
+CLK => CNTVAL[29]~reg0.CLK
+CLK => CNTVAL[30]~reg0.CLK
+CLK => CNTVAL[31]~reg0.CLK
+CNTVAL[0] <= CNTVAL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[1] <= CNTVAL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[2] <= CNTVAL[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[3] <= CNTVAL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[4] <= CNTVAL[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[5] <= CNTVAL[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[6] <= CNTVAL[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[7] <= CNTVAL[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[8] <= CNTVAL[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[9] <= CNTVAL[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[10] <= CNTVAL[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[11] <= CNTVAL[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[12] <= CNTVAL[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[13] <= CNTVAL[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[14] <= CNTVAL[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[15] <= CNTVAL[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[16] <= CNTVAL[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[17] <= CNTVAL[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[18] <= CNTVAL[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[19] <= CNTVAL[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[20] <= CNTVAL[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[21] <= CNTVAL[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[22] <= CNTVAL[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[23] <= CNTVAL[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[24] <= CNTVAL[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[25] <= CNTVAL[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[26] <= CNTVAL[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[27] <= CNTVAL[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[28] <= CNTVAL[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[29] <= CNTVAL[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[30] <= CNTVAL[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[31] <= CNTVAL[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+OV <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|cnt_en_12to0:inst9
+CLK => CNTVAL[0]~reg0.CLK
+CLK => CNTVAL[1]~reg0.CLK
+CLK => CNTVAL[2]~reg0.CLK
+CLK => CNTVAL[3]~reg0.CLK
+CLK => CNTVAL[4]~reg0.CLK
+CNTVAL[0] <= CNTVAL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[1] <= CNTVAL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[2] <= CNTVAL[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[3] <= CNTVAL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNTVAL[4] <= CNTVAL[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EN => CNTVAL[1]~reg0.ENA
+EN => CNTVAL[0]~reg0.ENA
+EN => CNTVAL[2]~reg0.ENA
+EN => CNTVAL[3]~reg0.ENA
+EN => CNTVAL[4]~reg0.ENA
+OV <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display_segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+enable <= <VCC>
+
+
+|clock|mux2to1_mul:inst16
+clk => ~NO_FANOUT~
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+in1[0] => out.DATAB
+in1[1] => out.DATAB
+in1[2] => out.DATAB
+in1[3] => out.DATAB
+in1[4] => out.DATAB
+in1[5] => out.DATAB
+in1[6] => out.DATAB
+in2[0] => out.DATAA
+in2[1] => out.DATAA
+in2[2] => out.DATAA
+in2[3] => out.DATAA
+in2[4] => out.DATAA
+in2[5] => out.DATAA
+in2[6] => out.DATAA
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

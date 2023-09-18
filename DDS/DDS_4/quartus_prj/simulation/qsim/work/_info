@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Git_Repository/FPGA_myself/DDS/DDS_4/quartus_prj/simulation/qsim
+vNCO_quartus
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 72oT3C8:3XX[:VjL2EPX^0
+IY8=>R=@kI1eO76Yh88F:g3
+R0
+w1695014590
+8NCO_quartus.vo
+FNCO_quartus.vo
+L0 31
+Z2 OL;L;10.4;61
+!s108 1695014592.260000
+!s107 NCO_quartus.vo|
+!s90 -work|work|NCO_quartus.vo|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@n@c@o_quartus
+vNCO_quartus_vlg_check_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 F;A]=iJejiNL0aZPfJF?U3
+I[PHe1aZ53AC]Go5Tgc63Q1
+R0
+Z4 w1695014589
+Z5 8Waveform.vwf.vt
+Z6 FWaveform.vwf.vt
+L0 63
+R2
+Z7 !s108 1695014592.620000
+Z8 !s107 Waveform.vwf.vt|
+Z9 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R3
+n@n@c@o_quartus_vlg_check_tst
+vNCO_quartus_vlg_sample_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 469<@70oEFl^GOaTJ`7Di3
+I:d:^N:f8BUF31ig2[Da8:1
+R0
+R4
+R5
+R6
+L0 29
+R2
+R7
+R8
+R9
+!i113 0
+R3
+n@n@c@o_quartus_vlg_sample_tst
+vNCO_quartus_vlg_vec_tst
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 <<8[TPl@VcR16SScH9<QZ2
+IZCBBAcBKMze:8XCfzQoBA2
+R0
+R4
+R5
+R6
+L0 347
+R2
+R7
+R8
+R9
+!i113 0
+R3
+n@n@c@o_quartus_vlg_vec_tst

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dF:/Git_Repository/FPGA_myself/DDS/hdl_prj/quartus_prj/simulation/qsim
 vlpm_abs
-Z1 !s110 1694691067
+Z1 !s110 1694784307
 !i10b 1
 !s100 <eMUJ2Bc:0iJb^8e`knSV1
 ICXC>GFXz]a3njAXV4QX=<0
@@ -23,7 +23,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-Z7 !s108 1694691067.132000
+Z7 !s108 1694784307.703000
 Z8 !s107 f:/app_download/quartus_13/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -work|lpm_ver|-vlog01compat|f:/app_download/quartus_13/quartus/eda/sim_lib/220model.v|
 !i113 0

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="FFT">
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[0].unit[1].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[0].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult2|mult_h8t:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_bq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[0].unit[2].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[1].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[0].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult0|mult_h8t:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_m6h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult3|mult_h8t:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_bq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[0].unit[0].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[0].unit[3].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[1].u_butter|lpm_mult:Mult1" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[2].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult1|mult_h8t:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_m6h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[0].unit[1].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[0].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[1].u_butter|lpm_mult:Mult2" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[3].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult1" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult2|mult_h8t:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_m6h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[0].unit[2].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[1].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[3].u_butter|lpm_mult:Mult1" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[0].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult2" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult3|mult_h8t:auto_generated|alt_mac_mult:mac_mult3" CBX_FILE_NAME="mac_mult_m6h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[2].u_butter|lpm_mult:Mult1" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[0].unit[3].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[2].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[3].u_butter|lpm_mult:Mult2" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[2].u_butter|lpm_mult:Mult2" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[1].unit[3].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult0|mult_h8t:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_bq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[3].u_butter|lpm_mult:Mult2" CBX_FILE_NAME="mult_h8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[0].unit[0].u_butter|lpm_mult:Mult0" CBX_FILE_NAME="mult_j8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[1].u_butter|lpm_mult:Mult1|mult_h8t:auto_generated|alt_mac_out:mac_out4" CBX_FILE_NAME="mac_out_bq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FFT|butterfly:stage[2].unit[3].u_butter|lpm_mult:Mult3" CBX_FILE_NAME="mult_h8t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

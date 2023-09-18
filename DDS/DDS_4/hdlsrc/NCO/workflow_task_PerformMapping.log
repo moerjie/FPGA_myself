@@ -1,0 +1,53 @@
+Task "Perform Mapping" unsuccessful. See log for details.
+Generated logfile: 
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Mon Sep 18 13:13:14 2023
+Info: Command: quartus_sta -t NCO_Altera_QUARTUS_II_run.tcl
+### Open existing Altera QUARTUS II 13.1.0 project F:\Git_Repository\FPGA_myself\DDS\DDS_4\quartus_prj\NCO_quartus.qpf
+### Running PostMapTiming in Altera QUARTUS II 13.1.0 ...
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Fitter
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Mon Sep 18 13:13:16 2023
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off NCO_quartus -c NCO_quartus --early_timing_estimate
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = NCO_quartus
+Info: Revision = NCO_quartus
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
+Warning (292000): FLEXlm software error: Invalid (inconsistent) license key.  The license key and data for the feature do not match.  This usually happens when a license file has been altered. Feature:       quartus License path:  F:\APP_Download\Quartus_9\quartus\license.DAT; FLEXnet Licensing error:-8,523 For further information, refer to the FLEXnet Licensing documentation, available at "www.acresso.com".
+Error (119013): Current license file does not support the EP3C40F484C6 device
+Error: Quartus II 32-bit Fitter was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 417 megabytes
+    Error: Processing ended: Mon Sep 18 13:13:16 2023
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:00
+------------------------------------------------
+ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.
+
+    while executing
+"execute_module -tool fit -args "--early_timing_estimate""
+    (file "NCO_Altera_QUARTUS_II_run.tcl" line 20)
+------------------------------------------------
+Error (23031): Evaluation of Tcl script NCO_Altera_QUARTUS_II_run.tcl unsuccessful
+Error: Quartus II 32-bit TimeQuest Timing Analyzer was unsuccessful. 7 errors, 1 warning
+    Error: Peak virtual memory: 358 megabytes
+    Error: Processing ended: Mon Sep 18 13:13:17 2023
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:00
+
+Elapsed time is 3.5251 seconds.
