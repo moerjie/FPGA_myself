@@ -1,0 +1,5 @@
+DDS/NCO/DitherGen --> DitherGen
+DDS/NCO/WaveformGen/LookUpTableGen --> LookUpTableGen
+DDS/NCO/WaveformGen --> WaveformGen
+DDS/NCO --> NCO
+DDS --> DDS
