@@ -1,5 +1,11 @@
-DDS/NCO/DitherGen --> DitherGen
-DDS/NCO/WaveformGen/LookUpTableGen --> LookUpTableGen
-DDS/NCO/WaveformGen --> WaveformGen
-DDS/NCO --> NCO
+DDS/Subsystem/Discrete FIR Filter/Filter/FilterCoef --> FilterCoef
+DDS/Subsystem/Discrete FIR Filter/Filter/subFilter/FilterTapSystolicPreAddWvlIn --> FilterTapSystolicPreAddWvlIn
+DDS/Subsystem/Discrete FIR Filter/Filter/subFilter --> subFilter
+DDS/Subsystem/Discrete FIR Filter/Filter --> Filter
+DDS/Subsystem/Discrete FIR Filter --> Discrete_FIR_Filter
+DDS/Subsystem/NCO/DitherGen --> DitherGen
+DDS/Subsystem/NCO/WaveformGen/LookUpTableGen --> LookUpTableGen
+DDS/Subsystem/NCO/WaveformGen --> WaveformGen
+DDS/Subsystem/NCO --> NCO
+DDS/Subsystem --> Subsystem
 DDS --> DDS

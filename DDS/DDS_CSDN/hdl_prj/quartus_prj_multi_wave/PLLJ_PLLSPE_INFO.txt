@@ -1,0 +1,5 @@
+PLL_Name	pll_DAC_ADC:inst2|altpll:altpll_component|pll_DAC_ADC_altpll:auto_generated|pll1
+PLLJITTER	41
+PLLSPEmax	84
+PLLSPEmin	-53
+

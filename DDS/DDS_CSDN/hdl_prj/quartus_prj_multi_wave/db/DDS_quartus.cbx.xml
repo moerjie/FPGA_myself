@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DDS_quartus">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_quartus|pll_DAC_ADC:inst2|altpll:altpll_component" CBX_FILE_NAME="pll_DAC_ADC_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

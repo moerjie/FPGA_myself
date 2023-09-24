@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Fri Sep 22 16:58:02 2023
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : DDS_quartus
+Top-level Entity Name : DDS_quartus
+Family : Cyclone III
+Total logic elements : 4,427
+    Total combinational functions : 2,553
+    Dedicated logic registers : 3,484
+Total registers : 3484
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 19,776
+Embedded Multiplier 9-bit elements : 80
+Total PLLs : 1

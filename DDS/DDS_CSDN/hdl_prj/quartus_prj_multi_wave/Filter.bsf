@@ -1,0 +1,565 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 232 128)
+	(text "filter" (rect 5 0 21 12)(font "Arial" ))
+	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk_enable" (rect 0 0 41 12)(font "Arial" ))
+		(text "clk_enable" (rect 21 43 62 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 59 41 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "filter_in[63..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "filter_in[63..0]" (rect 21 75 74 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "filter_out[63..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "filter_out[63..0]" (rect 136 27 195 39)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(parameter
+		"coeff1"
+		"5.52181961843925E-08"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff2"
+		"1.08044198975354E-07"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff3"
+		"-3.39326367919937E-07"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff4"
+		"-5.56319315216285E-07"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff5"
+		"1.27042683421883E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff6"
+		"1.93265471855905E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff7"
+		"-3.7514232407541E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff8"
+		"-5.42199473005911E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff9"
+		"9.49823888726186E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff10"
+		"1.32123782114328E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff11"
+		"-2.15165142448322E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff12"
+		"-2.90313928189758E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff13"
+		"4.4717371103525E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff14"
+		"5.88305099059515E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff15"
+		"-8.66713150630228E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff16"
+		"-0.000111600923370624"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff17"
+		"0.000158475133852252"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff18"
+		"0.000200290995377482"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff19"
+		"-0.000275693592883833"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff20"
+		"-0.000342784031404942"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff21"
+		"0.000459333420243849"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff22"
+		"0.00056289918917561"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff23"
+		"-0.000736823781401942"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff24"
+		"-0.000891408808145955"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff25"
+		"0.0011430278799112"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff26"
+		"0.00136713885730681"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff27"
+		"-0.00172141599785596"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff28"
+		"-0.00203836278375552"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff29"
+		"0.00252572559805144"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff30"
+		"0.00296496165365199"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff31"
+		"-0.00362279173939311"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff32"
+		"-0.00422231248510732"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff33"
+		"0.00509791109351873"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff34"
+		"0.0059088310139167"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff35"
+		"-0.00706550119001992"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff36"
+		"-0.00816117371612793"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff37"
+		"0.00969098448170028"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff38"
+		"0.0111860721336318"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff39"
+		"-0.0132378480619494"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff40"
+		"-0.0153311521748182"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff41"
+		"0.0181769529075467"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff42"
+		"0.0212587204247191"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff43"
+		"-0.0254737332084482"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff44"
+		"-0.030443390997594"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff45"
+		"0.0375046653915667"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff46"
+		"0.0469990049532502"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff47"
+		"-0.0621170424528325"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff48"
+		"-0.0882743042846415"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff49"
+		"0.1491615841325"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff50"
+		"0.449718432474799"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff51"
+		"0.449718432474799"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff52"
+		"0.1491615841325"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff53"
+		"-0.0882743042846415"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff54"
+		"-0.0621170424528325"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff55"
+		"0.0469990049532502"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff56"
+		"0.0375046653915667"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff57"
+		"-0.030443390997594"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff58"
+		"-0.0254737332084482"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff59"
+		"0.0212587204247191"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff60"
+		"0.0181769529075467"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff61"
+		"-0.0153311521748182"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff62"
+		"-0.0132378480619494"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff63"
+		"0.0111860721336318"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff64"
+		"0.00969098448170028"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff65"
+		"-0.00816117371612793"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff66"
+		"-0.00706550119001992"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff67"
+		"0.0059088310139167"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff68"
+		"0.00509791109351873"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff69"
+		"-0.00422231248510732"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff70"
+		"-0.00362279173939311"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff71"
+		"0.00296496165365199"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff72"
+		"0.00252572559805144"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff73"
+		"-0.00203836278375552"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff74"
+		"-0.00172141599785596"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff75"
+		"0.00136713885730681"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff76"
+		"0.0011430278799112"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff77"
+		"-0.000891408808145955"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff78"
+		"-0.000736823781401942"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff79"
+		"0.00056289918917561"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff80"
+		"0.000459333420243849"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff81"
+		"-0.000342784031404942"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff82"
+		"-0.000275693592883833"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff83"
+		"0.000200290995377482"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff84"
+		"0.000158475133852252"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff85"
+		"-0.000111600923370624"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff86"
+		"-8.66713150630228E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff87"
+		"5.88305099059515E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff88"
+		"4.4717371103525E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff89"
+		"-2.90313928189758E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff90"
+		"-2.15165142448322E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff91"
+		"1.32123782114328E-05"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff92"
+		"9.49823888726186E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff93"
+		"-5.42199473005911E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff94"
+		"-3.7514232407541E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff95"
+		"1.93265471855905E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff96"
+		"1.27042683421883E-06"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff97"
+		"-5.56319315216285E-07"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff98"
+		"-3.39326367919937E-07"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff99"
+		"1.08044198975354E-07"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(parameter
+		"coeff100"
+		"5.52181961843925E-08"
+		""
+		(type "PARAMETER_SIGNED_FLOAT")	)
+	(drawing
+		(rectangle (rect 16 16 200 96)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 232 -64 332 16))
+)

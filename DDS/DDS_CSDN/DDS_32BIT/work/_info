@@ -1,0 +1,357 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/DDS_32BIT
+vADC_interface
+Z1 !s110 1695534685
+!i10b 1
+!s100 ]kQehzJ4?lG_F_5V`R]FH1
+Ibji4?3Q7<zX;QTJlE^b[Q2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1695534685
+Z4 8c:\users\31651\appdata\local\temp\tmpuk5569.v
+Z5 Fc:\users\31651\appdata\local\temp\tmpuk5569.v
+L0 2
+Z6 OL;L;10.4;61
+r1
+!s85 0
+31
+Z7 !s108 1695534685.666000
+Z8 !s107 c:\users\31651\appdata\local\temp\tmpuk5569.v|
+Z9 !s90 c:\users\31651\appdata\local\temp\tmpuk5569.v|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a@d@c_interface
+vauout_cs4334
+!s110 1695536354
+!i10b 1
+!s100 7Mcl;85j3kbao33G;Q`mn2
+IV3R5goJicTYN38U:2=lH>3
+R2
+R0
+w1695536354
+8c:\users\31651\appdata\local\temp\tmpxwueni.v
+Fc:\users\31651\appdata\local\temp\tmpxwueni.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1695536354.433000
+!s107 c:\users\31651\appdata\local\temp\tmpxwueni.v|
+!s90 c:\users\31651\appdata\local\temp\tmpxwueni.v|
+!i113 0
+R10
+vbus_LSB_staff_zero
+R1
+!i10b 1
+!s100 3JfVo304K8CD;D2=87a2e3
+IE72Wg?CzDUh2F6KX5[B6Z1
+R2
+R0
+R3
+R4
+R5
+L0 64
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+nbus_@l@s@b_staff_zero
+vcnt_0to9
+R1
+!i10b 1
+!s100 N3nkXPYNC1@GOV]ahKKCM3
+IYgfk`jZf_nnX5MIAngUfB2
+R2
+R0
+R3
+R4
+R5
+L0 180
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vcnt_en_0to9
+R1
+!i10b 1
+!s100 5B;oD>8BLiT=zlO_1>eh43
+I?NTG81<9zPLYlf^GCZNnF1
+R2
+R0
+R3
+R4
+R5
+L0 152
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vcnt_incr
+R1
+!i10b 1
+!s100 K]914Ad1A?<dQhZECoY2E0
+IY^Ji_9c87DNc7zK@b^HYF1
+R2
+R0
+R3
+R4
+R5
+L0 134
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vcnt_sync
+R1
+!i10b 1
+!s100 dU]_Z`0=L]CGS3PLj9VT`1
+IeZ2Da9JB@2@K?8bTZWB2O1
+R2
+R0
+R3
+R4
+R5
+L0 109
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vDAC_interface
+R1
+!i10b 1
+!s100 acC;MWO6;XedR5CYkXT`02
+I:cIcV@?ZanbO=mZ>X714L2
+R2
+R0
+R3
+R4
+R5
+L0 37
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+n@d@a@c_interface
+vdec_2to4
+R1
+!i10b 1
+!s100 V<kJPK2k3WQ;i7P`OZldI3
+IHX8P_f<<E=YRiOMRC=<YB2
+R2
+R0
+R3
+R4
+R5
+L0 204
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vFilterTapSystolicPreAddWvlIn
+!s110 1695536380
+!i10b 1
+!s100 JFKWN>jQ3FJc2Q3c<lLh`1
+IEkzjz3_WY9bdG5b=B[;O;0
+R2
+R0
+w1695536379
+8c:\users\31651\appdata\local\temp\tmpukijet.v
+Fc:\users\31651\appdata\local\temp\tmpukijet.v
+L0 21
+R6
+r1
+!s85 0
+31
+!s108 1695536380.050000
+!s107 c:\users\31651\appdata\local\temp\tmpukijet.v|
+!s90 c:\users\31651\appdata\local\temp\tmpukijet.v|
+!i113 0
+R10
+n@filter@tap@systolic@pre@add@wvl@in
+vfre_sel
+Z11 !s110 1695538343
+!i10b 1
+!s100 HZ8Dm3YD_C>?9HKmRSbFN2
+Idgilk?F]FzSFQ?iEbfW<K1
+R2
+R0
+Z12 w1695538343
+Z13 8c:\users\31651\appdata\local\temp\tmp4xc_c0.v
+Z14 Fc:\users\31651\appdata\local\temp\tmp4xc_c0.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z15 !s108 1695538343.946000
+Z16 !s107 c:\users\31651\appdata\local\temp\tmp4xc_c0.v|
+Z17 !s90 c:\users\31651\appdata\local\temp\tmp4xc_c0.v|
+!i113 0
+R10
+vfre_sel_32b
+R11
+!i10b 1
+!s100 lBfF^F?<_0JDeQ_39mMQ<2
+Ie33j]D4G6QzUgVHGDdEUD1
+R2
+R0
+R12
+R13
+R14
+Z18 L0 39
+R6
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R10
+vfre_sel_audio
+R11
+!i10b 1
+!s100 9PXdFRZSaZc[aEDTX5:YP1
+IPLF[0P0g0o[jRh@Xm@I9G0
+R2
+R0
+R12
+R13
+R14
+L0 70
+R6
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R10
+vmux
+!s110 1695536372
+!i10b 1
+!s100 KUN3]z7MLmz;bAObhDJcg0
+IYPe1Uk`]BdPb_?NHKaG:_2
+R2
+R0
+w1695536371
+8c:\users\31651\appdata\local\temp\tmphztuo_.v
+Fc:\users\31651\appdata\local\temp\tmphztuo_.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1695536372.022000
+!s107 c:\users\31651\appdata\local\temp\tmphztuo_.v|
+!s90 c:\users\31651\appdata\local\temp\tmphztuo_.v|
+!i113 0
+R10
+vpll_DAC_ADC
+!s110 1695534866
+!i10b 1
+!s100 bcG6MhmSJY9M:9Z5kFIK`2
+I]m=RCNJ:d8IEdNb5h[Q4Q2
+R2
+R0
+w1695534866
+8c:\users\31651\appdata\local\temp\tmp9e8s7m.v
+Fc:\users\31651\appdata\local\temp\tmp9e8s7m.v
+R18
+R6
+r1
+!s85 0
+31
+!s108 1695534866.614000
+!s107 c:\users\31651\appdata\local\temp\tmp9e8s7m.v|
+!s90 c:\users\31651\appdata\local\temp\tmp9e8s7m.v|
+!i113 0
+R10
+npll_@d@a@c_@a@d@c
+vpll_MCLK
+!s110 1695534873
+!i10b 1
+!s100 ;6ZajhCc2M3>?gzXE6BAR2
+IUl_DeU]7BolJecbJnWR282
+R2
+R0
+w1695534873
+8c:\users\31651\appdata\local\temp\tmpoqt9dq.v
+Fc:\users\31651\appdata\local\temp\tmpoqt9dq.v
+R18
+R6
+r1
+!s85 0
+31
+!s108 1695534873.258000
+!s107 c:\users\31651\appdata\local\temp\tmpoqt9dq.v|
+!s90 c:\users\31651\appdata\local\temp\tmpoqt9dq.v|
+!i113 0
+R10
+npll_@m@c@l@k
+vshift_reg_SIPO
+R1
+!i10b 1
+!s100 Hm6?_K>eAC3ADUiCAe<7`3
+Idic]>PK<6_c]fB0XGB4fJ1
+R2
+R0
+R3
+R4
+R5
+L0 81
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+nshift_reg_@s@i@p@o
