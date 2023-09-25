@@ -1,5 +1,5 @@
 EDA Netlist Writer report for NCO_quartus
-Sun Sep 24 14:38:02 2023
+Sun Sep 24 20:15:15 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -34,7 +34,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                                       ;
 +---------------------------+------------------------------------------------------+
-; EDA Netlist Writer Status ; No Output Files Generated - Sun Sep 24 14:38:02 2023 ;
+; EDA Netlist Writer Status ; No Output Files Generated - Sun Sep 24 20:15:15 2023 ;
 ; Revision Name             ; NCO_quartus                                          ;
 ; Top-level Entity Name     ; NCO_quartus                                          ;
 ; Family                    ; Cyclone III                                          ;
@@ -47,13 +47,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun Sep 24 14:38:02 2023
+    Info: Processing started: Sun Sep 24 20:15:15 2023
 Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off NCO_quartus -c NCO_quartus
 Warning (199027): Can't generate output files. Specify command-line options to generate output files, or update EDA tool settings using GUI or Tcl script.
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4578 megabytes
-    Info: Processing ended: Sun Sep 24 14:38:03 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4577 megabytes
+    Info: Processing ended: Sun Sep 24 20:15:15 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

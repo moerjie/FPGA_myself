@@ -51,7 +51,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 216 528 272 544))
+	(annotation_block (location)(rect 272 528 328 544))
 )
 (pin
 	(input)
@@ -153,7 +153,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1360 128 1416 144))
+	(annotation_block (location)(rect 1456 128 1528 144))
 )
 (pin
 	(output)
@@ -685,7 +685,7 @@ applicable agreement for further details.
 (symbol
 	(rect 912 736 1096 816)
 	(text "fre_sel_audio" (rect 5 0 71 12)(font "Arial" ))
-	(text "inst11" (rect 8 64 37 76)(font "Arial" ))
+	(text "inst14" (rect 8 64 37 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -955,9 +955,26 @@ applicable agreement for further details.
 	(pt 1632 672)
 )
 (connector
+	(text "SW[7..0]" (rect 648 808 691 820)(font "Arial" ))
+	(pt 648 824)
+	(pt 680 824)
+	(bus)
+)
+(connector
+	(text "CLOCK_50" (rect 1666 504 1721 516)(font "Arial" ))
+	(pt 1728 528)
+	(pt 1672 528)
+)
+(connector
 	(text "SAM_CLK" (rect 866 744 915 756)(font "Arial" ))
 	(pt 864 768)
 	(pt 912 768)
+)
+(connector
+	(text "SW[2..0]" (rect 848 768 891 780)(font "Arial" ))
+	(pt 864 784)
+	(pt 912 784)
+	(bus)
 )
 (connector
 	(pt 1096 768)
@@ -969,22 +986,5 @@ applicable agreement for further details.
 	(pt 1216 768)
 	(bus)
 )
-(connector
-	(text "SW[7..0]" (rect 648 808 691 820)(font "Arial" ))
-	(pt 648 824)
-	(pt 680 824)
-	(bus)
-)
-(connector
-	(text "SW[4..2]" (rect 848 768 891 780)(font "Arial" ))
-	(pt 864 784)
-	(pt 912 784)
-	(bus)
-)
-(connector
-	(text "CLK_25M" (rect 1666 504 1713 516)(font "Arial" ))
-	(pt 1728 528)
-	(pt 1672 528)
-)
-(junction (pt 1152 768))
 (junction (pt 1248 296))
+(junction (pt 1152 768))

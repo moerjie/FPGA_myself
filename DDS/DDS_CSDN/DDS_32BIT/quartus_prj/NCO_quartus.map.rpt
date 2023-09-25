@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NCO_quartus
-Sun Sep 24 14:52:51 2023
+Sun Sep 24 20:40:04 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -24,8 +24,8 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
  16. Source assignments for NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|altsyncram:Mux14_rtl_0|altsyncram_ni01:auto_generated
  17. Source assignments for NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|altshift_taps:sine_1_rtl_0|shift_taps_65m:auto_generated|altsyncram_rc81:altsyncram2
  18. Parameter Settings for User Entity Instance: pll_DAC_ADC:inst2|altpll:altpll_component
- 19. Parameter Settings for User Entity Instance: pll_MCLK:inst1|altpll:altpll_component
- 20. Parameter Settings for User Entity Instance: cnt_sync:inst5
+ 19. Parameter Settings for User Entity Instance: cnt_sync:inst5
+ 20. Parameter Settings for User Entity Instance: pll_MCLK:inst1|altpll:altpll_component
  21. Parameter Settings for Inferred Entity Instance: NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|altsyncram:Mux14_rtl_0
  22. Parameter Settings for Inferred Entity Instance: NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|altshift_taps:sine_1_rtl_0
  23. Parameter Settings for Inferred Entity Instance: NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|lpm_mult:Mult0
@@ -102,15 +102,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 24 14:52:51 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 24 20:40:04 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; NCO_quartus                                 ;
 ; Top-level Entity Name              ; NCO_quartus                                 ;
 ; Family                             ; Cyclone III                                 ;
-; Total logic elements               ; 3,610                                       ;
-;     Total combinational functions  ; 2,148                                       ;
-;     Dedicated logic registers      ; 2,835                                       ;
-; Total registers                    ; 2835                                        ;
+; Total logic elements               ; 3,611                                       ;
+;     Total combinational functions  ; 2,149                                       ;
+;     Dedicated logic registers      ; 2,836                                       ;
+; Total registers                    ; 2836                                        ;
 ; Total pins                         ; 32                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 15,424                                      ;
@@ -214,13 +214,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.08        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-3         ;   4.2%      ;
-;     Processors 4-6         ; < 0.1%      ;
+;     Processors 2-6         ; < 0.1%      ;
 ;     Processors 7-12        ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -295,20 +294,20 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 3,610 ;
+; Estimated Total logic elements              ; 3,611 ;
 ;                                             ;       ;
-; Total combinational functions               ; 2148  ;
+; Total combinational functions               ; 2149  ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 52    ;
-;     -- 3 input functions                    ; 1918  ;
-;     -- <=2 input functions                  ; 178   ;
+;     -- 3 input functions                    ; 1920  ;
+;     -- <=2 input functions                  ; 177   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 183   ;
+;     -- normal mode                          ; 184   ;
 ;     -- arithmetic mode                      ; 1965  ;
 ;                                             ;       ;
-; Total registers                             ; 2835  ;
-;     -- Dedicated logic registers            ; 2835  ;
+; Total registers                             ; 2836  ;
+;     -- Dedicated logic registers            ; 2836  ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 32    ;
@@ -319,7 +318,7 @@ applicable agreement for further details.
 ;                                             ;       ;
 ; Maximum fan-out node                        ; inst7 ;
 ; Maximum fan-out                             ; 2746  ;
-; Total fan-out                               ; 13083 ;
+; Total fan-out                               ; 13089 ;
 ; Average fan-out                             ; 2.54  ;
 +---------------------------------------------+-------+
 
@@ -329,7 +328,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                    ; Library Name ;
 +-----------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |NCO_quartus                                                    ; 2148 (1)          ; 2835 (0)     ; 15424       ; 80           ; 0       ; 40        ; 32   ; 0            ; |NCO_quartus                                                                                                                                                                                                           ; work         ;
+; |NCO_quartus                                                    ; 2149 (1)          ; 2836 (0)     ; 15424       ; 80           ; 0       ; 40        ; 32   ; 0            ; |NCO_quartus                                                                                                                                                                                                           ; work         ;
 ;    |DAC_interface:inst12|                                       ; 13 (13)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|DAC_interface:inst12                                                                                                                                                                                      ; work         ;
 ;    |NCO_32:inst20|                                              ; 2037 (0)          ; 2715 (0)     ; 15424       ; 80           ; 0       ; 40        ; 0    ; 0            ; |NCO_quartus|NCO_32:inst20                                                                                                                                                                                             ; work         ;
 ;       |Subsystem:u_Sub|                                         ; 2037 (0)          ; 2715 (0)     ; 15424       ; 80           ; 0       ; 40        ; 0    ; 0            ; |NCO_quartus|NCO_32:inst20|Subsystem:u_Sub                                                                                                                                                                             ; work         ;
@@ -468,7 +467,7 @@ applicable agreement for further details.
 ;                   |cntr_unf:cntr1|                              ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|altshift_taps:sine_1_rtl_0|shift_taps_65m:auto_generated|cntr_unf:cntr1                                                                                     ; work         ;
 ;    |auout_cs4334:inst9|                                         ; 50 (50)           ; 61 (61)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|auout_cs4334:inst9                                                                                                                                                                                        ; work         ;
 ;    |cnt_sync:inst5|                                             ; 44 (44)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|cnt_sync:inst5                                                                                                                                                                                            ; work         ;
-;    |fre_sel_audio:inst11|                                       ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|fre_sel_audio:inst11                                                                                                                                                                                      ; work         ;
+;    |fre_sel_audio:inst14|                                       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|fre_sel_audio:inst14                                                                                                                                                                                      ; work         ;
 ;    |pll_DAC_ADC:inst2|                                          ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|pll_DAC_ADC:inst2                                                                                                                                                                                         ; work         ;
 ;       |altpll:altpll_component|                                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|pll_DAC_ADC:inst2|altpll:altpll_component                                                                                                                                                                 ; work         ;
 ;          |pll_DAC_ADC_altpll:auto_generated|                    ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NCO_quartus|pll_DAC_ADC:inst2|altpll:altpll_component|pll_DAC_ADC_altpll:auto_generated                                                                                                                               ; work         ;
@@ -527,7 +526,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|validOut_1                                                                                                                                                   ; Stuck at VCC due to stuck port data_in                                                                                                                                                             ;
 ; NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|dither_reg[4..31]                                                                                                                                            ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
 ; NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|lutout_reg[15]                                                                                        ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
-; fre_sel_audio:inst11|inc_32[27..31]                                                                                                                                                                        ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
+; fre_sel_audio:inst14|inc_32[28..31]                                                                                                                                                                        ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|dinRegVld                                                                                                        ; Stuck at VCC due to stuck port data_in                                                                                                                                                             ;
 ; NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|outsel_reg_reg[0..4]                                                                                                                                           ; Stuck at VCC due to stuck port data_in                                                                                                                                                             ;
 ; NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|validOut_1                                                                                                                                                     ; Stuck at VCC due to stuck port data_in                                                                                                                                                             ;
@@ -4568,6 +4567,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[6]                                                                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[6]                                                  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[5]                                                                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[5]                                                  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[4]                                                                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[4]                                                  ;
+; auout_cs4334:inst9|R_din_R1[14]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[14]                                                                                                                                                        ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[33]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[33]                                                     ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[32]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[32]                                                     ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[31]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[31]                                                     ;
@@ -4580,6 +4580,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[24]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[24]                                                     ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[23]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[23]                                                     ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[22]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[22]                                                     ;
+; auout_cs4334:inst9|R_din_R1[13]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[13]                                                                                                                                                        ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[33] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[31] ;
@@ -4592,6 +4593,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[24]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[24] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[23]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[23] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[22]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[22] ;
+; auout_cs4334:inst9|R_din_R1[12]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[12]                                                                                                                                                        ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_din2_reg1[15]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_din2_reg1[15]  ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_11|fTap_coef_reg2[0,6..15]                 ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg2[5]   ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_12|fTap_coef_reg2[2,4,6,8..15]             ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg2[5]   ;
@@ -4706,6 +4708,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[33] ;
+; auout_cs4334:inst9|R_din_R1[11]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[11]                                                                                                                                                        ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_11|fTap_coef_reg1[0,6..15]                 ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg1[5]   ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_12|fTap_coef_reg1[2,4,6,8..15]             ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg1[5]   ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_13|fTap_coef_reg1[0,1,3,8..15]             ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg1[5]   ;
@@ -4819,6 +4822,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[33] ;
+; auout_cs4334:inst9|R_din_R1[10]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[10]                                                                                                                                                        ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[2]  ;
@@ -4853,6 +4857,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[33] ;
+; auout_cs4334:inst9|R_din_R1[9]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[9]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[2]  ;
@@ -4887,6 +4892,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[33] ;
+; auout_cs4334:inst9|R_din_R1[8]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[8]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[2]  ;
@@ -4921,6 +4927,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[33] ;
+; auout_cs4334:inst9|R_din_R1[7]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[7]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[2]  ;
@@ -4955,6 +4962,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[33] ;
+; auout_cs4334:inst9|R_din_R1[6]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[6]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[2]  ;
@@ -4989,6 +4997,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[33] ;
+; auout_cs4334:inst9|R_din_R1[5]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[5]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[2]  ;
@@ -5023,6 +5032,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[33] ;
+; auout_cs4334:inst9|R_din_R1[4]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[4]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[2]  ;
@@ -5511,18 +5521,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[27]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[27] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[28]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[28] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[29]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[29] ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[30]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[30] ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[31] ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[32] ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[33] ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[0]  ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[1]  ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[2]  ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[3]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[3]  ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[4]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[4]  ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[5]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[5]  ;
-; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[6]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[6]  ;
-; Total Number of Removed Registers = 10289                                                                                                                                                                  ;                                                                                                                                                                                                    ;
+; Total Number of Removed Registers = 10288                                                                                                                                                                  ;                                                                                                                                                                                                    ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 * Table truncated at 5000 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
@@ -6292,7 +6291,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2835  ;
+; Total registers                              ; 2836  ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -6322,7 +6321,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------+
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |NCO_quartus|auout_cs4334:inst9|R_data_sh_R[30]                                                                                     ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |NCO_quartus|auout_cs4334:inst9|R_data_sh_R[22]                                                                                     ;
 ; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |NCO_quartus|auout_cs4334:inst9|L_data_sh_R[22]                                                                                     ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |NCO_quartus|NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|Lookup_Table_k[7] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------+
@@ -6720,6 +6719,16 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cnt_sync:inst5 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; MAX_VAL        ; 511   ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: pll_MCLK:inst1|altpll:altpll_component ;
 +-------------------------------+----------------------------+------------------------+
@@ -7091,16 +7100,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS           ; ON                         ; AUTO_CASCADE           ;
 ; IGNORE_CASCADE_BUFFERS        ; OFF                        ; IGNORE_CASCADE         ;
 +-------------------------------+----------------------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt_sync:inst5 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; MAX_VAL        ; 511   ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -9120,7 +9119,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:22     ;
+; Top            ; 00:00:25     ;
 +----------------+--------------+
 
 
@@ -9130,7 +9129,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun Sep 24 14:52:26 2023
+    Info: Processing started: Sun Sep 24 20:39:35 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NCO_quartus -c NCO_quartus
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/dds_csdn/dds_32bit/hdlsrc/pll_mclk.v
@@ -9253,6 +9252,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/pll_
 Info (12128): Elaborating entity "pll_DAC_ADC_altpll" for hierarchy "pll_DAC_ADC:inst2|altpll:altpll_component|pll_DAC_ADC_altpll:auto_generated"
 Info (12128): Elaborating entity "auout_cs4334" for hierarchy "auout_cs4334:inst9"
 Warning (10036): Verilog HDL or VHDL warning at auout_cs4334.v(77): object "SCLK_H2L_W" assigned a value but never read
+Info (12128): Elaborating entity "NCO_32" for hierarchy "NCO_32:inst"
+Info (12128): Elaborating entity "Subsystem" for hierarchy "NCO_32:inst|Subsystem:u_Sub"
+Info (12128): Elaborating entity "NCO_block" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO"
+Info (12128): Elaborating entity "DitherGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|DitherGen:u_dither_inst"
+Info (12128): Elaborating entity "WaveformGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst"
+Info (12128): Elaborating entity "LookUpTableGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst"
+Info (12128): Elaborating entity "Discrete_FIR_Filter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter"
+Info (12128): Elaborating entity "Filter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank"
+Info (12128): Elaborating entity "FilterCoef" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|FilterCoef:u_CoefTable_1"
+Info (12128): Elaborating entity "subFilter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re"
+Info (12128): Elaborating entity "FilterTapSystolicPreAddWvlIn" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1"
+Info (12128): Elaborating entity "cnt_sync" for hierarchy "cnt_sync:inst5"
 Info (12128): Elaborating entity "pll_MCLK" for hierarchy "pll_MCLK:inst1"
 Info (12128): Elaborating entity "altpll" for hierarchy "pll_MCLK:inst1|altpll:altpll_component"
 Info (12130): Elaborated megafunction instantiation "pll_MCLK:inst1|altpll:altpll_component"
@@ -9314,19 +9325,7 @@ Info (12133): Instantiated megafunction "pll_MCLK:inst1|altpll:altpll_component"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_mclk_altpll.v
     Info (12023): Found entity 1: pll_MCLK_altpll
 Info (12128): Elaborating entity "pll_MCLK_altpll" for hierarchy "pll_MCLK:inst1|altpll:altpll_component|pll_MCLK_altpll:auto_generated"
-Info (12128): Elaborating entity "NCO_32" for hierarchy "NCO_32:inst"
-Info (12128): Elaborating entity "Subsystem" for hierarchy "NCO_32:inst|Subsystem:u_Sub"
-Info (12128): Elaborating entity "NCO_block" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO"
-Info (12128): Elaborating entity "DitherGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|DitherGen:u_dither_inst"
-Info (12128): Elaborating entity "WaveformGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst"
-Info (12128): Elaborating entity "LookUpTableGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst"
-Info (12128): Elaborating entity "Discrete_FIR_Filter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter"
-Info (12128): Elaborating entity "Filter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank"
-Info (12128): Elaborating entity "FilterCoef" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|FilterCoef:u_CoefTable_1"
-Info (12128): Elaborating entity "subFilter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re"
-Info (12128): Elaborating entity "FilterTapSystolicPreAddWvlIn" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1"
-Info (12128): Elaborating entity "cnt_sync" for hierarchy "cnt_sync:inst5"
-Info (12128): Elaborating entity "fre_sel_audio" for hierarchy "fre_sel_audio:inst11"
+Info (12128): Elaborating entity "fre_sel_audio" for hierarchy "fre_sel_audio:inst14"
 Info (12128): Elaborating entity "DAC_interface" for hierarchy "DAC_interface:inst12"
 Info (19000): Inferred 2 megafunctions from design logic
     Info (276031): Inferred altsyncram megafunction from the following design logic: "NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|Mux14_rtl_0"
@@ -9882,19 +9881,19 @@ Warning (21074): Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]"
     Warning (15610): No output dependent on input pin "SW[6]"
     Warning (15610): No output dependent on input pin "SW[5]"
-    Warning (15610): No output dependent on input pin "SW[1]"
-    Warning (15610): No output dependent on input pin "SW[0]"
-Info (21057): Implemented 3755 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[4]"
+    Warning (15610): No output dependent on input pin "SW[3]"
+Info (21057): Implemented 3756 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 3610 logic cells
+    Info (21061): Implemented 3611 logic cells
     Info (21064): Implemented 31 RAM segments
     Info (21065): Implemented 2 PLLs
     Info (21062): Implemented 80 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Sun Sep 24 14:52:51 2023
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4812 megabytes
+    Info: Processing ended: Sun Sep 24 20:40:04 2023
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:15
 
 
