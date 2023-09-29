@@ -1,0 +1,193 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Git_Repository/FPGA_myself/DDS/dds_matlab/hdlsrc
+vfre_sel
+Z1 !s110 1695902778
+!i10b 1
+!s100 HZ8Dm3YD_C>?9HKmRSbFN2
+IRcanPdJ;k0H22e;I=2kNP3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1695902777
+Z4 8c:\users\31651\appdata\local\temp\tmpllv95u.v
+Z5 Fc:\users\31651\appdata\local\temp\tmpllv95u.v
+L0 1
+Z6 OL;L;10.4;61
+r1
+!s85 0
+31
+Z7 !s108 1695902778.626000
+Z8 !s107 c:\users\31651\appdata\local\temp\tmpllv95u.v|
+Z9 !s90 c:\users\31651\appdata\local\temp\tmpllv95u.v|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vfre_sel_
+!s110 1695820059
+!i10b 1
+!s100 5@8[kbD_Sc459I>[VhDkL2
+I<<=Del3=M4@4X5f_>20cX3
+R2
+R0
+w1695820059
+8c:\users\31651\appdata\local\temp\tmpp80v60.v
+Fc:\users\31651\appdata\local\temp\tmpp80v60.v
+Z11 L0 103
+R6
+r1
+!s85 0
+31
+!s108 1695820059.263000
+!s107 c:\users\31651\appdata\local\temp\tmpp80v60.v|
+!s90 c:\users\31651\appdata\local\temp\tmpp80v60.v|
+!i113 0
+R10
+vfre_sel_3
+!s110 1695820057
+!i10b 1
+!s100 800gDLoZbcgYgl6Ac?:4J0
+ILWMjFdzP;YgW`h996B>df0
+R2
+R0
+w1695820057
+8c:\users\31651\appdata\local\temp\tmpbv3gs8.v
+Fc:\users\31651\appdata\local\temp\tmpbv3gs8.v
+R11
+R6
+r1
+!s85 0
+31
+!s108 1695820057.346000
+!s107 c:\users\31651\appdata\local\temp\tmpbv3gs8.v|
+!s90 c:\users\31651\appdata\local\temp\tmpbv3gs8.v|
+!i113 0
+R10
+vfre_sel_32
+!s110 1695820062
+!i10b 1
+!s100 k;9Km7J7HjGjQ]04ABV_W3
+Ifl=X`lbWEPecZ]15c9XJJ0
+R2
+R0
+w1695820062
+8c:\users\31651\appdata\local\temp\tmpvce9f2.v
+Fc:\users\31651\appdata\local\temp\tmpvce9f2.v
+R11
+R6
+r1
+!s85 0
+31
+!s108 1695820062.785000
+!s107 c:\users\31651\appdata\local\temp\tmpvce9f2.v|
+!s90 c:\users\31651\appdata\local\temp\tmpvce9f2.v|
+!i113 0
+R10
+vfre_sel_32b
+R1
+!i10b 1
+!s100 lBfF^F?<_0JDeQ_39mMQ<2
+IP[CY7Z8Mk4?]j_nZMP6if0
+R2
+R0
+R3
+R4
+R5
+L0 39
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vfre_sel_32TE
+Z12 !s110 1695820064
+!i10b 1
+!s100 YB?SY?l91?b?XL6IVNH1=0
+I752HUkOModY@Zj]@ZO3Zm3
+R2
+R0
+Z13 w1695820064
+8c:\users\31651\appdata\local\temp\tmp0no84q.v
+Fc:\users\31651\appdata\local\temp\tmp0no84q.v
+R11
+R6
+r1
+!s85 0
+31
+!s108 1695820064.120000
+!s107 c:\users\31651\appdata\local\temp\tmp0no84q.v|
+!s90 c:\users\31651\appdata\local\temp\tmp0no84q.v|
+!i113 0
+R10
+nfre_sel_32@t@e
+vfre_sel_32TES
+R12
+!i10b 1
+!s100 mC18DJ0UJ5IBfn[CGaW293
+IBYm=]`9DNZOOaQggVO:P51
+R2
+R0
+R13
+8c:\users\31651\appdata\local\temp\tmp028qlk.v
+Fc:\users\31651\appdata\local\temp\tmp028qlk.v
+R11
+R6
+r1
+!s85 0
+31
+!s108 1695820064.371000
+!s107 c:\users\31651\appdata\local\temp\tmp028qlk.v|
+!s90 c:\users\31651\appdata\local\temp\tmp028qlk.v|
+!i113 0
+R10
+nfre_sel_32@t@e@s
+vfre_sel_32TEST
+!s110 1695820067
+!i10b 1
+!s100 c7e_1bmUkQkO=HgUbnDXW2
+I^NeKB>Olb5?<FLe5HHgOn1
+R2
+R0
+w1695820067
+8c:\users\31651\appdata\local\temp\tmpjjgm0r.v
+Fc:\users\31651\appdata\local\temp\tmpjjgm0r.v
+R11
+R6
+r1
+!s85 0
+31
+!s108 1695820067.081000
+!s107 c:\users\31651\appdata\local\temp\tmpjjgm0r.v|
+!s90 c:\users\31651\appdata\local\temp\tmpjjgm0r.v|
+!i113 0
+R10
+nfre_sel_32@t@e@s@t
+vfre_sel_audio
+R1
+!i10b 1
+!s100 _F:Q11VZ@K<Sb<2R1WJBV0
+I]fPi>5_a4IL4W:=]^bjbS3
+R2
+R0
+R3
+R4
+R5
+L0 70
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10

@@ -1,0 +1,123 @@
+# do NCO_32_quartus.do
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 20:44:53 on Sep 27,2023
+# vlog -work work NCO_32_quartus.vo 
+# -- Compiling module NCO_32_quartus
+# 
+# Top level modules:
+# 	NCO_32_quartus
+# End time: 20:44:54 on Sep 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 20:44:54 on Sep 27,2023
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module NCO_32_quartus_vlg_sample_tst
+# -- Compiling module NCO_32_quartus_vlg_check_tst
+# -- Compiling module NCO_32_quartus_vlg_vec_tst
+# 
+# Top level modules:
+# 	NCO_32_quartus_vlg_vec_tst
+# End time: 20:44:54 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "NCO_32_quartus.do" 
+# Start time: 20:44:54 on Sep 27,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/work.NCO_32_quartus_vlg_vec_tst
+# Loading work.NCO_32_quartus_vlg_vec_tst
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/work.NCO_32_quartus
+# Loading work.NCO_32_quartus
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/altera_ver.dffeas
+# Loading altera_ver.dffeas
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_pll
+# Loading cycloneiii_ver.cycloneiii_pll
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_m_cntr
+# Loading cycloneiii_ver.cycloneiii_m_cntr
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_n_cntr
+# Loading cycloneiii_ver.cycloneiii_n_cntr
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_scale_cntr
+# Loading cycloneiii_ver.cycloneiii_scale_cntr
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_clkctrl
+# Loading cycloneiii_ver.cycloneiii_clkctrl
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_mux41
+# Loading cycloneiii_ver.cycloneiii_mux41
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_ena_reg
+# Loading cycloneiii_ver.cycloneiii_ena_reg
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_ram_block
+# Loading cycloneiii_ver.cycloneiii_ram_block
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_ram_register
+# Loading cycloneiii_ver.cycloneiii_ram_register
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_ram_pulse_generator
+# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_mac_mult
+# Loading cycloneiii_ver.cycloneiii_mac_mult
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_mac_data_reg
+# Loading cycloneiii_ver.cycloneiii_mac_data_reg
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_mac_sign_reg
+# Loading cycloneiii_ver.cycloneiii_mac_sign_reg
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_mac_mult_internal
+# Loading cycloneiii_ver.cycloneiii_mac_mult_internal
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_mac_out
+# Loading cycloneiii_ver.cycloneiii_mac_out
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_jtag
+# Loading cycloneiii_ver.cycloneiii_jtag
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/work.NCO_32_quartus_vlg_sample_tst
+# Loading work.NCO_32_quartus_vlg_sample_tst
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate' at "sgate".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/work.NCO_32_quartus_vlg_check_tst
+# Loading work.NCO_32_quartus_vlg_check_tst
+# ** Warning: (vsim-3017) Waveform.vwf.vt(178): [TFMPC] - Too few port connections. Expected 9, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /NCO_32_quartus_vlg_vec_tst/i1 File: NCO_32_quartus.vo
+# ** Warning: (vsim-3722) Waveform.vwf.vt(178): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(178): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(178): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(178): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/dds_matlab/quartus_prj/simulation/qsim/verilog_libs/altera_ver.PRIM_GDFF_LOW
+# Loading altera_ver.PRIM_GDFF_LOW
+#  Note : Cyclone III PLL locked to incoming clock
+# Time: 90000.000 ps  Instance: NCO_32_quartus_vlg_vec_tst.i1.\inst2|altpll_component|auto_generated|pll1 
+# ERROR! Vector Mismatch for output port CLK_DAC :: @time = 1010000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           1 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(161)
+#    Time: 10 us  Iteration: 0  Instance: /NCO_32_quartus_vlg_vec_tst/tb_out
+# End time: 20:44:58 on Sep 27,2023, Elapsed time: 0:00:04
+# Errors: 6, Warnings: 6

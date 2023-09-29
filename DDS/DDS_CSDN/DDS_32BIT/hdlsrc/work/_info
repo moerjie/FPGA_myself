@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/DDS_32BIT/hdlsrc
+vfre_sel
+Z1 !s110 1695902960
+!i10b 1
+!s100 HZ8Dm3YD_C>?9HKmRSbFN2
+ImS6;0bQd09?J6M4Z]6@863
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1695902959
+Z4 8c:\users\31651\appdata\local\temp\tmp_5zrwy.v
+Z5 Fc:\users\31651\appdata\local\temp\tmp_5zrwy.v
+L0 1
+Z6 OL;L;10.4;61
+r1
+!s85 0
+31
+Z7 !s108 1695902960.600000
+Z8 !s107 c:\users\31651\appdata\local\temp\tmp_5zrwy.v|
+Z9 !s90 c:\users\31651\appdata\local\temp\tmp_5zrwy.v|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vfre_sel_32b
+R1
+!i10b 1
+!s100 lBfF^F?<_0JDeQ_39mMQ<2
+Im]VJa<z]ElKdG_TbN:bJK3
+R2
+R0
+R3
+R4
+R5
+L0 39
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vfre_sel_audio
+R1
+!i10b 1
+!s100 _F:Q11VZ@K<Sb<2R1WJBV0
+Ik0dY^DYcJOYSfnL?0RSmL2
+R2
+R0
+R3
+R4
+R5
+L0 70
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10

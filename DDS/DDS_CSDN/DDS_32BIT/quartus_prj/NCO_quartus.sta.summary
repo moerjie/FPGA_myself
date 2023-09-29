@@ -2,184 +2,64 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'cnt_sync:inst5|CNTVAL[0]'
-Slack : -10.505
-TNS   : -13379.935
-
-Type  : Slow 1200mV 85C Model Setup 'button[2]'
-Slack : -10.463
-TNS   : -13256.959
-
-Type  : Slow 1200mV 85C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -4.964
-TNS   : -64.891
-
-Type  : Slow 1200mV 85C Model Setup 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -2.997
-TNS   : -86.010
-
-Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -1.933
-TNS   : -72.278
-
-Type  : Slow 1200mV 85C Model Hold 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.279
-TNS   : -0.318
-
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.344
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 44.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.368
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.360
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'button[2]'
-Slack : 0.553
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 47.894
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'cnt_sync:inst5|CNTVAL[0]'
-Slack : 0.553
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.289
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'button[2]'
-Slack : -3.000
-TNS   : -3240.160
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -3.000
-TNS   : -64.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cnt_sync:inst5|CNTVAL[0]'
-Slack : -2.484
-TNS   : -3241.160
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.375
-TNS   : -33.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.034
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.584
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'cnt_sync:inst5|CNTVAL[0]'
-Slack : -9.270
-TNS   : -11848.573
-
-Type  : Slow 1200mV 0C Model Setup 'button[2]'
-Slack : -9.151
-TNS   : -11500.141
-
-Type  : Slow 1200mV 0C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -4.414
-TNS   : -56.855
-
-Type  : Slow 1200mV 0C Model Setup 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -2.583
-TNS   : -74.648
-
-Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.709
-TNS   : -59.928
-
-Type  : Slow 1200mV 0C Model Hold 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.349
-TNS   : -0.649
-
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.300
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 45.095
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.334
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.311
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'button[2]'
-Slack : 0.495
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 48.180
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'cnt_sync:inst5|CNTVAL[0]'
-Slack : 0.495
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 1.168
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'button[2]'
-Slack : -3.000
-TNS   : -3240.160
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -3.000
-TNS   : -64.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cnt_sync:inst5|CNTVAL[0]'
-Slack : -2.484
-TNS   : -3241.160
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.375
-TNS   : -33.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.034
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.523
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'cnt_sync:inst5|CNTVAL[0]'
-Slack : -6.279
-TNS   : -8247.315
-
-Type  : Fast 1200mV 0C Model Setup 'button[2]'
-Slack : -5.462
-TNS   : -5950.499
-
-Type  : Fast 1200mV 0C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.188
-TNS   : -38.348
-
-Type  : Fast 1200mV 0C Model Setup 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.741
-TNS   : -50.335
-
-Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.228
-TNS   : -24.945
-
-Type  : Fast 1200mV 0C Model Hold 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.187
-TNS   : -0.267
-
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.180
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 46.963
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.191
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.187
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'button[2]'
-Slack : 0.295
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 48.959
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'cnt_sync:inst5|CNTVAL[0]'
-Slack : 0.295
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.716
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'button[2]'
-Slack : -3.000
-TNS   : -3265.192
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -3.000
-TNS   : -68.114
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.375
-TNS   : -33.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cnt_sync:inst5|CNTVAL[0]'
-Slack : -1.000
-TNS   : -2911.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst1|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.034
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.464
 TNS   : 0.000
 
 ------------------------------------------------------------

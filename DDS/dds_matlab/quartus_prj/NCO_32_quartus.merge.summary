@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Thu Sep 28 19:28:21 2023
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : NCO_32_quartus
+Top-level Entity Name : NCO2
+Family : Cyclone III
+Total logic elements : 4,187
+    Total combinational functions : 2,507
+    Dedicated logic registers : 3,257
+Total registers : 3257
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 27,712
+Embedded Multiplier 9-bit elements : 80
+Total PLLs : 1

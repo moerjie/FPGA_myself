@@ -2,7 +2,6 @@
 CLK_DAC <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 CLOCK_50 => pll_DAC_ADC:inst2.inclk0
 CLOCK_50 => clk_div_even:inst.clk
-CLOCK_50 => mux:inst1.clk
 DAT_DAC[0] <= DAC_interface:inst12.DAT2DAC[0]
 DAT_DAC[1] <= DAC_interface:inst12.DAT2DAC[1]
 DAT_DAC[2] <= DAC_interface:inst12.DAT2DAC[2]
@@ -25,7 +24,7 @@ SW[6] => ~NO_FANOUT~
 SW[7] => ~NO_FANOUT~
 SW[8] => DAC_interface:inst12.SCALE
 SW[8] => DAC_interface:inst11.SCALE
-SW[9] => mux:inst1.sel
+SW[9] => ~NO_FANOUT~
 LEDG[0] <= NCO_32:inst20.NCO_VLD_OUT
 LEDG[1] <= NCO_32:inst20.FIR_VLD_OUT
 
@@ -33269,69 +33268,6 @@ inc[28] <= inc[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 inc[29] <= inc[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 inc[30] <= inc[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 inc[31] <= inc[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|DDS_quartus|mux:inst1
-nco_in[0] => out.DATAB
-nco_in[1] => out.DATAB
-nco_in[2] => out.DATAB
-nco_in[3] => out.DATAB
-nco_in[4] => out.DATAB
-nco_in[5] => out.DATAB
-nco_in[6] => out.DATAB
-nco_in[7] => out.DATAB
-nco_in[8] => out.DATAB
-nco_in[9] => out.DATAB
-nco_in[10] => out.DATAB
-nco_in[11] => out.DATAB
-fir_in[0] => out.DATAA
-fir_in[1] => out.DATAA
-fir_in[2] => out.DATAA
-fir_in[3] => out.DATAA
-fir_in[4] => out.DATAA
-fir_in[5] => out.DATAA
-fir_in[6] => out.DATAA
-fir_in[7] => out.DATAA
-fir_in[8] => out.DATAA
-fir_in[9] => out.DATAA
-fir_in[10] => out.DATAA
-fir_in[11] => out.DATAA
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-clk => out[0]~reg0.CLK
-clk => out[1]~reg0.CLK
-clk => out[2]~reg0.CLK
-clk => out[3]~reg0.CLK
-clk => out[4]~reg0.CLK
-clk => out[5]~reg0.CLK
-clk => out[6]~reg0.CLK
-clk => out[7]~reg0.CLK
-clk => out[8]~reg0.CLK
-clk => out[9]~reg0.CLK
-clk => out[10]~reg0.CLK
-clk => out[11]~reg0.CLK
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[7] <= out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[8] <= out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[9] <= out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[10] <= out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[11] <= out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DDS_quartus|DAC_interface:inst11

@@ -235,7 +235,6 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=2
 set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VERILOG_FILE ../../DDS_32BIT/hdlsrc/mux.v
 set_global_assignment -name VERILOG_FILE ../../DDS_32BIT/hdlsrc/NCO_32/NCO_32.v
 set_global_assignment -name VERILOG_FILE fre_div.v
@@ -243,7 +242,6 @@ set_global_assignment -name VERILOG_FILE fre_sel.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/filter.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/rtl_module.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/pll_DAC_ADC.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/mux.v
 set_global_assignment -name BDF_FILE ../hdlsrc/DDS_quartus.bdf
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
 set_global_assignment -name VERILOG_FILE ../hdlsrc/DDS/FilterCoef.v
@@ -261,4 +259,5 @@ set_global_assignment -name SDC_FILE ../hdlsrc/DDS/clock_constraint.sdc
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name QIP_FILE fir_test.qip
 set_global_assignment -name QIP_FILE count.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

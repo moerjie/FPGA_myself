@@ -1,5 +1,5 @@
 Flow report for DDS_quartus
-Fri Sep 22 18:27:15 2023
+Wed Sep 27 20:14:41 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Fri Sep 22 18:27:15 2023      ;
+; Flow Status                        ; Flow Failed - Wed Sep 27 20:14:41 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; DDS_quartus                                 ;
 ; Top-level Entity Name              ; DDS_quartus                                 ;
@@ -247,7 +247,10 @@ applicable agreement for further details.
 ; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4669 MB             ; 00:00:00                           ;
 ; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4706 MB             ; 00:00:01                           ;
 ; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
-; Total                     ; 00:10:59     ; --                      ; --                  ; 00:05:11                           ;
+; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4668 MB             ; 00:00:00                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4669 MB             ; 00:00:00                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4705 MB             ; 00:00:01                           ;
+; Total                     ; 00:11:02     ; --                      ; --                  ; 00:05:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -416,6 +419,9 @@ applicable agreement for further details.
 ; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 ; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 ; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -573,6 +579,9 @@ quartus_cdb --read_settings_files=off --write_settings_files=off DDS_quartus -c 
 quartus_fit --read_settings_files=off --write_settings_files=off DDS_quartus -c DDS_quartus
 quartus_asm --read_settings_files=off --write_settings_files=off DDS_quartus -c DDS_quartus
 quartus_sta DDS_quartus -c DDS_quartus
+quartus_map --read_settings_files=on --write_settings_files=off DDS_quartus -c DDS_quartus
+quartus_map --read_settings_files=on --write_settings_files=off DDS_quartus -c DDS_quartus
+quartus_map --read_settings_files=on --write_settings_files=off DDS_quartus -c DDS_quartus
 quartus_map --read_settings_files=on --write_settings_files=off DDS_quartus -c DDS_quartus
 quartus_map --read_settings_files=on --write_settings_files=off DDS_quartus -c DDS_quartus
 quartus_map --read_settings_files=on --write_settings_files=off DDS_quartus -c DDS_quartus

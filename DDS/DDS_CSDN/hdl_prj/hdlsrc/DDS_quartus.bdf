@@ -272,49 +272,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1160 256 1344 368)
-	(text "mux" (rect 5 0 26 12)(font "Arial" ))
-	(text "inst1" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "nco_in[11..0]" (rect 0 0 63 12)(font "Arial" ))
-		(text "nco_in[11..0]" (rect 21 27 84 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "fir_in[11..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "fir_in[11..0]" (rect 21 43 77 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "sel" (rect 0 0 14 12)(font "Arial" ))
-		(text "sel" (rect 21 59 35 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 75 35 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 184 32)
-		(output)
-		(text "out[11..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "out[11..0]" (rect 124 27 171 39)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 168 96))
-	)
-)
-(symbol
 	(rect 592 40 640 72)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 3 21 26 33)(font "Arial" ))
@@ -549,16 +506,6 @@ applicable agreement for further details.
 	(pt 1040 104)
 	(pt 1040 184)
 	(bus)
-)
-(connector
-	(text "SW[9]" (rect 1122 304 1152 316)(font "Arial" ))
-	(pt 1160 320)
-	(pt 1128 320)
-)
-(connector
-	(text "CLOCK_50" (rect 1112 320 1167 332)(font "Arial" ))
-	(pt 1160 336)
-	(pt 1128 336)
 )
 (connector
 	(pt 992 232)

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DDS_quartus
-Fri Sep 22 18:27:15 2023
+Wed Sep 27 20:14:41 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -92,7 +92,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Sep 22 18:27:15 2023           ;
+; Analysis & Synthesis Status        ; Failed - Wed Sep 27 20:14:41 2023           ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; DDS_quartus                                 ;
 ; Top-level Entity Name              ; DDS_quartus                                 ;
@@ -223,7 +223,6 @@ applicable agreement for further details.
 ; fre_sel.v                                    ; yes             ; User Verilog HDL File              ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/quartus_prj_multi_wave/fre_sel.v               ;         ;
 ; ../hdlsrc/rtl_module.v                       ; yes             ; User Verilog HDL File              ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/rtl_module.v                            ;         ;
 ; ../hdlsrc/pll_DAC_ADC.v                      ; yes             ; User Wizard-Generated File         ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/pll_DAC_ADC.v                           ;         ;
-; ../hdlsrc/mux.v                              ; yes             ; User Verilog HDL File              ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/mux.v                                   ;         ;
 ; ../hdlsrc/DDS_quartus.bdf                    ; yes             ; User Block Diagram/Schematic File  ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/DDS_quartus.bdf                         ;         ;
 ; ../hdlsrc/DDS/FilterCoef.v                   ; yes             ; User Verilog HDL File              ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/DDS/FilterCoef.v                        ;         ;
 ; ../hdlsrc/DDS/FilterTapSystolicPreAddWvlIn.v ; yes             ; User Verilog HDL File              ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/DDS/FilterTapSystolicPreAddWvlIn.v      ;         ;
@@ -235,11 +234,11 @@ applicable agreement for further details.
 ; ../hdlsrc/DDS/WaveformGen.v                  ; yes             ; User Verilog HDL File              ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/DDS/WaveformGen.v                       ;         ;
 ; ../hdlsrc/DDS/NCO.v                          ; yes             ; User Verilog HDL File              ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/DDS/NCO.v                               ;         ;
 ; ../hdlsrc/DDS/Subsystem.v                    ; yes             ; User Verilog HDL File              ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/hdlsrc/DDS/Subsystem.v                         ;         ;
-; altpll.tdf                                   ; yes             ; Megafunction                       ; f:/app_download/quartus_13/quartus/libraries/megafunctions/altpll.tdf                             ;         ;
-; aglobal131.inc                               ; yes             ; Megafunction                       ; f:/app_download/quartus_13/quartus/libraries/megafunctions/aglobal131.inc                         ;         ;
-; stratix_pll.inc                              ; yes             ; Megafunction                       ; f:/app_download/quartus_13/quartus/libraries/megafunctions/stratix_pll.inc                        ;         ;
-; stratixii_pll.inc                            ; yes             ; Megafunction                       ; f:/app_download/quartus_13/quartus/libraries/megafunctions/stratixii_pll.inc                      ;         ;
-; cycloneii_pll.inc                            ; yes             ; Megafunction                       ; f:/app_download/quartus_13/quartus/libraries/megafunctions/cycloneii_pll.inc                      ;         ;
+; altpll.tdf                                   ; yes             ; Megafunction                       ; f:/fpga/quartus13/quartus/libraries/megafunctions/altpll.tdf                                      ;         ;
+; aglobal131.inc                               ; yes             ; Megafunction                       ; f:/fpga/quartus13/quartus/libraries/megafunctions/aglobal131.inc                                  ;         ;
+; stratix_pll.inc                              ; yes             ; Megafunction                       ; f:/fpga/quartus13/quartus/libraries/megafunctions/stratix_pll.inc                                 ;         ;
+; stratixii_pll.inc                            ; yes             ; Megafunction                       ; f:/fpga/quartus13/quartus/libraries/megafunctions/stratixii_pll.inc                               ;         ;
+; cycloneii_pll.inc                            ; yes             ; Megafunction                       ; f:/fpga/quartus13/quartus/libraries/megafunctions/cycloneii_pll.inc                               ;         ;
 ; db/pll_dac_adc_altpll.v                      ; yes             ; Auto-Generated Megafunction        ; F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/hdl_prj/quartus_prj_multi_wave/db/pll_dac_adc_altpll.v ;         ;
 +----------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
 
@@ -4839,9 +4838,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Fri Sep 22 18:27:14 2023
+    Info: Processing started: Wed Sep 27 20:14:39 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DDS_quartus -c DDS_quartus
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
+Warning (12090): Entity "mux" obtained from "../../DDS_32BIT/hdlsrc/mux.v" instead of from Quartus II megafunction library
+Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/dds_csdn/dds_32bit/hdlsrc/mux.v
+    Info (12023): Found entity 1: mux
 Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/dds_csdn/dds_32bit/hdlsrc/nco_32/nco_32.v
     Info (12023): Found entity 1: NCO_32
 Info (12021): Found 2 design units, including 2 entities, in source file fre_div.v
@@ -4864,9 +4866,6 @@ Info (12021): Found 9 design units, including 9 entities, in source file /git_re
     Info (12023): Found entity 9: dec_2to4
 Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/dds_csdn/hdl_prj/hdlsrc/pll_dac_adc.v
     Info (12023): Found entity 1: pll_DAC_ADC
-Warning (12090): Entity "mux" obtained from "../hdlsrc/mux.v" instead of from Quartus II megafunction library
-Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/dds_csdn/hdl_prj/hdlsrc/mux.v
-    Info (12023): Found entity 1: mux
 Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/dds_csdn/hdl_prj/hdlsrc/dds_quartus.bdf
     Info (12023): Found entity 1: DDS_quartus
 Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/dds_csdn/hdl_prj/hdlsrc/dds/filtercoef.v
@@ -4985,16 +4984,15 @@ Info (12128): Elaborating entity "subFilter" for hierarchy "NCO_32:inst20|Subsys
 Info (12128): Elaborating entity "FilterTapSystolicPreAddWvlIn" for hierarchy "NCO_32:inst20|Subsystem:u_Subsystem|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1"
 Info (12128): Elaborating entity "clk_div_even" for hierarchy "clk_div_even:inst"
 Info (12128): Elaborating entity "fre_sel_32b" for hierarchy "fre_sel_32b:inst13"
-Info (12128): Elaborating entity "mux" for hierarchy "mux:inst1"
 Error (12002): Port "FIR_VLD_OUT" does not exist in macrofunction "u_Subsystem" File: F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/DDS_32BIT/hdlsrc/NCO_32/NCO_32.v Line: 75
 Error (12002): Port "In1" does not exist in macrofunction "u_Subsystem" File: F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/DDS_32BIT/hdlsrc/NCO_32/NCO_32.v Line: 75
 Error (12002): Port "NCO_VLD_OUT" does not exist in macrofunction "u_Subsystem" File: F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/DDS_32BIT/hdlsrc/NCO_32/NCO_32.v Line: 75
 Error (12002): Port "WAVE_Out" does not exist in macrofunction "u_Subsystem" File: F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/DDS_32BIT/hdlsrc/NCO_32/NCO_32.v Line: 75
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 2 warnings
-    Error: Peak virtual memory: 4721 megabytes
-    Error: Processing ended: Fri Sep 22 18:27:15 2023
-    Error: Elapsed time: 00:00:01
+    Error: Peak virtual memory: 4705 megabytes
+    Error: Processing ended: Wed Sep 27 20:14:41 2023
+    Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:01
 
 
