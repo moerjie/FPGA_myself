@@ -1,7 +1,7 @@
-SH_R=[1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0];
-MCLK=24576000;
-cnt1_LRCLK=511;
-cnt2_SCLK=7;
+SH_R=[1,2,3,4,5];
+MCLK=
+cnt1_max=511;
+cnt2_max=7;
 
 
 
