@@ -1,0 +1,47 @@
+|I2S
+pin_name1 => i2s_output:inst.clock
+
+
+|I2S|i2s_output:inst
+clock => frame_counter.CLK
+clock => bit_counter[0].CLK
+clock => bit_counter[1].CLK
+clock => bit_counter[2].CLK
+clock => bit_counter[3].CLK
+clock => bit_counter[4].CLK
+clock => bit_counter[5].CLK
+clock => bit_counter[6].CLK
+clock => bit_counter[7].CLK
+clock => shift_register[15].CLK
+clock => bit_clock.DATAIN
+reset => frame_counter.ACLR
+reset => bit_counter[0].ACLR
+reset => bit_counter[1].ACLR
+reset => bit_counter[2].ACLR
+reset => bit_counter[3].ACLR
+reset => bit_counter[4].ACLR
+reset => bit_counter[5].ACLR
+reset => bit_counter[6].ACLR
+reset => bit_counter[7].ACLR
+reset => shift_register[15].ACLR
+audio_data[0] => Mux0.IN15
+audio_data[1] => Mux0.IN14
+audio_data[2] => Mux0.IN13
+audio_data[3] => Mux0.IN12
+audio_data[4] => Mux0.IN11
+audio_data[5] => Mux0.IN10
+audio_data[6] => Mux0.IN9
+audio_data[7] => Mux0.IN8
+audio_data[8] => Mux0.IN7
+audio_data[9] => Mux0.IN6
+audio_data[10] => Mux0.IN5
+audio_data[11] => Mux0.IN4
+audio_data[12] => Mux0.IN3
+audio_data[13] => Mux0.IN2
+audio_data[14] => Mux0.IN1
+audio_data[15] => Mux0.IN0
+bit_clock <= clock.DB_MAX_OUTPUT_PORT_TYPE
+frame_clock <= frame_counter.DB_MAX_OUTPUT_PORT_TYPE
+serial_data <= shift_register[15].DB_MAX_OUTPUT_PORT_TYPE
+
+

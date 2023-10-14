@@ -1,0 +1,6 @@
+vendor_name = ModelSim
+source_file = 1, F:/Git_Repository/FPGA_myself/DDS/I2S/i2s.v
+source_file = 1, F:/Git_Repository/FPGA_myself/DDS/I2S/quartus/I2S.bdf
+source_file = 1, F:/Git_Repository/FPGA_myself/DDS/I2S/quartus/db/I2S.cbx.xml
+design_name = I2S
+instance = comp, \pin_name1~input , pin_name1~input, I2S, 1

@@ -1,5 +1,5 @@
 Flow report for NCO_quartus
-Thu Sep 28 20:15:33 2023
+Thu Oct 05 18:28:46 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep 28 20:15:30 2023       ;
+; Flow Status                        ; Successful - Thu Oct 05 18:28:43 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; NCO_quartus                                 ;
 ; Top-level Entity Name              ; NCO_quartus                                 ;
 ; Family                             ; Cyclone III                                 ;
 ; Device                             ; EP3C16F484C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,615 / 15,408 ( 23 % )                     ;
-;     Total combinational functions  ; 2,608 / 15,408 ( 17 % )                     ;
+; Total logic elements               ; 3,617 / 15,408 ( 23 % )                     ;
+;     Total combinational functions  ; 2,610 / 15,408 ( 17 % )                     ;
 ;     Dedicated logic registers      ; 3,364 / 15,408 ( 22 % )                     ;
 ; Total registers                    ; 3364                                        ;
 ; Total pins                         ; 32 / 347 ( 9 % )                            ;
@@ -116,7 +116,17 @@ applicable agreement for further details.
 ; Fitter                    ; 00:00:11     ; 2.3                     ; 5634 MB             ; 00:00:06                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 4619 MB             ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 6.0                     ; 4760 MB             ; 00:00:01                           ;
-; Total                     ; 00:02:51     ; --                      ; --                  ; 00:01:31                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4767 MB             ; 00:00:02                           ;
+; Partition Merge           ; 00:00:01     ; 1.0                     ; 4688 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:09     ; 1.6                     ; 5570 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4618 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:28     ; 1.9                     ; 4779 MB             ; 00:00:14                           ;
+; Partition Merge           ; 00:00:01     ; 1.0                     ; 4678 MB             ; 00:00:00                           ;
+; Fitter                    ; 00:00:09     ; 1.6                     ; 5629 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4610 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4754 MB             ; 00:00:01                           ;
+; Total                     ; 00:03:48     ; --                      ; --                  ; 00:02:00                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -126,6 +136,16 @@ applicable agreement for further details.
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
 ; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 ; Fitter                    ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 ; Assembler                 ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; MOERJIE_PC       ; Windows 7 ; 6.2        ; x86_64         ;
@@ -171,6 +191,16 @@ quartus_fit --read_settings_files=off --write_settings_files=off NCO_quartus -c 
 quartus_asm --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus
 quartus_sta NCO_quartus -c NCO_quartus
 quartus_eda --read_settings_files=on --write_settings_files=off NCO_quartus -c NCO_quartus
+quartus_map --read_settings_files=on --write_settings_files=off NCO_quartus -c NCO_quartus
+quartus_cdb --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus
+quartus_asm --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus
+quartus_sta NCO_quartus -c NCO_quartus
+quartus_map --read_settings_files=on --write_settings_files=off NCO_quartus -c NCO_quartus
+quartus_cdb --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus
+quartus_asm --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus
+quartus_sta NCO_quartus -c NCO_quartus
 quartus_map --read_settings_files=on --write_settings_files=off NCO_quartus -c NCO_quartus
 quartus_cdb --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus --merge=on
 quartus_fit --read_settings_files=off --write_settings_files=off NCO_quartus -c NCO_quartus

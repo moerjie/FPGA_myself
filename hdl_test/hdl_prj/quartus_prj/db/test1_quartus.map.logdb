@@ -1,0 +1,4 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|FilterTapSystolicPreAdd:u_filterTap2|lpm_mult:Mult0|mult_s4t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|FilterTapSystolicPreAdd:u_filterTap1|lpm_mult:Mult0|mult_m4t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|FilterTapSystolicPreAdd:u_filterTap0|lpm_mult:Mult0|mult_p4t:auto_generated|mac_out2,
