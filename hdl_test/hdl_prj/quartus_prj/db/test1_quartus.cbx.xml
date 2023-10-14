@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="test1_quartus">
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Addressable_Delay_Line:u_delayLine0|SimpleDualPortRAM_generic:u_simpleDualPortRam_generic|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_kvn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_f8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Addressable_Delay_Line:u_delayLine1|SimpleDualPortRAM_generic:u_simpleDualPortRam_generic|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_kvn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Addressable_Delay_Line_block:u_delayLine3|SimpleDualPortRAM_generic:u_simpleDualPortRam|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_kvn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Addressable_Delay_Line_block:u_delayLine5|altshift_taps:dataOut_1_rtl_0" CBX_FILE_NAME="shift_taps_35m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|FilterTapSystolicPreAdd:u_filterTap1|lpm_mult:Mult0" CBX_FILE_NAME="mult_m4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_3024.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_9fi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Addressable_Delay_Line:u_delayLine2|SimpleDualPortRAM_generic:u_simpleDualPortRam_generic|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_kvn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Addressable_Delay_Line_block:u_delayLine4|SimpleDualPortRAM_generic:u_simpleDualPortRam|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_kvn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|FilterTapSystolicPreAdd:u_filterTap2|lpm_mult:Mult0" CBX_FILE_NAME="mult_s4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_mrc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_afi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Addressable_Delay_Line_block:u_delayLine5|SimpleDualPortRAM_generic:u_simpleDualPortRam|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_kvn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|SinglePortRAM_generic:u_RAM|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_1491.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_4uf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter" CBX_FILE_NAME="cntr_p1j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|FilterTapSystolicPreAdd:u_filterTap0|lpm_mult:Mult0" CBX_FILE_NAME="mult_p4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|FilterTapSystolicPreAdd:u_filterTap2|altshift_taps:fTap_din1_reg1_rtl_0" CBX_FILE_NAME="shift_taps_j6m.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,8 @@
+
+State Machine - |test1_quartus|myCNT09:inst5|Discrete_FIR_Filter:u_Discrete_FIR_Filter|FirRdyLogic:u_firRdyLogic|firRdy_state
+Name firRdy_state.011 firRdy_state.010 firRdy_state.001 firRdy_state.000 firRdy_state.100 
+firRdy_state.000 0 0 0 0 0 
+firRdy_state.001 0 0 1 1 0 
+firRdy_state.010 0 1 0 1 0 
+firRdy_state.011 1 0 0 1 0 
+firRdy_state.100 0 0 0 1 1 

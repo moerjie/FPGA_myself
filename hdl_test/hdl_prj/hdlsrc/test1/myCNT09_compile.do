@@ -1,0 +1,9 @@
+vlib work
+vlog  FirRdyLogic.v
+vlog  SimpleDualPortRAM_generic.v
+vlog  Addressable_Delay_Line.v
+vlog  Addressable_Delay_Line_block.v
+vlog  FilterTapSystolicPreAdd.v
+vlog  Discrete_FIR_Filter.v
+vlog  SinglePortRAM_generic.v
+vlog  myCNT09.v
