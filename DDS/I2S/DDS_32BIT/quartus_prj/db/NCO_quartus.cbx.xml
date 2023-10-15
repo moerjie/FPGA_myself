@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="NCO_quartus">
+		<CBX_INST_ENTRY INSTANCE_NAME="|NCO_quartus|pll_DAC_ADC:inst2|altpll:altpll_component" CBX_FILE_NAME="pll_DAC_ADC_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|NCO_quartus|pll_MCLK:inst1|altpll:altpll_component" CBX_FILE_NAME="pll_MCLK_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>
