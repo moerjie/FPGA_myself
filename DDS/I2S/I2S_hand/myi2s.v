@@ -90,8 +90,8 @@ always @(posedge clk or posedge rst) begin
                 r_audio_sample[0]<=1'b0;
             end
             else begin
-                l_audio_sample[31:1]<=r_audio_sample[30:0];
-                r_audio_sample[0]<=1'b0;
+                l_audio_sample[31:1]<=l_audio_sample[30:0];
+                l_audio_sample[0]<=1'b0;
             end
         end
     end
