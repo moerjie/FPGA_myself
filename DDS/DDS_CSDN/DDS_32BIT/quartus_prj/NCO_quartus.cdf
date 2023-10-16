@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16F484) Path("F:/Git_Repository/FPGA_myself/DDS/DDS_CSDN/DDS_32BIT/quartus_prj/") File("NCO_quartus.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16F484) Path("C:/Users/DELL/Desktop/FPGA/FPGA_myself/DDS/DDS_CSDN/DDS_32BIT/quartus_prj/") File("NCO_quartus.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
