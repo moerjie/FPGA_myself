@@ -2,16 +2,16 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 17:16:08 on Oct 15,2023
+# Start time: 14:53:01 on Oct 16,2023
 # vlog -work work i2s.vo 
 # -- Compiling module i2s
 # 
 # Top level modules:
 # 	i2s
-# End time: 17:16:08 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 14:53:01 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 17:16:08 on Oct 15,2023
+# Start time: 14:53:01 on Oct 16,2023
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module i2s_vlg_sample_tst
 # -- Compiling module i2s_vlg_check_tst
@@ -19,10 +19,10 @@
 # 
 # Top level modules:
 # 	i2s_vlg_vec_tst
-# End time: 17:16:08 on Oct 15,2023, Elapsed time: 0:00:00
+# End time: 14:53:01 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -do "i2s.do" 
-# Start time: 17:16:08 on Oct 15,2023
+# Start time: 14:53:02 on Oct 16,2023
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
 # //  ModelSim SE-64 10.4 Dec  3 2014 
@@ -51,6 +51,14 @@
 # Loading work.i2s
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_pll
+# Loading cycloneiii_ver.cycloneiii_pll
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_m_cntr
+# Loading cycloneiii_ver.cycloneiii_m_cntr
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_n_cntr
+# Loading cycloneiii_ver.cycloneiii_n_cntr
+# Refreshing F:/Git_Repository/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim/verilog_libs/cycloneiii_ver.cycloneiii_scale_cntr
+# Loading cycloneiii_ver.cycloneiii_scale_cntr
 # Loading cycloneiii_ver.cycloneiii_clkctrl
 # Loading cycloneiii_ver.cycloneiii_mux41
 # Loading cycloneiii_ver.cycloneiii_ena_reg
@@ -73,8 +81,10 @@
 # Refreshing F:/Git_Repository/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim/work.i2s_vlg_check_tst
 # Loading work.i2s_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
+#  Note : Cyclone III PLL locked to incoming clock
+# Time: 730000.000 ps  Instance: i2s_vlg_vec_tst.i1.\inst6|altpll_component|auto_generated|pll1 
 # Simulation passed !
-# ** Note: $finish    : Waveform.vwf.vt(155)
+# ** Note: $finish    : Waveform.vwf.vt(204)
 #    Time: 5 us  Iteration: 0  Instance: /i2s_vlg_vec_tst/tb_out
-# End time: 17:16:09 on Oct 15,2023, Elapsed time: 0:00:01
+# End time: 14:53:03 on Oct 16,2023, Elapsed time: 0:00:01
 # Errors: 6, Warnings: 1

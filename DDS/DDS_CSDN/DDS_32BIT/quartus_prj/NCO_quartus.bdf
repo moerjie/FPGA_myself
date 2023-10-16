@@ -85,7 +85,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 152 20)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 624 600 672 616))
+	(annotation_block (location)(rect 624 600 688 624))
 )
 (pin
 	(output)
@@ -961,11 +961,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "CLOCK_50" (rect 1666 504 1740 519)(font "Arial" ))
-	(pt 1728 528)
-	(pt 1672 528)
-)
-(connector
 	(text "SAM_CLK" (rect 866 744 930 759)(font "Arial" ))
 	(pt 864 768)
 	(pt 912 768)
@@ -990,6 +985,11 @@ applicable agreement for further details.
 	(text "MULT_CLK" (rect 1320 864 1394 879)(font "Arial" ))
 	(pt 1360 896)
 	(pt 1328 896)
+)
+(connector
+	(text "CLK_25M" (rect 1658 504 1721 519)(font "Arial" ))
+	(pt 1728 528)
+	(pt 1664 528)
 )
 (junction (pt 1248 296))
 (junction (pt 1152 768))

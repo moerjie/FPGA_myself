@@ -241,6 +241,7 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=72" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=55818" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=64960" -section_id auto_signaltap_0
+set_global_assignment -name VERILOG_FILE ../../I2S_hand/myi2s.v
 set_global_assignment -name VERILOG_FILE ../../hdl_prj/hdlsrc/I2S/I2S.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/pll_MCLK.v
 set_global_assignment -name VERILOG_FILE ../hdlsrc/auout_cs4334.v

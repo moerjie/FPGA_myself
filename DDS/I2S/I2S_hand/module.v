@@ -33,3 +33,20 @@ module piso_shift_reg (//load 高电平加载,load低电平en高电平开始传�
   end
 
 endmodule
+
+
+
+module bus_LSB_staff_zero(
+  IN    ,   
+  OUT   );
+parameter INWL     = 16;
+parameter OUTWL    = 32;
+
+input   [INWL -1:0] IN ;
+output  [OUTWL-1:0] OUT;
+
+assign OUT[OUTWL-2:OUTWL - INWL -1 ] = IN;
+assign OUT[INWL-2:0] = 0;
+assign OUT[OUTWL-1]=0;
+
+endmodule
