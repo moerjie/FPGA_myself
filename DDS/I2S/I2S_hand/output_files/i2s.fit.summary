@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sun Oct 15 21:12:15 2023
+Fitter Status : Successful - Mon Oct 16 16:27:14 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : i2s
 Top-level Entity Name : i2s
 Family : Cyclone III
 Device : EP3C16F484C6
 Timing Models : Final
-Total logic elements : 3,009 / 15,408 ( 20 % )
-    Total combinational functions : 2,210 / 15,408 ( 14 % )
-    Dedicated logic registers : 2,736 / 15,408 ( 18 % )
-Total registers : 2736
-Total pins : 11 / 347 ( 3 % )
+Total logic elements : 3,687 / 15,408 ( 24 % )
+    Total combinational functions : 2,657 / 15,408 ( 17 % )
+    Dedicated logic registers : 3,387 / 15,408 ( 22 % )
+Total registers : 3387
+Total pins : 12 / 347 ( 3 % )
 Total virtual pins : 0
-Total memory bits : 15,424 / 516,096 ( 3 % )
+Total memory bits : 50,240 / 516,096 ( 10 % )
 Embedded Multiplier 9-bit elements : 78 / 112 ( 70 % )
 Total PLLs : 1 / 4 ( 25 % )

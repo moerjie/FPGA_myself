@@ -384,20 +384,19 @@ R9
 !i113 0
 R10
 vcycloneiii_m_cntr
-R1
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 67S62:7[?@57BQlO7VT`O1
 IE@hlaKhEBQYz?WO?9FdFH0
-R2
 R0
 R3
 R4
 R5
 L0 491
 R6
-r1
-!s85 0
-31
 R7
 R8
 R9
@@ -543,20 +542,19 @@ R9
 !i113 0
 R10
 vcycloneiii_n_cntr
-R1
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 OL;ac3H?JEgSN1=gj;3T21
 InCdG_>Wd??b5PV5c1;DM90
-R2
 R0
 R3
 R4
 R5
 L0 572
 R6
-r1
-!s85 0
-31
 R7
 R8
 R9
@@ -603,20 +601,19 @@ R9
 !i113 0
 R10
 vcycloneiii_pll
-R1
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 9nkHaCbRo9DIOhUD_11g[0
 I6UdYmio5YJnj?:7OEinl62
-R2
 R0
 R3
 R4
 R5
 L0 824
 R6
-r1
-!s85 0
-31
 R7
 R8
 R9
@@ -826,20 +823,19 @@ R9
 !i113 0
 R10
 vcycloneiii_scale_cntr
-R1
+R2
+r1
+!s85 0
+31
 !i10b 1
 !s100 AHzCj?TSR@OS1NZl7IblX1
 Igjg5EI<1>`moSzT[Kj@kT2
-R2
 R0
 R3
 R4
 R5
 L0 643
 R6
-r1
-!s85 0
-31
 R7
 R8
 R9

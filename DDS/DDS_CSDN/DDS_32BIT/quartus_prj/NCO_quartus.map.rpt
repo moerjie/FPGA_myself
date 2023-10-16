@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NCO_quartus
-Thu Oct 05 18:28:27 2023
+Mon Oct 16 16:02:47 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -22,8 +22,8 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
  14. Source assignments for NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|altsyncram:Mux14_rtl_0|altsyncram_ni01:auto_generated
  15. Source assignments for NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|altshift_taps:sine_1_rtl_0|shift_taps_65m:auto_generated|altsyncram_rc81:altsyncram2
  16. Parameter Settings for User Entity Instance: pll_DAC_ADC:inst2|altpll:altpll_component
- 17. Parameter Settings for User Entity Instance: cnt_sync:inst5
- 18. Parameter Settings for User Entity Instance: pll_MCLK:inst1|altpll:altpll_component
+ 17. Parameter Settings for User Entity Instance: pll_MCLK:inst1|altpll:altpll_component
+ 18. Parameter Settings for User Entity Instance: cnt_sync:inst5
  19. Parameter Settings for Inferred Entity Instance: NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|altsyncram:Mux14_rtl_0
  20. Parameter Settings for Inferred Entity Instance: NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|altshift_taps:sine_1_rtl_0
  21. Parameter Settings for Inferred Entity Instance: NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|lpm_mult:Mult0
@@ -99,7 +99,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 05 18:28:27 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 16 16:02:47 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; NCO_quartus                                 ;
 ; Top-level Entity Name              ; NCO_quartus                                 ;
@@ -216,7 +216,7 @@ applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  89.3%      ;
+;     Processor 2            ;  88.9%      ;
 ;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -326,7 +326,7 @@ applicable agreement for further details.
 +-----------+-----------------+-------------------+----------+----------------------------------+----------------------------------+
 ; Hierarchy ; File Name       ; Relative Location ; Change   ; Old                              ; New                              ;
 +-----------+-----------------+-------------------+----------+----------------------------------+----------------------------------+
-; |         ; NCO_quartus.bdf ; Project Directory ; Checksum ; b05e27cd8827283d4f05cfd69fa3e62c ; f5f9e234822a64eae893cb72c16fdad5 ;
+; |         ; NCO_quartus.bdf ; Project Directory ; Checksum ; 6bde87b108769ef95cab8907a905c48d ; 89cad7c41da250bf4ed46b819049ee1f ;
 +-----------+-----------------+-------------------+----------+----------------------------------+----------------------------------+
 
 
@@ -4536,7 +4536,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[6]                                                                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[6]                                                  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[5]                                                                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[5]                                                  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[4]                                                                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|dout_1_re_1[4]                                                  ;
-; auout_cs4334:inst9|R_din_R1[14]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[14]                                                                                                                                                        ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[33]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[33]                                                     ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[32]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[32]                                                     ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[31]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[31]                                                     ;
@@ -4549,7 +4548,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[24]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[24]                                                     ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[23]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[23]                                                     ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[22]                                                                           ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|foutDly[22]                                                     ;
-; auout_cs4334:inst9|R_din_R1[13]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[13]                                                                                                                                                        ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[33] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[31] ;
@@ -4562,7 +4560,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[24]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[24] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[23]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[23] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[22]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_addout_reg[22] ;
-; auout_cs4334:inst9|R_din_R1[12]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[12]                                                                                                                                                        ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_din2_reg1[15]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_40|fTap_din2_reg1[15]  ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_11|fTap_coef_reg2[0,6..15]                 ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg2[5]   ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_12|fTap_coef_reg2[2,4,6,8..15]             ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg2[5]   ;
@@ -4677,7 +4674,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_39|fTap_addout_reg[33] ;
-; auout_cs4334:inst9|R_din_R1[11]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[11]                                                                                                                                                        ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_11|fTap_coef_reg1[0,6..15]                 ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg1[5]   ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_12|fTap_coef_reg1[2,4,6,8..15]             ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg1[5]   ;
 ; NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_13|fTap_coef_reg1[0,1,3,8..15]             ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_10|fTap_coef_reg1[5]   ;
@@ -4791,7 +4787,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_38|fTap_addout_reg[33] ;
-; auout_cs4334:inst9|R_din_R1[10]                                                                                                                                                                            ; Merged with auout_cs4334:inst9|L_din_R1[10]                                                                                                                                                        ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[2]  ;
@@ -4826,7 +4821,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_37|fTap_addout_reg[33] ;
-; auout_cs4334:inst9|R_din_R1[9]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[9]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[2]  ;
@@ -4861,7 +4855,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_36|fTap_addout_reg[33] ;
-; auout_cs4334:inst9|R_din_R1[8]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[8]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[2]  ;
@@ -4896,7 +4889,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_35|fTap_addout_reg[33] ;
-; auout_cs4334:inst9|R_din_R1[7]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[7]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[2]  ;
@@ -4931,7 +4923,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_34|fTap_addout_reg[33] ;
-; auout_cs4334:inst9|R_din_R1[6]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[6]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[2]  ;
@@ -4966,7 +4957,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_33|fTap_addout_reg[33] ;
-; auout_cs4334:inst9|R_din_R1[5]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[5]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[2]  ;
@@ -5001,7 +4991,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[31] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[32] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_32|fTap_addout_reg[33] ;
-; auout_cs4334:inst9|R_din_R1[4]                                                                                                                                                                             ; Merged with auout_cs4334:inst9|L_din_R1[4]                                                                                                                                                         ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[0]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[1]  ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_31|fTap_addout_reg[2]  ;
@@ -5490,6 +5479,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[27]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[27] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[28]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[28] ;
 ; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[29]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[29] ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[30]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[30] ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[31]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[31] ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[32]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[32] ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[33]                       ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_18|fTap_addout_reg[33] ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[0]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[0]  ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[1]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[1]  ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[2]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[2]  ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[3]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[3]  ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[4]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[4]  ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[5]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[5]  ;
+; NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[6]                        ; Merged with NCO_32:inst20|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_17|fTap_addout_reg[6]  ;
 ; Total Number of Removed Registers = 10288                                                                                                                                                                  ;                                                                                                                                                                                                    ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 * Table truncated at 5000 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
@@ -6673,16 +6673,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cnt_sync:inst5 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; MAX_VAL        ; 511   ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: pll_MCLK:inst1|altpll:altpll_component ;
 +-------------------------------+----------------------------+------------------------+
@@ -7054,6 +7044,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS           ; ON                         ; AUTO_CASCADE           ;
 ; IGNORE_CASCADE_BUFFERS        ; OFF                        ; IGNORE_CASCADE         ;
 +-------------------------------+----------------------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cnt_sync:inst5 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; MAX_VAL        ; 511   ; Signed Integer                     ;
++----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -8561,7 +8561,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ../hdlsrc/rtl_module.v                       ; Project Directory  ; work    ; cc287da42f0ecb18162d31b054076742 ;
 ; db/pll_dac_adc_altpll.v                      ; Project Directory  ; work    ; 37e51e9407199447b2c7d351eb51a5f4 ;
 ; db/pll_mclk_altpll.v                         ; Project Directory  ; work    ; 873ff855fca37acd4f7c753bedc07221 ;
-; NCO_quartus.bdf                              ; Project Directory  ; work    ; f5f9e234822a64eae893cb72c16fdad5 ;
+; NCO_quartus.bdf                              ; Project Directory  ; work    ; 89cad7c41da250bf4ed46b819049ee1f ;
 +----------------------------------------------+--------------------+---------+----------------------------------+
 
 
@@ -8678,7 +8678,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Oct 05 18:27:59 2023
+    Info: Processing started: Mon Oct 16 16:02:18 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NCO_quartus -c NCO_quartus
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file /git_repository/fpga_myself/dds/dds_csdn/dds_32bit/hdlsrc/pll_mclk.v
@@ -8801,18 +8801,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/pll_
 Info (12128): Elaborating entity "pll_DAC_ADC_altpll" for hierarchy "pll_DAC_ADC:inst2|altpll:altpll_component|pll_DAC_ADC_altpll:auto_generated"
 Info (12128): Elaborating entity "auout_cs4334" for hierarchy "auout_cs4334:inst9"
 Warning (10036): Verilog HDL or VHDL warning at auout_cs4334.v(77): object "SCLK_H2L_W" assigned a value but never read
-Info (12128): Elaborating entity "NCO_32" for hierarchy "NCO_32:inst"
-Info (12128): Elaborating entity "Subsystem" for hierarchy "NCO_32:inst|Subsystem:u_Sub"
-Info (12128): Elaborating entity "NCO_block" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO"
-Info (12128): Elaborating entity "DitherGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|DitherGen:u_dither_inst"
-Info (12128): Elaborating entity "WaveformGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst"
-Info (12128): Elaborating entity "LookUpTableGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst"
-Info (12128): Elaborating entity "Discrete_FIR_Filter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter"
-Info (12128): Elaborating entity "Filter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank"
-Info (12128): Elaborating entity "FilterCoef" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|FilterCoef:u_CoefTable_1"
-Info (12128): Elaborating entity "subFilter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re"
-Info (12128): Elaborating entity "FilterTapSystolicPreAddWvlIn" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1"
-Info (12128): Elaborating entity "cnt_sync" for hierarchy "cnt_sync:inst5"
 Info (12128): Elaborating entity "pll_MCLK" for hierarchy "pll_MCLK:inst1"
 Info (12128): Elaborating entity "altpll" for hierarchy "pll_MCLK:inst1|altpll:altpll_component"
 Info (12130): Elaborated megafunction instantiation "pll_MCLK:inst1|altpll:altpll_component"
@@ -8874,6 +8862,18 @@ Info (12133): Instantiated megafunction "pll_MCLK:inst1|altpll:altpll_component"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_mclk_altpll.v
     Info (12023): Found entity 1: pll_MCLK_altpll
 Info (12128): Elaborating entity "pll_MCLK_altpll" for hierarchy "pll_MCLK:inst1|altpll:altpll_component|pll_MCLK_altpll:auto_generated"
+Info (12128): Elaborating entity "NCO_32" for hierarchy "NCO_32:inst"
+Info (12128): Elaborating entity "Subsystem" for hierarchy "NCO_32:inst|Subsystem:u_Sub"
+Info (12128): Elaborating entity "NCO_block" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO"
+Info (12128): Elaborating entity "DitherGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|DitherGen:u_dither_inst"
+Info (12128): Elaborating entity "WaveformGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst"
+Info (12128): Elaborating entity "LookUpTableGen" for hierarchy "NCO_32:inst|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst"
+Info (12128): Elaborating entity "Discrete_FIR_Filter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter"
+Info (12128): Elaborating entity "Filter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank"
+Info (12128): Elaborating entity "FilterCoef" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|FilterCoef:u_CoefTable_1"
+Info (12128): Elaborating entity "subFilter" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re"
+Info (12128): Elaborating entity "FilterTapSystolicPreAddWvlIn" for hierarchy "NCO_32:inst|Subsystem:u_Sub|Discrete_FIR_Filter:u_Discrete_FIR_Filter|Filter:u_FilterBank|subFilter:u_subFilter_1_re|FilterTapSystolicPreAddWvlIn:u_FilterTap_1"
+Info (12128): Elaborating entity "cnt_sync" for hierarchy "cnt_sync:inst5"
 Info (12128): Elaborating entity "fre_sel_audio" for hierarchy "fre_sel_audio:inst14"
 Info (12128): Elaborating entity "DAC_interface" for hierarchy "DAC_interface:inst12"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7t14.tdf
@@ -8906,7 +8906,7 @@ Info (281037): Using 6 processors to synthesize 2 partitions in parallel
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Oct 05 18:28:03 2023
+    Info: Processing started: Mon Oct 16 16:02:22 2023
 Info: Command: quartus_map --parallel=1 --helper=0 --helper_type=user_partition --partition=Top NCO_quartus -c NCO_quartus
 Info (19000): Inferred 2 megafunctions from design logic
     Info (276031): Inferred altsyncram megafunction from the following design logic: "NCO_32:inst20|Subsystem:u_Sub|NCO_block:u_NCO|WaveformGen:u_Wave_inst|LookUpTableGen:u_SineWave_inst|Mux14_rtl_0"
@@ -9462,14 +9462,14 @@ Info (21057): Implemented 3758 device resources after synthesis - the final reso
     Info (21065): Implemented 2 PLLs
     Info (21062): Implemented 80 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4719 megabytes
-    Info: Processing ended: Thu Oct 05 18:28:27 2023
+    Info: Peak virtual memory: 4724 megabytes
+    Info: Processing ended: Mon Oct 16 16:02:46 2023
     Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:24
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Oct 05 18:28:03 2023
+    Info: Processing started: Mon Oct 16 16:02:22 2023
 Info: Command: quartus_map --parallel=1 --helper=2 --helper_type=user_partition --partition=sld_hub:auto_hub NCO_quartus -c NCO_quartus
 Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_hub:auto_hub
 Info (13000): Registers with preset signals will power-up high
@@ -9483,14 +9483,14 @@ Info (21057): Implemented 212 device resources after synthesis - the final resou
     Info (21061): Implemented 152 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4622 megabytes
-    Info: Processing ended: Thu Oct 05 18:28:04 2023
+    Info: Processing ended: Mon Oct 16 16:02:23 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 Info (281038): Finished parallel synthesis of all partitions
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Thu Oct 05 18:28:28 2023
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Mon Oct 16 16:02:47 2023
     Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:28
 
 
