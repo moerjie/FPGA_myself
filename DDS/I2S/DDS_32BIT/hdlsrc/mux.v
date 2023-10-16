@@ -18,3 +18,26 @@ module mux (
 
   end
 endmodule
+
+
+
+module mux_2 (
+    l_in,
+    r_in,
+    sel,
+    clk,
+    out
+);
+  input r_in, l_in;
+  input sel, clk;
+  output out;
+  reg out;
+  always @(posedge clk) begin
+    if (sel == 1'b1) begin
+      out <= r_in;
+    end else begin
+      out <= l_in;
+    end
+
+  end
+endmodule

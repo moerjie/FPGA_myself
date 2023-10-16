@@ -60,21 +60,7 @@ module DAC_interface (
 
 
 endmodule
-//////////////////// λ����չ���ģ��  /////////////////////////
-module bus_LSB_staff_zero (
-    IN,
-    OUT
-);
-  parameter INWL = 8;
-  parameter OUTWL = 16;
 
-  input [INWL -1:0] IN;
-  output [OUTWL-1:0] OUT;
-
-  assign OUT[OUTWL-1:OUTWL-INWL] = IN;
-  assign OUT[INWL-1:0]           = 0;
-
-endmodule
 
 
 //////////////////// ���벢����λ�Ĵ���  /////////////////////////

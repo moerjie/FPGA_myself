@@ -39,12 +39,12 @@ applicable agreement for further details.
 	)
 	(parameter
 		"INWL"
-		"8"
+		"16"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"OUTWL"
-		"16"
+		"32"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
