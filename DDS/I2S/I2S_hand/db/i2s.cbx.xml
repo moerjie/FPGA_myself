@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="i2s">
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2s|pll_MCLK:inst|altpll:altpll_component" CBX_FILE_NAME="pll_MCLK_altpll.v"/>
 	</PROJECT>
 </LOG_ROOT>

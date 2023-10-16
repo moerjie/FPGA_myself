@@ -1,5 +1,5 @@
 EDA Netlist Writer report for i2s
-Sun Oct 15 17:16:07 2023
+Mon Oct 16 14:38:32 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Oct 15 17:16:07 2023 ;
+; EDA Netlist Writer Status ; Successful - Mon Oct 16 14:38:32 2023 ;
 ; Revision Name             ; i2s                                   ;
 ; Top-level Entity Name     ; i2s                                   ;
 ; Family                    ; Cyclone III                           ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------------+
-; Simulation Generated Files                                             ;
-+------------------------------------------------------------------------+
-; Generated Files                                                        ;
-+------------------------------------------------------------------------+
-; F:/Git_Repository/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim//i2s.vo ;
-+------------------------------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Simulation Generated Files                                                      ;
++---------------------------------------------------------------------------------+
+; Generated Files                                                                 ;
++---------------------------------------------------------------------------------+
+; C:/Users/DELL/Desktop/FPGA/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim//i2s.vo ;
++---------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,13 +93,13 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Sun Oct 15 17:16:06 2023
-Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/Git_Repository/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim/ i2s -c i2s
-Info (204019): Generated file i2s.vo in folder "F:/Git_Repository/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim//" for EDA simulation tool
+    Info: Processing started: Mon Oct 16 14:38:32 2023
+Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/DELL/Desktop/FPGA/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim/ i2s -c i2s
+Info (204019): Generated file i2s.vo in folder "C:/Users/DELL/Desktop/FPGA/FPGA_myself/DDS/I2S/I2S_hand/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4558 megabytes
-    Info: Processing ended: Sun Oct 15 17:16:07 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4575 megabytes
+    Info: Processing ended: Mon Oct 16 14:38:32 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
