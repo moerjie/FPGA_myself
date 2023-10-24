@@ -45,27 +45,6 @@ set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE ../hdlsrc/pll_MCLK.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/auout_cs4334.v
-set_global_assignment -name VERILOG_FILE ../../FIR/hdlsrc/FIR/FIR.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/mux.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/rtl_module.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/pll_DAC_ADC.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/fre_sel.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/fre_div.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/FilterCoef.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/FilterTapSystolicPreAddWvlIn.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/subFilter.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/Filter.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/Discrete_FIR_Filter.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/DitherGen.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/LookUpTableGen.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/WaveformGen.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/NCO_block.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/Subsystem.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/NCO.v
-set_global_assignment -name SDC_FILE ../hdlsrc/NCO/clock_constraint.sdc
-set_global_assignment -name BDF_FILE NCO_quartus.bdf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_C4 -to DRAM_ADDR[0]
 set_location_assignment PIN_A3 -to DRAM_ADDR[1]
@@ -203,7 +182,6 @@ set_location_assignment PIN_V7 -to DAT_DAC[1]
 set_location_assignment PIN_V6 -to DAT_DAC[0]
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
-set_global_assignment -name SIGNALTAP_FILE stp1.stp
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to CLOCK_50 -section_id auto_signaltap_0
@@ -271,5 +249,28 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LE
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=8192" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=20559" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=8192" -section_id auto_signaltap_0
+set_global_assignment -name VERILOG_FILE ../hdlsrc/auout_cs4334.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/pll_MCLK.v
+set_global_assignment -name VERILOG_FILE ../../FIR/hdlsrc/FIR/FIR.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/mux.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/rtl_module.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/pll_DAC_ADC.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/fre_sel.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/fre_div.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/FilterCoef.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/FilterTapSystolicPreAddWvlIn.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/subFilter.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/Filter.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/Discrete_FIR_Filter.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/DitherGen.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/LookUpTableGen.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/WaveformGen.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/NCO_block.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/Subsystem.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/NCO/NCO.v
+set_global_assignment -name SDC_FILE ../hdlsrc/NCO/clock_constraint.sdc
+set_global_assignment -name BDF_FILE NCO_quartus.bdf
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE NEW.bdf
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

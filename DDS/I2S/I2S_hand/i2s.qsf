@@ -192,33 +192,8 @@ set_location_assignment PIN_AB18 -to SDATA
 set_location_assignment PIN_AA18 -to SCLK
 set_location_assignment PIN_AA17 -to LRCK
 set_location_assignment PIN_AB17 -to MCLK
-set_global_assignment -name VERILOG_FILE myi2s.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/GEN_LRCLK/hdlsrc/GEN_LRCLK/GEN_LRCLK_block.v
-set_global_assignment -name VERILOG_FILE ../hdlsrc/GEN_LRCLK/hdlsrc/GEN_LRCLK/GEN_LRCLK.v
-set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/auout_cs4334.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/WaveformGen.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/Subsystem.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/subFilter.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/NCO_32.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/NCO.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/LookUpTableGen.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/Lookup_Table.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/FilterTapSystolicPreAddWvlIn.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/FilterCoef.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/Filter.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/DitherGen.v
-set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/Discrete_FIR_Filter.v
-set_global_assignment -name VERILOG_FILE module.v
-set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/rtl_module.v
-set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/pll_MCLK.v
-set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/pll_DAC_ADC.v
-set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/mux.v
-set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/fre_sel.v
-set_global_assignment -name BDF_FILE i2s.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
-set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to CLOCK_50 -section_id auto_signaltap_0
@@ -278,5 +253,32 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLE
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name VERILOG_FILE auout_cs4334.v
+set_global_assignment -name VERILOG_FILE myi2s.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/GEN_LRCLK/hdlsrc/GEN_LRCLK/GEN_LRCLK_block.v
+set_global_assignment -name VERILOG_FILE ../hdlsrc/GEN_LRCLK/hdlsrc/GEN_LRCLK/GEN_LRCLK.v
+set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/auout_cs4334.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/WaveformGen.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/Subsystem.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/subFilter.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/NCO_32.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/NCO.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/LookUpTableGen.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/Lookup_Table.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/FilterTapSystolicPreAddWvlIn.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/FilterCoef.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/Filter.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/DitherGen.v
+set_global_assignment -name VERILOG_FILE ../hdl_prj/NCO/hdlsrc/NCO_32/Discrete_FIR_Filter.v
+set_global_assignment -name VERILOG_FILE module.v
+set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/rtl_module.v
+set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/pll_MCLK.v
+set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/pll_DAC_ADC.v
+set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/mux.v
+set_global_assignment -name VERILOG_FILE ../DDS_32BIT/hdlsrc/fre_sel.v
+set_global_assignment -name BDF_FILE i2s.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name BDF_FILE NEW.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

@@ -12,6 +12,9 @@ mhi=[1 1 0 0 ];
 bhi = fir2(79,f,mhi);
 freqz(bhi,1,[],1)
 
+
+shif=['1'];
+
 % sin1_phase=((0:cnt2_max)*2*pi)/(cnt2_max+1);
 % sin2_phase=64*((0:cnt2_max)*2*pi)/(cnt2_max+1);
 % sin1=sin(sin1_phase);

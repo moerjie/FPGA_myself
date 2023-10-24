@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Oct 16 16:27:04 2023
+Analysis & Synthesis Status : Failed - Sun Oct 22 20:07:00 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : i2s
 Top-level Entity Name : i2s
 Family : Cyclone III
-Total logic elements : 4,392
-    Total combinational functions : 2,654
-    Dedicated logic registers : 3,402
-Total registers : 3402
-Total pins : 12
-Total virtual pins : 0
-Total memory bits : 50,240
-Embedded Multiplier 9-bit elements : 78
-Total PLLs : 1
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
